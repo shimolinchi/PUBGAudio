@@ -1,0 +1,9 @@
+{
+  "model": {"classes": 3, "output_mode": "multi_accddoa", "self_classes": 3},
+  "seed": 20260907,
+  "learning_rate": 0.001,
+  "epochs": 5,
+  "patience": 5,
+  "distance_scale": 100.0,
+  "purpose": "five full epochs on 48 training scenes; small synthetic training test, not the complete paper experiment"
+}

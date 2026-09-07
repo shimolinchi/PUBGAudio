@@ -6,14 +6,16 @@ build-backend = "setuptools.build_meta"
 name = "pubg-audio"
 version = "0.1.0"
 description = "Binaural SELD paper architecture and trajectory audio research"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = ["numpy>=2.0,<3", "scipy>=1.14,<2", "torch>=2.8,<2.9"]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<9"]
+tracking = ["wandb>=0.26,<0.27"]
 
 [project.scripts]
 pubg-audio-train = "pubg_audio.train:main"
+pubg-audio-evaluate = "pubg_audio.evaluate:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,0 +1,36 @@
+{
+  "status": "verified",
+  "total_clips": 72,
+  "total_hours": 0.6,
+  "split_clip_counts": {
+    "train": 48,
+    "validation": 12,
+    "test": 12
+  },
+  "master_gain": 0.6,
+  "far_active_track_frame_fraction": 0.8820588897013331,
+  "hidden_active_track_frames": 15489,
+  "cabin_dropped_tracks": 18,
+  "collision_events": 18,
+  "weather_scenes": 16,
+  "weather_only_scenes": 2,
+  "vehicle_motion_state_frames": [
+    78309,
+    38227,
+    5065,
+    11092,
+    14160
+  ],
+  "self_policy_counts": {
+    "mixed_self_foot": 14,
+    "self_only_foot": 4,
+    "external_only": 16,
+    "mixed_self_gun": 14,
+    "mixed_self_vehicle": 14,
+    "self_only_gun": 4,
+    "weather_only": 2,
+    "self_only_vehicle": 4
+  },
+  "elapsed_seconds": 15.56,
+  "verification_report": "verification.json"
+}

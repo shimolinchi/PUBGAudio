@@ -80,9 +80,11 @@ def adapt_scene(scene,sources,cfg,rng,force_weather=None):
 
 
 def plan(sources,cfg,splitting,groups,regular,preview=False):
+    # Vary trajectories without moving recording families between data splits.
+    scene_cfg=dict(cfg,seed=cfg.get('scene_seed',cfg['seed']))
     if preview:
-        scenes=base.preview_plan(regular,cfg,groups)
-        rng=np.random.default_rng(cfg['seed']+48000)
+        scenes=base.preview_plan(regular,scene_cfg,groups)
+        rng=np.random.default_rng(scene_cfg['seed']+48000)
         for scene in scenes:
             adapt_scene(scene,sources,cfg,rng,force_weather=False)
         car=next(copy.deepcopy(t) for s in scenes for t in s['tracks'] if t['class_index']==1 and t.get('source_role')!='self')
@@ -109,8 +111,8 @@ def plan(sources,cfg,splitting,groups,regular,preview=False):
                 split='preview',density='high',duration_seconds=30,sample_rate_hz=motion.RATE,tracks=[])
             scenes.append(adapt_scene(scene,[source],cfg,rng,force_weather=True))
         return scenes
-    scenes=base.plan(regular,cfg,splitting,groups)
-    rng=np.random.default_rng(cfg['seed']+48000)
+    scenes=base.plan(regular,scene_cfg,splitting,groups)
+    rng=np.random.default_rng(scene_cfg['seed']+48000)
     for scene in scenes:
         available=[s for s in sources if splitting['source_to_split'].get(s['id'])==scene['split']]
         if rng.random()<cfg['weather_only_probability']:
@@ -197,14 +199,25 @@ def main():
     for name in ['sources','hrir','output']:
         parser.add_argument('--'+name,type=Path,required=True)
     parser.add_argument('--workers',type=int,default=4)
-    parser.add_argument('--limit-per-split',type=int)
-    parser.add_argument('--preview-only',action='store_true')
+    size=parser.add_mutually_exclusive_group()
+    size.add_argument('--limit-per-split',type=int)
+    size.add_argument('--split-counts',type=int,nargs=3,metavar=('TRAIN','VALIDATION','TEST'))
+    size.add_argument('--preview-only',action='store_true')
+    parser.add_argument('--scene-seed',type=int,help='New trajectories; source-family split seed stays fixed')
     parser.add_argument('--plan-only',action='store_true')
     args=parser.parse_args()
+    if args.workers<1 or (args.limit_per_split is not None and args.limit_per_split<1) or (args.split_counts and min(args.split_counts)<1):
+        parser.error('Worker and split counts must be positive')
+    if args.scene_seed is not None and args.scene_seed<0:
+        parser.error('Scene seed must be nonnegative')
     args.sources,args.hrir,args.output=(x.resolve() for x in [args.sources,args.hrir,args.output])
     cfg=configuration()
-    if args.limit_per_split:
+    if args.limit_per_split is not None:
         cfg['split_clip_counts']={s:args.limit_per_split for s in cfg['split_clip_counts']}
+    if args.split_counts:
+        cfg['split_clip_counts']=dict(zip(['train','validation','test'],args.split_counts))
+    if args.scene_seed is not None:
+        cfg['scene_seed']=args.scene_seed
     manifest=json.loads((args.sources/'sources.json').read_text(encoding='utf-8'))
     regular,splitting,groups=sources_and_splits(manifest['sources'],cfg)
     scenes=plan(manifest['sources'],cfg,splitting,groups,regular,args.preview_only)

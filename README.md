@@ -6,11 +6,15 @@
 
 - 按 Krause、Politis、Mesaros 的 EUSIPCO 2024 论文实现 **3 CNN → 2 层 BiGRU → 2 层多头注意力 → 输出头**，支持 multi-ACCDDOA/ADPIT 和 multi-task 两种输出。
 - 论文 13 类配置与本项目 3 类配置分开。本项目额外有 3 类自身声音头；它是扩展，不属于论文原网络。
-- 已实现训练、验证、训练集归一化、checkpoint、断点恢复和离线预测。当前只有流程 smoke 权重，尚未进行完整训练或真实游戏准确率验证。
+- 已实现训练、验证、独立测试集诊断、训练集归一化、checkpoint、断点恢复和离线预测。小规模训练结果见 `outputs/reports/small_training_20260907.md`；尚未进行完整 25 小时训练或真实游戏准确率验证。
 - 本地 v4 数据为 3000 段 × 30 秒：训练 20 小时，验证、测试各 2.5 小时。约 84.69% 的外部发声帧为远处；含 867 次碰撞、707 段天气背景，其中 141 段只有天气。
 - 15 段试听包含远处曲线脚步/车辆、自身声音、急刹与原生碰撞、巡航和三种沙尘暴循环声对照。界面同步显示位置和方位，可填写结果并导出 CSV。
 
 论文：[Sound Event Detection and Localization with Distance Estimation](https://arxiv.org/abs/2403.11827)。详细对应关系见 [复刻说明](docs/paper_reproduction.md)，生成规则见 [数据说明](docs/dataset.md)。
+
+小规模试训已完成；固定阈值下外部三类仍未检出，当前权重尚不可用于实战。增强方法与 20→40→80 小时训练集的对照建议见 [数据增强与扩充](docs/augmentation_and_scaling.md)，该扩充方案尚未执行。
+
+已加入独立项目的 W&B 历史导入和实时训练记录，连接方式见 [W&B 说明](docs/wandb.md)。
 
 ## 目录
 
@@ -31,7 +35,7 @@ outputs/reports/      小型检查报告（Git 跟踪）
 
 ## 安装与训练（在子模块目录执行）
 
-本机已经建立 `.venv`，以下是新机器的 CPU 安装方式；CUDA 机器按其驱动选择相应 PyTorch 2.8 安装包。
+支持 Python 3.10 及以上。本机优先使用 Anaconda 的 `pubg` 环境；原 `.venv` 保留用于 CPU 检查。以下是新机器的 CPU 安装方式；CUDA 机器按其驱动选择相应 PyTorch 2.8 安装包。
 
 ```powershell
 python -m venv .venv
@@ -56,6 +60,27 @@ python -m venv .venv
 
 `predict` 输出每 100ms 的原始方向向量、距离和自身概率。ADPIT 的 3 个轨道可能重复，尚未进行检测阈值校准、去重和事件合并。BiGRU 和注意力使用整个 5 秒窗口，当前是离线模型，不是因果实时网络。
 
+## 少量数据训练测试
+
+72 段 × 30 秒，共 36 分钟；训练 / 验证 / 测试为 48 / 12 / 12 段，各自切成不重叠的 5 秒输入。新轨迹使用独立 `scene-seed`，保持原素材家族划分不变。不要用测试集选择 epoch、阈值或参数。
+
+```powershell
+conda activate pubg
+# 环境首次安装；已有正确 CUDA 版 torch 时无需重复安装
+python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+python -m pip install -e '.[test]'
+
+# 每次重新生成请换新的输出目录；已有本地小数据可以跳过这两步
+python tools/synthesis/generate_scenario_dataset.py --sources datasets/sources-v4 --hrir datasets/hrir/kemar-diffuse.zip --output datasets/scenario-small-20260907 --split-counts 48 12 12 --scene-seed 202609071 --workers 4
+python tools/synthesis/verify_scenario_dataset.py --dataset datasets/scenario-small-20260907 --reproduce 6
+
+# 5 轮完整遍历训练集，每轮用验证集选取 best.pt
+python -m pubg_audio.train --config configs/pubg_small_test.json --dataset datasets/scenario-small-20260907 --output outputs/train-small-20260907 --device cuda --batch-size 4
+python -m pubg_audio.evaluate --checkpoint outputs/train-small-20260907/best.pt --dataset datasets/scenario-small-20260907 --split test --output outputs/train-small-20260907/test.json --device cuda --batch-size 4
+```
+
+`evaluate` 使用 checkpoint 中冻结的训练集归一化参数，并核对三个数据清单的哈希。输出忽略被遮蔽标签的逐帧 precision / recall / F1；外部三个轨道取最大向量长度判断该类是否存在，避免把重复轨道计成三次。默认阈值固定为 0.5，未校准。方向、距离误差仅在检出的单声源帧上计算，必须结合检测召回率阅读；这些是流程诊断，不是官方 SELD 分数。距离仍为合成单位。
+
 ## 本地数据准备与试听
 
 在已有命名素材库上校验并复制，原文件不修改：
@@ -76,6 +101,6 @@ python -m venv .venv
 
 ## 仓库状态
 
-私有仓库：[shimolinchi/PUBGAudio](https://github.com/shimolinchi/PUBGAudio)，主项目内路径为 `modules/PUBGAudio`。训练数据保存在本地，不随 Git 克隆下载。数据路径可整体移动，复现工具可用 `--sources`、`--hrir` 指定新位置。
+公开仓库：[shimolinchi/PUBGAudio](https://github.com/shimolinchi/PUBGAudio)，主项目内路径为 `modules/PUBGAudio`。训练数据保存在本地，不随 Git 克隆下载。数据路径可整体移动，复现工具可用 `--sources`、`--hrir` 指定新位置。
 
 已生成全量 v4 的生产脚本保存在 `datasets/registry/v4_generator_snapshot/`，其中内部数据 ID 保留生成时的标识。当前生成器的产品名与试听碰撞对照元数据已有更新；复刻既有全量数据请使用该快照，以保留原参数和场景序列。

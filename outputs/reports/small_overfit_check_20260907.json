@@ -1,0 +1,180 @@
+{
+  "status": "passed",
+  "training_crops": [
+    {
+      "scene_id": "train_000016",
+      "start_seconds": 0.0
+    },
+    {
+      "scene_id": "train_000017",
+      "start_seconds": 10.0
+    }
+  ],
+  "reference_checkpoint_usage": "architecture and training-only normalization; model initialized from scratch",
+  "steps": 300,
+  "seed": 20260907,
+  "records": [
+    {
+      "step": 0,
+      "loss": 0.9212126731872559,
+      "external_f1": 0.8780487804878049
+    },
+    {
+      "step": 50,
+      "loss": 0.05644430220127106,
+      "external_f1": 0.9510869565217391
+    },
+    {
+      "step": 100,
+      "loss": 0.02612796239554882,
+      "external_f1": 0.988950276243094
+    },
+    {
+      "step": 150,
+      "loss": 0.007919352501630783,
+      "external_f1": 0.9944444444444445
+    },
+    {
+      "step": 200,
+      "loss": 0.002146039390936494,
+      "external_f1": 1.0
+    },
+    {
+      "step": 250,
+      "loss": 0.001212889445014298,
+      "external_f1": 1.0
+    },
+    {
+      "step": 300,
+      "loss": 0.0005425729905255139,
+      "external_f1": 1.0
+    }
+  ],
+  "diagnostics": {
+    "threshold": 0.5,
+    "frame_seconds": 0.1,
+    "external_activity_rule": "maximum xyz norm over ADPIT tracks; duplicate tracks count once",
+    "localization_rule": "detected single-source frames only; highest-confidence track, no truth-based selection",
+    "distance_units": "uncalibrated synthetic units, not measured metres",
+    "external": {
+      "per_class": {
+        "footsteps": {
+          "tp": 30,
+          "fp": 0,
+          "fn": 0,
+          "tn": 34,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "positive_frames": 30,
+          "valid_frames": 64,
+          "ignored_frames": 36,
+          "conditional_localization": {
+            "detected_single_source_frames": 30,
+            "angular_mae_degrees": 1.5845146179199219,
+            "distance_mae_units": 4.31365000406901
+          }
+        },
+        "vehicle": {
+          "tp": 82,
+          "fp": 0,
+          "fn": 0,
+          "tn": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "positive_frames": 82,
+          "valid_frames": 84,
+          "ignored_frames": 16,
+          "conditional_localization": {
+            "detected_single_source_frames": 82,
+            "angular_mae_degrees": 1.135185148657822,
+            "distance_mae_units": 1.6272080584270199
+          }
+        },
+        "gunfire": {
+          "tp": 68,
+          "fp": 0,
+          "fn": 0,
+          "tn": 20,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "positive_frames": 68,
+          "valid_frames": 88,
+          "ignored_frames": 12,
+          "conditional_localization": {
+            "detected_single_source_frames": 68,
+            "angular_mae_degrees": 1.129648208618164,
+            "distance_mae_units": 1.5331601535572725
+          }
+        }
+      },
+      "micro": {
+        "tp": 180,
+        "fp": 0,
+        "fn": 0,
+        "tn": 56,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positive_frames": 180,
+        "valid_frames": 236
+      }
+    },
+    "self": {
+      "per_class": {
+        "footsteps": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 100,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "positive_frames": 0,
+          "valid_frames": 100,
+          "ignored_frames": 0
+        },
+        "vehicle": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 100,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "positive_frames": 0,
+          "valid_frames": 100,
+          "ignored_frames": 0
+        },
+        "gunfire": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 100,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "positive_frames": 0,
+          "valid_frames": 100,
+          "ignored_frames": 0
+        }
+      },
+      "micro": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 300,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "positive_frames": 0,
+        "valid_frames": 300
+      }
+    }
+  },
+  "elapsed_seconds": 4.172,
+  "scope": "memorization sanity check on seen training crops, not validation or test accuracy",
+  "weights_saved": false
+}

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "counts": {
+    "emergency_brake_tracks": 49,
+    "clips": 72,
+    "collision_source_uses": 18
+  },
+  "weather_only_scenes": 2,
+  "source_family_and_pcm_split_isolation": true,
+  "all_frame_geometry_passed": true,
+  "exact_pcm_and_all_labels_reproduced": [
+    "train_000001",
+    "train_000003",
+    "train_000008",
+    "train_000015",
+    "train_000022",
+    "train_000029",
+    "train_000043",
+    "validation_000009",
+    "test_000012"
+  ],
+  "original_audio_unchanged": true,
+  "real_game_audibility_not_validated": true
+}

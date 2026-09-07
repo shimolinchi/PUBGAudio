@@ -18,3 +18,5 @@ checkpoints/
 *.zip
 .env
 *.pem
+configs/wandb.local.json
+wandb/
