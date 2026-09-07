@@ -1,0 +1,8 @@
+{
+  "model": {"classes": 13, "output_mode": "multi_accddoa", "self_classes": 0},
+  "seed": 20260907,
+  "learning_rate": 0.001,
+  "epochs": 250,
+  "patience": 75,
+  "purpose": "paper topology reference; requires original STARSS23 preprocessing for paper-score reproduction"
+}

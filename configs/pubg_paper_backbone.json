@@ -1,0 +1,9 @@
+{
+  "model": {"classes": 3, "output_mode": "multi_accddoa", "self_classes": 3},
+  "seed": 20260907,
+  "learning_rate": 0.001,
+  "epochs": 250,
+  "patience": 75,
+  "distance_scale": 100.0,
+  "purpose": "paper backbone with project class count, distance units and optional own-sound head; not an unchanged paper experiment"
+}

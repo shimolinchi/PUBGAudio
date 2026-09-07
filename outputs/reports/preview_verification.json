@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "counts": {
+    "clips": 15,
+    "emergency_brake_tracks": 5,
+    "collision_source_uses": 4
+  },
+  "weather_only_scenes": 3,
+  "source_family_and_pcm_split_isolation": true,
+  "all_frame_geometry_passed": true,
+  "exact_pcm_and_all_labels_reproduced": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "P01",
+    "P02",
+    "P03",
+    "M01",
+    "M02",
+    "N01",
+    "C01",
+    "C02",
+    "W01",
+    "W02",
+    "W03"
+  ],
+  "original_audio_unchanged": true,
+  "real_game_audibility_not_validated": true
+}

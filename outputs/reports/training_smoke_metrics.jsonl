@@ -1,0 +1,2 @@
+{"epoch": 0, "train_loss": 0.49611595273017883, "validation_loss": 0.17362989485263824, "train_batches": 2, "validation_batches": 1, "smoke_only": true}
+{"epoch": 1, "train_loss": 0.25690198689699173, "validation_loss": 0.08359866589307785, "train_batches": 2, "validation_batches": 1, "smoke_only": true}
