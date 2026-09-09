@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "artifact": "model.pt",
+  "artifact_bytes": 4291579,
+  "artifact_sha256": "3f2875750a4abe6478644a34dd04071b9deedfe4ebeca61ae8f2a701cb0663b0",
+  "inference_audio": "validation_0001.wav",
+  "frames": 1200,
+  "finite_outputs": true,
+  "check": "Exported tensors match best checkpoint; standalone CPU inference on a real validation scene",
+  "not_additional_test_evaluation": true
+}

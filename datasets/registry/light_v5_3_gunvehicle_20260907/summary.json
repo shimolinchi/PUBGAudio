@@ -1,0 +1,46 @@
+{
+  "status": "verified",
+  "clips": 108,
+  "seconds": 12960,
+  "split_counts": {
+    "train": 96,
+    "validation": 6,
+    "test": 6
+  },
+  "source_manifest_sha256": "4020f2529b9d89dd8ab4e01d9b4a71c90e5137fa41decf5e3de43c5cd55d3c79",
+  "hrir_sha256": "a48e73137390626ef1e45d1de6a4d98530c6aa570e71b40f7c4442241ed5fa22",
+  "split_density": {
+    "train": {
+      "high": 38,
+      "medium": 26,
+      "low": 32
+    },
+    "validation": {
+      "medium": 3,
+      "high": 1,
+      "low": 2
+    },
+    "test": {
+      "high": 3,
+      "low": 2,
+      "medium": 1
+    }
+  },
+  "limitations": [
+    "Whole scene, surface, vehicle bank, weapon family, auxiliary recording family and PCM isolation.",
+    "Retain v5.3 density, far-biased paths, listener yaw, self roles and vehicle motion probabilities.",
+    "Standing walk/run/sprint only; no body actions, throwables, C4, aircraft, weather or vehicle damage chains.",
+    "Tyre recordings have only two roll/brake families and one skid family: each stays in its assigned split; unavailable layers are omitted and recorded, never borrowed.",
+    "Synthetic held-out family evaluation, not real game accuracy.",
+    "F034: append 48 two-minute training scenes; retain all parent recordings and held-out hashes.",
+    "New eligible-step relative spawn intensities: footsteps/vehicle/gunfire 20/40/40, not duration quotas."
+  ],
+  "parent": "light-v5_3-20260907",
+  "added_training_seconds": 5760,
+  "new_track_kinds": {
+    "footsteps": 70,
+    "vehicle": 140,
+    "gunfire": 230
+  },
+  "new_collision_events": 15
+}

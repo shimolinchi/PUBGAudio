@@ -1,0 +1,1 @@
+{"external_targets":["footsteps","vehicle","gunfire"],"self_targets":["footsteps","vehicle","gunfire"],"unselected_audio":"keep_as_interference","hidden_target":"retain_detailed_positive_and_mask_training_loss","notes":"Data projection only. Existing three-class network slots are unchanged. Remove names to disable supervision; detailed labels and mixed WAV are retained."}

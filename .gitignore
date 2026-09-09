@@ -20,3 +20,4 @@ checkpoints/
 *.pem
 configs/wandb.local.json
 wandb/
+*.log

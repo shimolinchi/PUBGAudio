@@ -1,4 +1,4 @@
-"""Load immutable 30 s WAV/NPZ scenes and aligned five-second training crops."""
+"""Load immutable WAV/NPZ scenes and aligned five-second training crops."""
 import json
 from pathlib import Path
 import wave
@@ -25,14 +25,19 @@ def read_crop(path, start, seconds):
 def aligned_targets(labels, start, seconds, classes=3, distance_scale=100.):
     frames = round(seconds * 10)
     target = np.zeros((frames,3,classes,4), np.float32)
+    localization_mask = np.zeros((frames,3,classes), np.float32)
     counts = np.zeros((frames,classes), np.int64)
     mask = np.ones((frames,classes), np.float32)
     own_target = np.zeros((frames,3), np.float32)
     own_mask = np.ones((frames,3), np.float32)
-    label_time = labels['frame_right_edge_seconds'] - .016 - 64/44100
+    power_window_seconds = float(labels.get('power_window_seconds', .032))
+    support_end = np.asarray(labels['frame_right_edge_seconds'])
+    support_start = support_end - power_window_seconds
+    support_inside_crop = (support_start >= start-1e-9) & (support_end <= start+seconds+1e-9)
+    label_time = support_end - power_window_seconds/2 - 64/44100
     for frame in range(frames):
-        # A non-overlapping 100 ms target bin avoids leaking labels across crops.
-        # Feature windows overlap boundaries; retain short events in each bin.
+        # Keep short events in each 100 ms bin. A centre inside the crop does
+        # not imply that its complete power-analysis window is inside it.
         begin, end = start + frame * .1, start + (frame + 1) * .1
         idx = np.flatnonzero((label_time >= begin) & (label_time < end))
         if not len(idx):
@@ -49,6 +54,7 @@ def aligned_targets(labels, start, seconds, classes=3, distance_scale=100.):
             if not labels['activity_loss_mask'][idx,cls].all():
                 mask[frame,cls] = 0
             values = []
+            localizable = []
             for actor, actor_cls in enumerate(labels['track_class_index']):
                 if int(actor_cls) != cls or labels['track_source_role'][actor] != 0:
                     continue
@@ -61,12 +67,21 @@ def aligned_targets(labels, start, seconds, classes=3, distance_scale=100.):
                 # Our coordinates: x right, y front, z up. All sources are horizontal.
                 direction = xy / max(np.linalg.norm(xy),1e-9)
                 values.append([*direction,0.,distance/distance_scale])
+                localizable.append(float(np.mean(labels['track_localization_observable'][actor,active_idx]) >= .5)
+                    if 'track_localization_observable' in labels else 1.)
             if len(values) > 3:
                 mask[frame,cls] = 0  # Never silently discard a fourth source.
             counts[frame,cls] = min(len(values),3)
             for actor,value in enumerate(values[:3]):
                 target[frame,actor,cls] = value
-    return {k:torch.from_numpy(v) for k,v in dict(target=target,counts=counts,mask=mask,
+                localization_mask[frame,actor,cls] = localizable[actor]
+        if not support_inside_crop[idx].all():
+            # Preserve detailed positives for audit, but neither positive nor
+            # negative supervision may depend on sound outside this crop.
+            mask[frame] = 0
+            own_mask[frame] = 0
+            localization_mask[frame] = 0
+    return {k:torch.from_numpy(v) for k,v in dict(target=target,counts=counts,mask=mask,localization_mask=localization_mask,
         self_target=own_target,self_mask=own_mask).items()}
 
 

@@ -1,0 +1,11 @@
+{
+  "run": "outputs\\train-light-v5_3-250epochs-20260907",
+  "files": {
+    "best.pt": "af51b008fa794d41d90bbf9c0355212b101f3bcdaa14c673112906dc835c3349",
+    "best_detection.pt": "a74d32cf25c460ee5e86036c4b1179a2e162a3ba96ba7e1e6b4cbd4fe24b6830",
+    "last.pt": "a050c190800aff712113bc80db2a31764e5ea491c9e497116635913d364fb860",
+    "model.pt": "1a5e69fca4a1880f5118f1ca4f68b9bee468cbdbd68af30e4b04ca7d18b17310",
+    "model_detection.pt": "3603df49319300de2c01f0ed6f11a5890876d1b019461b90e104885247b281bd"
+  },
+  "weights_stay_local": true
+}

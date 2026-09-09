@@ -1,0 +1,16 @@
+{
+  "status": "final_evaluation_and_tracking_completed",
+  "completed_epochs": 400,
+  "optimizer_updates_added": 0,
+  "training_metrics_sha256": "b8665ac92052527866196eba33052cba5383220666e86e1edb43c4a47e48d008",
+  "evaluated_now": [],
+  "existing_reports_reused": [
+    "test.json",
+    "test_detection.json"
+  ],
+  "checkpoint_epochs": {
+    "test": 229,
+    "test_detection": 339
+  },
+  "wandb_url": "https://wandb.ai/simonlynch-harbin-institute-of-technology/PUBGAudio/runs/e6f7b62b7263"
+}

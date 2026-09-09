@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "clips": 720,
+  "seconds": 86400,
+  "source_files_verified": 682,
+  "source_and_pcm_overlap": 682,
+  "evaluation_protocol": "known_assets_new_scenes",
+  "exact_replays": [
+    "train_0001",
+    "validation_0001",
+    "test_0001"
+  ],
+  "pcm_peak": 0.684377574999237,
+  "observed": {
+    "train": {
+      "scenes": 600,
+      "seconds": 72000,
+      "density": {
+        "high": 198,
+        "low": 190,
+        "medium": 212
+      },
+      "curves": {
+        "arc": 445,
+        "sine": 425,
+        "straight": 432,
+        "bezier": 406
+      },
+      "distance_modes": {
+        "far": 1058,
+        "recede": 99,
+        "near_pass": 225,
+        "mid_pass": 228,
+        "approach": 98
+      },
+      "counts": {
+        "tracks/vehicle/self": 548,
+        "collision_events": 169,
+        "tracks/gunfire/external": 2190,
+        "tracks/vehicle/external": 1156,
+        "tracks/gunfire/self": 750,
+        "observable_10ms/vehicle/self": 1495879,
+        "observable_10ms/gunfire/external": 630749,
+        "observable_10ms/vehicle/external": 1993127,
+        "observable_10ms/gunfire/self": 252295,
+        "tracks/footsteps/external": 552,
+        "tracks/footsteps/self": 278,
+        "observable_10ms/footsteps/external": 252446,
+        "observable_10ms/footsteps/self": 364118
+      }
+    },
+    "validation": {
+      "scenes": 60,
+      "seconds": 7200,
+      "density": {
+        "medium": 24,
+        "high": 17,
+        "low": 19
+      },
+      "curves": {
+        "arc": 45,
+        "bezier": 37,
+        "straight": 40,
+        "sine": 47
+      },
+      "distance_modes": {
+        "far": 104,
+        "near_pass": 20,
+        "approach": 11,
+        "mid_pass": 24,
+        "recede": 10
+      },
+      "counts": {
+        "tracks/gunfire/external": 204,
+        "collision_events": 15,
+        "tracks/vehicle/external": 116,
+        "tracks/footsteps/external": 53,
+        "tracks/vehicle/self": 57,
+        "tracks/gunfire/self": 79,
+        "observable_10ms/gunfire/external": 59867,
+        "observable_10ms/vehicle/external": 197997,
+        "observable_10ms/footsteps/external": 23026,
+        "observable_10ms/vehicle/self": 148160,
+        "observable_10ms/gunfire/self": 27058,
+        "tracks/footsteps/self": 19,
+        "observable_10ms/footsteps/self": 28276
+      }
+    },
+    "test": {
+      "scenes": 60,
+      "seconds": 7200,
+      "density": {
+        "low": 29,
+        "medium": 16,
+        "high": 15
+      },
+      "curves": {
+        "arc": 42,
+        "straight": 34,
+        "sine": 31,
+        "bezier": 40
+      },
+      "distance_modes": {
+        "approach": 10,
+        "far": 97,
+        "mid_pass": 14,
+        "near_pass": 17,
+        "recede": 9
+      },
+      "counts": {
+        "tracks/gunfire/external": 213,
+        "collision_events": 11,
+        "tracks/gunfire/self": 76,
+        "tracks/vehicle/self": 47,
+        "tracks/vehicle/external": 89,
+        "observable_10ms/gunfire/external": 63623,
+        "observable_10ms/gunfire/self": 26457,
+        "observable_10ms/vehicle/self": 129564,
+        "observable_10ms/vehicle/external": 155815,
+        "tracks/footsteps/self": 19,
+        "tracks/footsteps/external": 58,
+        "observable_10ms/footsteps/self": 24672,
+        "observable_10ms/footsteps/external": 27711
+      }
+    }
+  },
+  "manifests_sha256": {
+    "train": "f96440fb1010315a26cad6243beceb867fff9ca77c43c608c183c8935e253eb3",
+    "validation": "eb61e5e5f3e402c448da10756d0c748d2aa746857a708a30ec281457a58613c5",
+    "test": "cbd07aa5d3c62e2e0a01109758c8fd3b29a03ae0eea37522624b005d2953ac4c"
+  },
+  "scope": "three-class light synthetic release; all sources/recipes/PCM/geometry/projections checked; not a listening assessment"
+}

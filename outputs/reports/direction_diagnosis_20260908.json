@@ -1,0 +1,2919 @@
+{
+  "checkpoint_sha256": "3d654b3cae5644f06c0d56965b6145e0d401fb3757b804b59ecbae8c55ad8bb1",
+  "dataset_fingerprint": {
+    "train": "b8b80376faf046e7d69dbdd403ba28898b3cdaf5591d2d0586ebddace0d05a2a",
+    "validation": "706eb25de4045c11a32980fea67ea11a79f68db2e2d3a4671985dbc5121a43cb",
+    "test": "99b7be6bedc05034b201fb80274d58f4153e5921c7d50c184988d47f58c46a76"
+  },
+  "threshold": 0.5,
+  "scope": "Post-hoc frozen-model diagnosis; existing test has been inspected. No tuning, fitting or checkpoint selection.",
+  "eligibility": "Valid, detected, exactly one external source of this class; other classes or self may overlap. Highest xyz-norm track, never truth-based track selection.",
+  "front_back_like_rule": "Azimuth error >60 degrees and error after reflecting predicted y <30 degrees; diagnostic heuristic, not proof of acoustic cause.",
+  "left_right_like_rule": "Azimuth error >60 degrees and error after reflecting predicted x <30 degrees.",
+  "yaw_rule": "Absolute unwrapped listener yaw rate at bin midpoint; observational subsets, not controlled comparisons.",
+  "splits": {
+    "validation": {
+      "footsteps": {
+        "overall": {
+          "frames": 381,
+          "azimuth_mae_deg": 19.561208623586786,
+          "angle_3d_mae_deg": 19.56145274914261,
+          "median_azimuth_error_deg": 9.957604641965219,
+          "p90_azimuth_error_deg": 44.26865714992152,
+          "within_20_deg_fraction": 0.7506561679790026,
+          "above_90_deg_fraction": 0.04461942257217848,
+          "front_back_like_fraction": 0.028871391076115485,
+          "left_right_like_fraction": 0.010498687664041995,
+          "mean_abs_predicted_elevation_deg": 0.04263969230576195,
+          "true_row_predicted_column_front_right_back_left": [
+            [
+              18,
+              5,
+              7,
+              8
+            ],
+            [
+              0,
+              126,
+              11,
+              0
+            ],
+            [
+              1,
+              15,
+              57,
+              6
+            ],
+            [
+              0,
+              6,
+              7,
+              114
+            ]
+          ]
+        },
+        "subsets": {
+          "yaw_below_5_deg_s": {
+            "frames": 306,
+            "azimuth_mae_deg": 16.897169296775456,
+            "angle_3d_mae_deg": 16.89749203406752,
+            "median_azimuth_error_deg": 8.877512298232489,
+            "p90_azimuth_error_deg": 35.8940135601065,
+            "within_20_deg_fraction": 0.7777777777777778,
+            "above_90_deg_fraction": 0.032679738562091505,
+            "front_back_like_fraction": 0.016339869281045753,
+            "left_right_like_fraction": 0.006535947712418301,
+            "mean_abs_predicted_elevation_deg": 0.040569400089151345,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                8,
+                2,
+                4,
+                4
+              ],
+              [
+                0,
+                106,
+                7,
+                0
+              ],
+              [
+                0,
+                14,
+                43,
+                4
+              ],
+              [
+                0,
+                4,
+                3,
+                107
+              ]
+            ]
+          },
+          "yaw_5_to_30_deg_s": {
+            "frames": 35,
+            "azimuth_mae_deg": 28.033693164823834,
+            "angle_3d_mae_deg": 28.033895643049448,
+            "median_azimuth_error_deg": 12.039933731458405,
+            "p90_azimuth_error_deg": 93.69910312484201,
+            "within_20_deg_fraction": 0.7428571428571429,
+            "above_90_deg_fraction": 0.11428571428571428,
+            "front_back_like_fraction": 0.02857142857142857,
+            "left_right_like_fraction": 0.05714285714285714,
+            "mean_abs_predicted_elevation_deg": 0.04632761098538744,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                3,
+                2,
+                0,
+                2
+              ],
+              [
+                0,
+                10,
+                2,
+                0
+              ],
+              [
+                1,
+                1,
+                6,
+                0
+              ],
+              [
+                0,
+                2,
+                2,
+                4
+              ]
+            ]
+          },
+          "yaw_at_least_30_deg_s": {
+            "frames": 40,
+            "azimuth_mae_deg": 32.52768550011103,
+            "angle_3d_mae_deg": 32.52736468729862,
+            "median_azimuth_error_deg": 18.378968432877045,
+            "p90_azimuth_error_deg": 77.27746421337405,
+            "within_20_deg_fraction": 0.55,
+            "above_90_deg_fraction": 0.075,
+            "front_back_like_fraction": 0.125,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05525049891816079,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                7,
+                1,
+                3,
+                2
+              ],
+              [
+                0,
+                10,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                8,
+                2
+              ],
+              [
+                0,
+                0,
+                2,
+                3
+              ]
+            ]
+          },
+          "distance_below_40_units": {
+            "frames": 250,
+            "azimuth_mae_deg": 17.181467329527898,
+            "angle_3d_mae_deg": 17.18166109709062,
+            "median_azimuth_error_deg": 10.553396500195007,
+            "p90_azimuth_error_deg": 33.510768714961145,
+            "within_20_deg_fraction": 0.772,
+            "above_90_deg_fraction": 0.028,
+            "front_back_like_fraction": 0.016,
+            "left_right_like_fraction": 0.008,
+            "mean_abs_predicted_elevation_deg": 0.03783605237424092,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                18,
+                1,
+                3,
+                6
+              ],
+              [
+                0,
+                119,
+                10,
+                0
+              ],
+              [
+                0,
+                1,
+                11,
+                6
+              ],
+              [
+                0,
+                4,
+                1,
+                70
+              ]
+            ]
+          },
+          "distance_40_to_100_units": {
+            "frames": 131,
+            "azimuth_mae_deg": 24.10269964278314,
+            "angle_3d_mae_deg": 24.103039871379238,
+            "median_azimuth_error_deg": 8.428052043527373,
+            "p90_azimuth_error_deg": 77.04474683572204,
+            "within_20_deg_fraction": 0.7099236641221374,
+            "above_90_deg_fraction": 0.07633587786259542,
+            "front_back_like_fraction": 0.05343511450381679,
+            "left_right_like_fraction": 0.015267175572519083,
+            "mean_abs_predicted_elevation_deg": 0.051806944083473826,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                4,
+                4,
+                2
+              ],
+              [
+                0,
+                7,
+                1,
+                0
+              ],
+              [
+                1,
+                14,
+                46,
+                0
+              ],
+              [
+                0,
+                2,
+                6,
+                44
+              ]
+            ]
+          },
+          "distance_at_least_100_units": {
+            "frames": 0
+          },
+          "self_vehicle_present": {
+            "frames": 0
+          },
+          "self_vehicle_absent": {
+            "frames": 381,
+            "azimuth_mae_deg": 19.561208623586786,
+            "angle_3d_mae_deg": 19.56145274914261,
+            "median_azimuth_error_deg": 9.957604641965219,
+            "p90_azimuth_error_deg": 44.26865714992152,
+            "within_20_deg_fraction": 0.7506561679790026,
+            "above_90_deg_fraction": 0.04461942257217848,
+            "front_back_like_fraction": 0.028871391076115485,
+            "left_right_like_fraction": 0.010498687664041995,
+            "mean_abs_predicted_elevation_deg": 0.04263969230576195,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                18,
+                5,
+                7,
+                8
+              ],
+              [
+                0,
+                126,
+                11,
+                0
+              ],
+              [
+                1,
+                15,
+                57,
+                6
+              ],
+              [
+                0,
+                6,
+                7,
+                114
+              ]
+            ]
+          }
+        },
+        "per_scene": {
+          "validation_0001": {
+            "frames": 106,
+            "azimuth_mae_deg": 17.479826796485618,
+            "angle_3d_mae_deg": 17.479881942432485,
+            "median_azimuth_error_deg": 9.245466641283883,
+            "p90_azimuth_error_deg": 34.98383252530513,
+            "within_20_deg_fraction": 0.8018867924528302,
+            "above_90_deg_fraction": 0.02830188679245283,
+            "front_back_like_fraction": 0.03773584905660377,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05526029558737683,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                1,
+                3,
+                6
+              ],
+              [
+                0,
+                50,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                9,
+                0
+              ],
+              [
+                0,
+                0,
+                7,
+                28
+              ]
+            ]
+          },
+          "validation_0002": {
+            "frames": 28,
+            "azimuth_mae_deg": 54.97435466696442,
+            "angle_3d_mae_deg": 54.97460464702801,
+            "median_azimuth_error_deg": 34.69008756570554,
+            "p90_azimuth_error_deg": 125.06195254704357,
+            "within_20_deg_fraction": 0.2857142857142857,
+            "above_90_deg_fraction": 0.25,
+            "front_back_like_fraction": 0.21428571428571427,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05825310642451703,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                4,
+                4,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                14,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ]
+            ]
+          },
+          "validation_0003": {
+            "frames": 29,
+            "azimuth_mae_deg": 7.231625065702854,
+            "angle_3d_mae_deg": 7.2328938426276395,
+            "median_azimuth_error_deg": 6.941571615460759,
+            "p90_azimuth_error_deg": 13.2629828015891,
+            "within_20_deg_fraction": 0.9655172413793104,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.045678456550554185,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                18,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                11,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "validation_0004": {
+            "frames": 0
+          },
+          "validation_0005": {
+            "frames": 114,
+            "azimuth_mae_deg": 16.013060482376225,
+            "angle_3d_mae_deg": 16.01314430196841,
+            "median_azimuth_error_deg": 11.498177554076904,
+            "p90_azimuth_error_deg": 43.153833273822286,
+            "within_20_deg_fraction": 0.7719298245614035,
+            "above_90_deg_fraction": 0.008771929824561403,
+            "front_back_like_fraction": 0.008771929824561403,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.024709514280321164,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                26,
+                5,
+                0
+              ],
+              [
+                1,
+                12,
+                4,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                60
+              ]
+            ]
+          },
+          "validation_0006": {
+            "frames": 104,
+            "azimuth_mae_deg": 19.475681659498214,
+            "angle_3d_mae_deg": 19.476006822577958,
+            "median_azimuth_error_deg": 6.953200139522139,
+            "p90_azimuth_error_deg": 36.155717947965435,
+            "within_20_deg_fraction": 0.7403846153846154,
+            "above_90_deg_fraction": 0.057692307692307696,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.038461538461538464,
+            "mean_abs_predicted_elevation_deg": 0.04437965950407885,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                39,
+                5,
+                0
+              ],
+              [
+                0,
+                0,
+                30,
+                0
+              ],
+              [
+                0,
+                6,
+                0,
+                24
+              ]
+            ]
+          }
+        }
+      },
+      "vehicle": {
+        "overall": {
+          "frames": 1122,
+          "azimuth_mae_deg": 44.37676168724973,
+          "angle_3d_mae_deg": 44.379114363025295,
+          "median_azimuth_error_deg": 27.010810527123553,
+          "p90_azimuth_error_deg": 95.75831953222318,
+          "within_20_deg_fraction": 0.39572192513368987,
+          "above_90_deg_fraction": 0.13992869875222816,
+          "front_back_like_fraction": 0.24242424242424243,
+          "left_right_like_fraction": 0.0,
+          "mean_abs_predicted_elevation_deg": 0.1194394239329125,
+          "true_row_predicted_column_front_right_back_left": [
+            [
+              26,
+              10,
+              73,
+              11
+            ],
+            [
+              18,
+              218,
+              3,
+              0
+            ],
+            [
+              36,
+              38,
+              42,
+              176
+            ],
+            [
+              20,
+              0,
+              0,
+              451
+            ]
+          ]
+        },
+        "subsets": {
+          "yaw_below_5_deg_s": {
+            "frames": 884,
+            "azimuth_mae_deg": 45.10874904522041,
+            "angle_3d_mae_deg": 45.11109140314421,
+            "median_azimuth_error_deg": 28.151670937434574,
+            "p90_azimuth_error_deg": 95.48598421427809,
+            "within_20_deg_fraction": 0.37895927601809953,
+            "above_90_deg_fraction": 0.1414027149321267,
+            "front_back_like_fraction": 0.2420814479638009,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.11938055866850114,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                20,
+                5,
+                61,
+                8
+              ],
+              [
+                18,
+                181,
+                3,
+                0
+              ],
+              [
+                25,
+                33,
+                27,
+                124
+              ],
+              [
+                19,
+                0,
+                0,
+                360
+              ]
+            ]
+          },
+          "yaw_5_to_30_deg_s": {
+            "frames": 159,
+            "azimuth_mae_deg": 41.03372465679036,
+            "angle_3d_mae_deg": 41.03710599397695,
+            "median_azimuth_error_deg": 22.062306157210315,
+            "p90_azimuth_error_deg": 95.88353356252362,
+            "within_20_deg_fraction": 0.4716981132075472,
+            "above_90_deg_fraction": 0.12578616352201258,
+            "front_back_like_fraction": 0.2641509433962264,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.1376293445082724,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                4,
+                0,
+                5,
+                1
+              ],
+              [
+                0,
+                17,
+                0,
+                0
+              ],
+              [
+                9,
+                2,
+                7,
+                48
+              ],
+              [
+                1,
+                0,
+                0,
+                65
+              ]
+            ]
+          },
+          "yaw_at_least_30_deg_s": {
+            "frames": 79,
+            "azimuth_mae_deg": 42.9143067935405,
+            "angle_3d_mae_deg": 42.914704580918546,
+            "median_azimuth_error_deg": 22.775068807682374,
+            "p90_azimuth_error_deg": 99.52520312477323,
+            "within_20_deg_fraction": 0.43037974683544306,
+            "above_90_deg_fraction": 0.1518987341772152,
+            "front_back_like_fraction": 0.20253164556962025,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.08348802548047485,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                2,
+                5,
+                7,
+                2
+              ],
+              [
+                0,
+                20,
+                0,
+                0
+              ],
+              [
+                2,
+                3,
+                8,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                26
+              ]
+            ]
+          },
+          "distance_below_40_units": {
+            "frames": 33,
+            "azimuth_mae_deg": 29.394914236551717,
+            "angle_3d_mae_deg": 29.40323308001525,
+            "median_azimuth_error_deg": 30.766662668205527,
+            "p90_azimuth_error_deg": 44.5840255226703,
+            "within_20_deg_fraction": 0.21212121212121213,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.06753004717858024,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                13,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                4,
+                9
+              ],
+              [
+                0,
+                0,
+                0,
+                6
+              ]
+            ]
+          },
+          "distance_40_to_100_units": {
+            "frames": 65,
+            "azimuth_mae_deg": 31.124103006993675,
+            "angle_3d_mae_deg": 31.124113360963893,
+            "median_azimuth_error_deg": 25.15720746737213,
+            "p90_azimuth_error_deg": 52.777379719380306,
+            "within_20_deg_fraction": 0.3076923076923077,
+            "above_90_deg_fraction": 0.07692307692307693,
+            "front_back_like_fraction": 0.09230769230769231,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.032336420409850644,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                1,
+                4,
+                0
+              ],
+              [
+                0,
+                18,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                42
+              ]
+            ]
+          },
+          "distance_at_least_100_units": {
+            "frames": 1024,
+            "azimuth_mae_deg": 45.70080834749356,
+            "angle_3d_mae_deg": 45.70311743672971,
+            "median_azimuth_error_deg": 28.11122291480666,
+            "p90_azimuth_error_deg": 96.72618016873045,
+            "within_20_deg_fraction": 0.4072265625,
+            "above_90_deg_fraction": 0.1484375,
+            "front_back_like_fraction": 0.259765625,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.12664128395429142,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                26,
+                9,
+                69,
+                11
+              ],
+              [
+                18,
+                187,
+                3,
+                0
+              ],
+              [
+                36,
+                37,
+                38,
+                167
+              ],
+              [
+                20,
+                0,
+                0,
+                403
+              ]
+            ]
+          },
+          "self_vehicle_present": {
+            "frames": 0
+          },
+          "self_vehicle_absent": {
+            "frames": 1122,
+            "azimuth_mae_deg": 44.37676168724973,
+            "angle_3d_mae_deg": 44.379114363025295,
+            "median_azimuth_error_deg": 27.010810527123553,
+            "p90_azimuth_error_deg": 95.75831953222318,
+            "within_20_deg_fraction": 0.39572192513368987,
+            "above_90_deg_fraction": 0.13992869875222816,
+            "front_back_like_fraction": 0.24242424242424243,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.1194394239329125,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                26,
+                10,
+                73,
+                11
+              ],
+              [
+                18,
+                218,
+                3,
+                0
+              ],
+              [
+                36,
+                38,
+                42,
+                176
+              ],
+              [
+                20,
+                0,
+                0,
+                451
+              ]
+            ]
+          }
+        },
+        "per_scene": {
+          "validation_0001": {
+            "frames": 239,
+            "azimuth_mae_deg": 67.72375662441684,
+            "angle_3d_mae_deg": 67.72516129353957,
+            "median_azimuth_error_deg": 44.967620290626314,
+            "p90_azimuth_error_deg": 164.5092071544634,
+            "within_20_deg_fraction": 0.24267782426778242,
+            "above_90_deg_fraction": 0.3305439330543933,
+            "front_back_like_fraction": 0.401673640167364,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.07333349542416419,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                13,
+                6,
+                58,
+                0
+              ],
+              [
+                18,
+                82,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                4,
+                9
+              ],
+              [
+                0,
+                0,
+                0,
+                48
+              ]
+            ]
+          },
+          "validation_0002": {
+            "frames": 409,
+            "azimuth_mae_deg": 35.41890097344209,
+            "angle_3d_mae_deg": 35.41952311408885,
+            "median_azimuth_error_deg": 23.560522555755938,
+            "p90_azimuth_error_deg": 72.20775057831878,
+            "within_20_deg_fraction": 0.45232273838630804,
+            "above_90_deg_fraction": 0.03667481662591687,
+            "front_back_like_fraction": 0.1271393643031785,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.11531889869953017,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                4,
+                0,
+                15,
+                11
+              ],
+              [
+                0,
+                19,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                10,
+                99
+              ],
+              [
+                9,
+                0,
+                0,
+                242
+              ]
+            ]
+          },
+          "validation_0003": {
+            "frames": 0
+          },
+          "validation_0004": {
+            "frames": 0
+          },
+          "validation_0005": {
+            "frames": 217,
+            "azimuth_mae_deg": 36.25816433103464,
+            "angle_3d_mae_deg": 36.26620506538204,
+            "median_azimuth_error_deg": 27.28850965028272,
+            "p90_azimuth_error_deg": 86.19154131417865,
+            "within_20_deg_fraction": 0.39631336405529954,
+            "above_90_deg_fraction": 0.05069124423963134,
+            "front_back_like_fraction": 0.22580645161290322,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.17408029586593496,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                34,
+                2,
+                26
+              ],
+              [
+                7,
+                0,
+                0,
+                145
+              ]
+            ]
+          },
+          "validation_0006": {
+            "frames": 257,
+            "azimuth_mae_deg": 43.775862341969834,
+            "angle_3d_mae_deg": 43.777047911704976,
+            "median_azimuth_error_deg": 23.79201522656598,
+            "p90_azimuth_error_deg": 97.78719689751091,
+            "within_20_deg_fraction": 0.4474708171206226,
+            "above_90_deg_fraction": 0.20233463035019456,
+            "front_back_like_fraction": 0.2918287937743191,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.12273725476784776,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                9,
+                4,
+                0,
+                0
+              ],
+              [
+                0,
+                117,
+                3,
+                0
+              ],
+              [
+                33,
+                3,
+                26,
+                42
+              ],
+              [
+                4,
+                0,
+                0,
+                16
+              ]
+            ]
+          }
+        }
+      },
+      "gunfire": {
+        "overall": {
+          "frames": 341,
+          "azimuth_mae_deg": 42.80210366436182,
+          "angle_3d_mae_deg": 42.802565686314786,
+          "median_azimuth_error_deg": 34.56473487378207,
+          "p90_azimuth_error_deg": 80.69486409088566,
+          "within_20_deg_fraction": 0.3196480938416422,
+          "above_90_deg_fraction": 0.0469208211143695,
+          "front_back_like_fraction": 0.2903225806451613,
+          "left_right_like_fraction": 0.005865102639296188,
+          "mean_abs_predicted_elevation_deg": 0.0664225426445558,
+          "true_row_predicted_column_front_right_back_left": [
+            [
+              46,
+              24,
+              5,
+              35
+            ],
+            [
+              4,
+              76,
+              0,
+              0
+            ],
+            [
+              1,
+              9,
+              17,
+              8
+            ],
+            [
+              0,
+              2,
+              1,
+              113
+            ]
+          ]
+        },
+        "subsets": {
+          "yaw_below_5_deg_s": {
+            "frames": 298,
+            "azimuth_mae_deg": 43.695016331422906,
+            "angle_3d_mae_deg": 43.69535932345651,
+            "median_azimuth_error_deg": 34.4060774029133,
+            "p90_azimuth_error_deg": 81.3057453431363,
+            "within_20_deg_fraction": 0.3187919463087248,
+            "above_90_deg_fraction": 0.050335570469798654,
+            "front_back_like_fraction": 0.3221476510067114,
+            "left_right_like_fraction": 0.006711409395973154,
+            "mean_abs_predicted_elevation_deg": 0.06511846750195327,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                41,
+                22,
+                5,
+                30
+              ],
+              [
+                4,
+                64,
+                0,
+                0
+              ],
+              [
+                0,
+                5,
+                17,
+                7
+              ],
+              [
+                0,
+                2,
+                1,
+                100
+              ]
+            ]
+          },
+          "yaw_5_to_30_deg_s": {
+            "frames": 20,
+            "azimuth_mae_deg": 37.418257135247835,
+            "angle_3d_mae_deg": 37.41832980187617,
+            "median_azimuth_error_deg": 40.46219563414266,
+            "p90_azimuth_error_deg": 82.74313858890245,
+            "within_20_deg_fraction": 0.35,
+            "above_90_deg_fraction": 0.05,
+            "front_back_like_fraction": 0.15,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05583107412699101,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                2,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                10,
+                0,
+                0
+              ],
+              [
+                1,
+                4,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "yaw_at_least_30_deg_s": {
+            "frames": 23,
+            "azimuth_mae_deg": 35.9146669599304,
+            "angle_3d_mae_deg": 35.91700976546861,
+            "median_azimuth_error_deg": 30.421903903082352,
+            "p90_azimuth_error_deg": 68.27914340605365,
+            "within_20_deg_fraction": 0.30434782608695654,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.09252879320311438,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                3,
+                2,
+                0,
+                3
+              ],
+              [
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                12
+              ]
+            ]
+          },
+          "distance_below_40_units": {
+            "frames": 21,
+            "azimuth_mae_deg": 4.8098975712652585,
+            "angle_3d_mae_deg": 4.810109995206416,
+            "median_azimuth_error_deg": 4.763579838433202,
+            "p90_azimuth_error_deg": 7.996033609050983,
+            "within_20_deg_fraction": 1.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.03351947733774455,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                19,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "distance_40_to_100_units": {
+            "frames": 0
+          },
+          "distance_at_least_100_units": {
+            "frames": 320,
+            "azimuth_mae_deg": 45.29534218922128,
+            "angle_3d_mae_deg": 45.29582059104377,
+            "median_azimuth_error_deg": 36.912966611141115,
+            "p90_azimuth_error_deg": 81.32720822594435,
+            "within_20_deg_fraction": 0.275,
+            "above_90_deg_fraction": 0.05,
+            "front_back_like_fraction": 0.309375,
+            "left_right_like_fraction": 0.00625,
+            "mean_abs_predicted_elevation_deg": 0.06858180630531528,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                27,
+                24,
+                5,
+                33
+              ],
+              [
+                4,
+                76,
+                0,
+                0
+              ],
+              [
+                1,
+                9,
+                17,
+                8
+              ],
+              [
+                0,
+                2,
+                1,
+                113
+              ]
+            ]
+          },
+          "self_vehicle_present": {
+            "frames": 20,
+            "azimuth_mae_deg": 39.62264692317189,
+            "angle_3d_mae_deg": 39.62271265248794,
+            "median_azimuth_error_deg": 35.57003950806413,
+            "p90_azimuth_error_deg": 53.71980748642785,
+            "within_20_deg_fraction": 0.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.05,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.07465975229125063,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                7
+              ],
+              [
+                0,
+                0,
+                0,
+                13
+              ]
+            ]
+          },
+          "self_vehicle_absent": {
+            "frames": 321,
+            "azimuth_mae_deg": 43.000200657582376,
+            "angle_3d_mae_deg": 43.00068737066536,
+            "median_azimuth_error_deg": 34.03290128411493,
+            "p90_azimuth_error_deg": 81.3228838492065,
+            "within_20_deg_fraction": 0.3395638629283489,
+            "above_90_deg_fraction": 0.04984423676012461,
+            "front_back_like_fraction": 0.3052959501557632,
+            "left_right_like_fraction": 0.006230529595015576,
+            "mean_abs_predicted_elevation_deg": 0.065909320859715,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                46,
+                24,
+                5,
+                35
+              ],
+              [
+                4,
+                76,
+                0,
+                0
+              ],
+              [
+                1,
+                9,
+                17,
+                1
+              ],
+              [
+                0,
+                2,
+                1,
+                100
+              ]
+            ]
+          }
+        },
+        "per_scene": {
+          "validation_0001": {
+            "frames": 20,
+            "azimuth_mae_deg": 39.62264692317189,
+            "angle_3d_mae_deg": 39.62271265248794,
+            "median_azimuth_error_deg": 35.57003950806413,
+            "p90_azimuth_error_deg": 53.71980748642785,
+            "within_20_deg_fraction": 0.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.05,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.07465975229125063,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                7
+              ],
+              [
+                0,
+                0,
+                0,
+                13
+              ]
+            ]
+          },
+          "validation_0002": {
+            "frames": 135,
+            "azimuth_mae_deg": 29.094308798308248,
+            "angle_3d_mae_deg": 29.09539546028131,
+            "median_azimuth_error_deg": 23.62687918096367,
+            "p90_azimuth_error_deg": 61.716323390594326,
+            "within_20_deg_fraction": 0.4444444444444444,
+            "above_90_deg_fraction": 0.014814814814814815,
+            "front_back_like_fraction": 0.08148148148148149,
+            "left_right_like_fraction": 0.014814814814814815,
+            "mean_abs_predicted_elevation_deg": 0.08505477992399471,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                27,
+                0,
+                0,
+                8
+              ],
+              [
+                0,
+                21,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                14,
+                1
+              ],
+              [
+                0,
+                2,
+                1,
+                59
+              ]
+            ]
+          },
+          "validation_0003": {
+            "frames": 44,
+            "azimuth_mae_deg": 58.147140638865146,
+            "angle_3d_mae_deg": 58.14706295587491,
+            "median_azimuth_error_deg": 30.787509109402095,
+            "p90_azimuth_error_deg": 137.49916842379844,
+            "within_20_deg_fraction": 0.20454545454545456,
+            "above_90_deg_fraction": 0.20454545454545456,
+            "front_back_like_fraction": 0.4318181818181818,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.04333808813794059,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                5,
+                0
+              ],
+              [
+                3,
+                18,
+                0,
+                0
+              ],
+              [
+                1,
+                7,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                10
+              ]
+            ]
+          },
+          "validation_0004": {
+            "frames": 46,
+            "azimuth_mae_deg": 68.85963443181333,
+            "angle_3d_mae_deg": 68.85963579174216,
+            "median_azimuth_error_deg": 66.02975862367742,
+            "p90_azimuth_error_deg": 79.53663188089314,
+            "within_20_deg_fraction": 0.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.9130434782608695,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.016766929924352934,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                17
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                29
+              ]
+            ]
+          },
+          "validation_0005": {
+            "frames": 24,
+            "azimuth_mae_deg": 6.457082600982581,
+            "angle_3d_mae_deg": 6.457477825797622,
+            "median_azimuth_error_deg": 5.559607900619909,
+            "p90_azimuth_error_deg": 13.749516940389697,
+            "within_20_deg_fraction": 1.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.06033785781687129,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                19,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                3,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "validation_0006": {
+            "frames": 72,
+            "azimuth_mae_deg": 55.47701901271205,
+            "angle_3d_mae_deg": 55.477066313164265,
+            "median_azimuth_error_deg": 72.48738387539646,
+            "p90_azimuth_error_deg": 87.41513841943437,
+            "within_20_deg_fraction": 0.2222222222222222,
+            "above_90_deg_fraction": 0.06944444444444445,
+            "front_back_like_fraction": 0.3611111111111111,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.07705879811159304,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                24,
+                0,
+                8
+              ],
+              [
+                1,
+                37,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "test": {
+      "footsteps": {
+        "overall": {
+          "frames": 235,
+          "azimuth_mae_deg": 9.903977922019534,
+          "angle_3d_mae_deg": 9.904360395791945,
+          "median_azimuth_error_deg": 8.773364625103284,
+          "p90_azimuth_error_deg": 18.24462793889986,
+          "within_20_deg_fraction": 0.9446808510638298,
+          "above_90_deg_fraction": 0.0,
+          "front_back_like_fraction": 0.01276595744680851,
+          "left_right_like_fraction": 0.0,
+          "mean_abs_predicted_elevation_deg": 0.037651752765977195,
+          "true_row_predicted_column_front_right_back_left": [
+            [
+              48,
+              7,
+              0,
+              2
+            ],
+            [
+              1,
+              129,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              48
+            ]
+          ]
+        },
+        "subsets": {
+          "yaw_below_5_deg_s": {
+            "frames": 193,
+            "azimuth_mae_deg": 10.504391007366962,
+            "angle_3d_mae_deg": 10.504831990731024,
+            "median_azimuth_error_deg": 9.001080498301576,
+            "p90_azimuth_error_deg": 19.288566967739328,
+            "within_20_deg_fraction": 0.9326424870466321,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.015544041450777202,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.040873044246336775,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                48,
+                6,
+                0,
+                2
+              ],
+              [
+                1,
+                94,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                42
+              ]
+            ]
+          },
+          "yaw_5_to_30_deg_s": {
+            "frames": 39,
+            "azimuth_mae_deg": 6.803070896477884,
+            "angle_3d_mae_deg": 6.803189135105897,
+            "median_azimuth_error_deg": 7.231487380619171,
+            "p90_azimuth_error_deg": 12.132998888813916,
+            "within_20_deg_fraction": 1.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.022465886565368003,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                33,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                5
+              ]
+            ]
+          },
+          "yaw_at_least_30_deg_s": {
+            "frames": 3,
+            "azimuth_mae_deg": 11.589194096709738,
+            "angle_3d_mae_deg": 11.58924751029646,
+            "median_azimuth_error_deg": 12.629891109065568,
+            "p90_azimuth_error_deg": 12.691658412990467,
+            "within_20_deg_fraction": 1.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.027831594804096887,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "distance_below_40_units": {
+            "frames": 120,
+            "azimuth_mae_deg": 8.902700155886645,
+            "angle_3d_mae_deg": 8.902916352798805,
+            "median_azimuth_error_deg": 9.509221406787447,
+            "p90_azimuth_error_deg": 16.298777634156835,
+            "within_20_deg_fraction": 1.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.0345832547300092,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                5,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                48
+              ]
+            ]
+          },
+          "distance_40_to_100_units": {
+            "frames": 115,
+            "azimuth_mae_deg": 10.948789504071241,
+            "angle_3d_mae_deg": 10.949345484132612,
+            "median_azimuth_error_deg": 8.020218742381275,
+            "p90_azimuth_error_deg": 20.17607796723818,
+            "within_20_deg_fraction": 0.8869565217391304,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.02608695652173913,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.040853663760030766,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                43,
+                7,
+                0,
+                2
+              ],
+              [
+                1,
+                62,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "distance_at_least_100_units": {
+            "frames": 0
+          },
+          "self_vehicle_present": {
+            "frames": 0
+          },
+          "self_vehicle_absent": {
+            "frames": 235,
+            "azimuth_mae_deg": 9.903977922019534,
+            "angle_3d_mae_deg": 9.904360395791945,
+            "median_azimuth_error_deg": 8.773364625103284,
+            "p90_azimuth_error_deg": 18.24462793889986,
+            "within_20_deg_fraction": 0.9446808510638298,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.01276595744680851,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.037651752765977195,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                48,
+                7,
+                0,
+                2
+              ],
+              [
+                1,
+                129,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                48
+              ]
+            ]
+          }
+        },
+        "per_scene": {
+          "test_0001": {
+            "frames": 45,
+            "azimuth_mae_deg": 12.379394107991514,
+            "angle_3d_mae_deg": 12.38067098490913,
+            "median_azimuth_error_deg": 16.07580139247915,
+            "p90_azimuth_error_deg": 20.943238188296505,
+            "within_20_deg_fraction": 0.7777777777777778,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.07099722068237474,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                43,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "test_0002": {
+            "frames": 0
+          },
+          "test_0003": {
+            "frames": 0
+          },
+          "test_0004": {
+            "frames": 148,
+            "azimuth_mae_deg": 7.940517475348724,
+            "angle_3d_mae_deg": 7.9407015015754565,
+            "median_azimuth_error_deg": 6.121241040717138,
+            "p90_azimuth_error_deg": 13.853493807761584,
+            "within_20_deg_fraction": 0.9797297297297297,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.02027027027027027,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.021754463716549086,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                5,
+                7,
+                0,
+                0
+              ],
+              [
+                1,
+                129,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                6
+              ]
+            ]
+          },
+          "test_0005": {
+            "frames": 0
+          },
+          "test_0006": {
+            "frames": 42,
+            "azimuth_mae_deg": 14.170606915794327,
+            "angle_3d_mae_deg": 14.170730391834022,
+            "median_azimuth_error_deg": 14.78132287487935,
+            "p90_azimuth_error_deg": 17.376424284219613,
+            "within_20_deg_fraction": 1.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05794348426782176,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                42
+              ]
+            ]
+          }
+        }
+      },
+      "vehicle": {
+        "overall": {
+          "frames": 774,
+          "azimuth_mae_deg": 67.40329864354989,
+          "angle_3d_mae_deg": 67.40403028429876,
+          "median_azimuth_error_deg": 72.44653196246966,
+          "p90_azimuth_error_deg": 138.74499477003906,
+          "within_20_deg_fraction": 0.3178294573643411,
+          "above_90_deg_fraction": 0.39664082687338503,
+          "front_back_like_fraction": 0.40568475452196384,
+          "left_right_like_fraction": 0.0,
+          "mean_abs_predicted_elevation_deg": 0.10915399759580588,
+          "true_row_predicted_column_front_right_back_left": [
+            [
+              100,
+              77,
+              40,
+              6
+            ],
+            [
+              51,
+              179,
+              20,
+              0
+            ],
+            [
+              200,
+              33,
+              25,
+              0
+            ],
+            [
+              4,
+              0,
+              0,
+              39
+            ]
+          ]
+        },
+        "subsets": {
+          "yaw_below_5_deg_s": {
+            "frames": 679,
+            "azimuth_mae_deg": 70.32984210555374,
+            "angle_3d_mae_deg": 70.3306508121302,
+            "median_azimuth_error_deg": 74.70052935341639,
+            "p90_azimuth_error_deg": 143.40634264181932,
+            "within_20_deg_fraction": 0.30486008836524303,
+            "above_90_deg_fraction": 0.42415316642120765,
+            "front_back_like_fraction": 0.4418262150220913,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.10475953013340608,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                77,
+                58,
+                36,
+                4
+              ],
+              [
+                42,
+                149,
+                20,
+                0
+              ],
+              [
+                200,
+                33,
+                25,
+                0
+              ],
+              [
+                4,
+                0,
+                0,
+                31
+              ]
+            ]
+          },
+          "yaw_5_to_30_deg_s": {
+            "frames": 72,
+            "azimuth_mae_deg": 46.98421061959344,
+            "angle_3d_mae_deg": 46.98445542783574,
+            "median_azimuth_error_deg": 40.99449409338341,
+            "p90_azimuth_error_deg": 104.17168752301589,
+            "within_20_deg_fraction": 0.4305555555555556,
+            "above_90_deg_fraction": 0.2222222222222222,
+            "front_back_like_fraction": 0.1527777777777778,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.17153620727465277,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                14,
+                19,
+                1,
+                0
+              ],
+              [
+                9,
+                28,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "yaw_at_least_30_deg_s": {
+            "frames": 23,
+            "azimuth_mae_deg": 44.92726938373464,
+            "angle_3d_mae_deg": 44.92724990463676,
+            "median_azimuth_error_deg": 26.55269278343485,
+            "p90_azimuth_error_deg": 132.38668609337475,
+            "within_20_deg_fraction": 0.34782608695652173,
+            "above_90_deg_fraction": 0.13043478260869565,
+            "front_back_like_fraction": 0.13043478260869565,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.04360288064330486,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                9,
+                0,
+                3,
+                2
+              ],
+              [
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                7
+              ]
+            ]
+          },
+          "distance_below_40_units": {
+            "frames": 13,
+            "azimuth_mae_deg": 14.486234027335119,
+            "angle_3d_mae_deg": 14.4868343593174,
+            "median_azimuth_error_deg": 17.624974268198287,
+            "p90_azimuth_error_deg": 23.003701827119556,
+            "within_20_deg_fraction": 0.6153846153846154,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.07200977209165361,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                12,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "distance_40_to_100_units": {
+            "frames": 33,
+            "azimuth_mae_deg": 8.439496846641397,
+            "angle_3d_mae_deg": 8.439719542162583,
+            "median_azimuth_error_deg": 8.19525653759493,
+            "p90_azimuth_error_deg": 15.636440904596128,
+            "within_20_deg_fraction": 1.0,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.04343666882317367,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                20,
+                0
+              ],
+              [
+                0,
+                0,
+                13,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "distance_at_least_100_units": {
+            "frames": 728,
+            "azimuth_mae_deg": 71.02105592282017,
+            "angle_3d_mae_deg": 71.02181297868783,
+            "median_azimuth_error_deg": 75.55867947677807,
+            "p90_azimuth_error_deg": 141.86067275695757,
+            "within_20_deg_fraction": 0.2815934065934066,
+            "above_90_deg_fraction": 0.4217032967032967,
+            "front_back_like_fraction": 0.43131868131868134,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.11279623218516141,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                100,
+                77,
+                40,
+                6
+              ],
+              [
+                51,
+                179,
+                0,
+                0
+              ],
+              [
+                200,
+                32,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0,
+                39
+              ]
+            ]
+          },
+          "self_vehicle_present": {
+            "frames": 69,
+            "azimuth_mae_deg": 16.47935798200236,
+            "angle_3d_mae_deg": 16.479674095635126,
+            "median_azimuth_error_deg": 12.822609690991953,
+            "p90_azimuth_error_deg": 32.36256860460617,
+            "within_20_deg_fraction": 0.7391304347826086,
+            "above_90_deg_fraction": 0.014492753623188406,
+            "front_back_like_fraction": 0.014492753623188406,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.06429548635135356,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                20,
+                0
+              ],
+              [
+                0,
+                9,
+                25,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                14
+              ]
+            ]
+          },
+          "self_vehicle_absent": {
+            "frames": 705,
+            "azimuth_mae_deg": 72.38734389978644,
+            "angle_3d_mae_deg": 72.38811620914669,
+            "median_azimuth_error_deg": 80.99251679814236,
+            "p90_azimuth_error_deg": 143.20114049125067,
+            "within_20_deg_fraction": 0.2765957446808511,
+            "above_90_deg_fraction": 0.4340425531914894,
+            "front_back_like_fraction": 0.44397163120567373,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.11354440507930545,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                100,
+                77,
+                39,
+                6
+              ],
+              [
+                51,
+                179,
+                0,
+                0
+              ],
+              [
+                200,
+                24,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0,
+                25
+              ]
+            ]
+          }
+        },
+        "per_scene": {
+          "test_0001": {
+            "frames": 313,
+            "azimuth_mae_deg": 101.1135774140271,
+            "angle_3d_mae_deg": 101.11334274496465,
+            "median_azimuth_error_deg": 115.94981724842498,
+            "p90_azimuth_error_deg": 159.17007616005438,
+            "within_20_deg_fraction": 0.134185303514377,
+            "above_90_deg_fraction": 0.65814696485623,
+            "front_back_like_fraction": 0.7987220447284346,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.09374422754017565,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                3,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                11,
+                20,
+                0
+              ],
+              [
+                200,
+                33,
+                25,
+                0
+              ],
+              [
+                4,
+                0,
+                0,
+                16
+              ]
+            ]
+          },
+          "test_0002": {
+            "frames": 28,
+            "azimuth_mae_deg": 37.16486617246433,
+            "angle_3d_mae_deg": 37.16498319004808,
+            "median_azimuth_error_deg": 19.95754013941172,
+            "p90_azimuth_error_deg": 102.42474347829267,
+            "within_20_deg_fraction": 0.5,
+            "above_90_deg_fraction": 0.10714285714285714,
+            "front_back_like_fraction": 0.10714285714285714,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05941534624076467,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                3,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                23
+              ]
+            ]
+          },
+          "test_0003": {
+            "frames": 0
+          },
+          "test_0004": {
+            "frames": 234,
+            "azimuth_mae_deg": 70.81284207049514,
+            "angle_3d_mae_deg": 70.81381585152215,
+            "median_azimuth_error_deg": 81.05705067068756,
+            "p90_azimuth_error_deg": 117.00949327058107,
+            "within_20_deg_fraction": 0.18803418803418803,
+            "above_90_deg_fraction": 0.4188034188034188,
+            "front_back_like_fraction": 0.2606837606837607,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.1655521958327525,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                76,
+                37,
+                0
+              ],
+              [
+                39,
+                82,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "test_0005": {
+            "frames": 199,
+            "azimuth_mae_deg": 14.62704584016214,
+            "angle_3d_mae_deg": 14.629099107013896,
+            "median_azimuth_error_deg": 9.682484442406121,
+            "p90_azimuth_error_deg": 34.88702632282479,
+            "within_20_deg_fraction": 0.7336683417085427,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.074072398992328,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                97,
+                0,
+                0,
+                4
+              ],
+              [
+                12,
+                86,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "test_0006": {
+            "frames": 0
+          }
+        }
+      },
+      "gunfire": {
+        "overall": {
+          "frames": 128,
+          "azimuth_mae_deg": 32.24888730736539,
+          "angle_3d_mae_deg": 32.24906206687888,
+          "median_azimuth_error_deg": 21.037428199266273,
+          "p90_azimuth_error_deg": 68.5981524924241,
+          "within_20_deg_fraction": 0.4609375,
+          "above_90_deg_fraction": 0.078125,
+          "front_back_like_fraction": 0.1171875,
+          "left_right_like_fraction": 0.0,
+          "mean_abs_predicted_elevation_deg": 0.05004946056662331,
+          "true_row_predicted_column_front_right_back_left": [
+            [
+              15,
+              17,
+              9,
+              14
+            ],
+            [
+              3,
+              37,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              5
+            ],
+            [
+              2,
+              0,
+              0,
+              20
+            ]
+          ]
+        },
+        "subsets": {
+          "yaw_below_5_deg_s": {
+            "frames": 114,
+            "azimuth_mae_deg": 33.16629737737506,
+            "angle_3d_mae_deg": 33.16645601023058,
+            "median_azimuth_error_deg": 20.790568296620634,
+            "p90_azimuth_error_deg": 74.50299883261246,
+            "within_20_deg_fraction": 0.4649122807017544,
+            "above_90_deg_fraction": 0.08771929824561403,
+            "front_back_like_fraction": 0.13157894736842105,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05010547035263782,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                15,
+                15,
+                9,
+                12
+              ],
+              [
+                3,
+                31,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                5,
+                5
+              ],
+              [
+                2,
+                0,
+                0,
+                17
+              ]
+            ]
+          },
+          "yaw_5_to_30_deg_s": {
+            "frames": 9,
+            "azimuth_mae_deg": 26.47302757957775,
+            "angle_3d_mae_deg": 26.473166457856703,
+            "median_azimuth_error_deg": 29.286303244550254,
+            "p90_azimuth_error_deg": 54.11244515285832,
+            "within_20_deg_fraction": 0.4444444444444444,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.03932687782929349,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                6,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "yaw_at_least_30_deg_s": {
+            "frames": 5,
+            "azimuth_mae_deg": 21.728485221162565,
+            "angle_3d_mae_deg": 21.729092254699715,
+            "median_azimuth_error_deg": 25.95156577321353,
+            "p90_azimuth_error_deg": 34.31170244211379,
+            "within_20_deg_fraction": 0.4,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.06807308637268612,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ]
+            ]
+          },
+          "distance_below_40_units": {
+            "frames": 33,
+            "azimuth_mae_deg": 22.06576180944872,
+            "angle_3d_mae_deg": 22.066002145299066,
+            "median_azimuth_error_deg": 8.193655234406378,
+            "p90_azimuth_error_deg": 68.35701639731113,
+            "within_20_deg_fraction": 0.6666666666666666,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.18181818181818182,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.029710104131275457,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                10,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                8,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12
+              ]
+            ]
+          },
+          "distance_40_to_100_units": {
+            "frames": 0
+          },
+          "distance_at_least_100_units": {
+            "frames": 95,
+            "azimuth_mae_deg": 35.786183532957494,
+            "angle_3d_mae_deg": 35.786335513322385,
+            "median_azimuth_error_deg": 22.135689591315327,
+            "p90_azimuth_error_deg": 95.95157750568667,
+            "within_20_deg_fraction": 0.3894736842105263,
+            "above_90_deg_fraction": 0.10526315789473684,
+            "front_back_like_fraction": 0.09473684210526316,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05711471069679678,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                5,
+                17,
+                9,
+                12
+              ],
+              [
+                2,
+                29,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                6,
+                5
+              ],
+              [
+                2,
+                0,
+                0,
+                8
+              ]
+            ]
+          },
+          "self_vehicle_present": {
+            "frames": 33,
+            "azimuth_mae_deg": 30.742938138221987,
+            "angle_3d_mae_deg": 30.743179714597943,
+            "median_azimuth_error_deg": 28.901514775162468,
+            "p90_azimuth_error_deg": 68.35701639731113,
+            "within_20_deg_fraction": 0.42424242424242425,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.18181818181818182,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.03432282481722393,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                4,
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                13,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                5
+              ],
+              [
+                2,
+                0,
+                0,
+                4
+              ]
+            ]
+          },
+          "self_vehicle_absent": {
+            "frames": 95,
+            "azimuth_mae_deg": 32.772006492436255,
+            "angle_3d_mae_deg": 32.772158041881724,
+            "median_azimuth_error_deg": 20.261553752291405,
+            "p90_azimuth_error_deg": 95.95157750568667,
+            "within_20_deg_fraction": 0.47368421052631576,
+            "above_90_deg_fraction": 0.10526315789473684,
+            "front_back_like_fraction": 0.09473684210526316,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05551239719536204,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                11,
+                15,
+                9,
+                14
+              ],
+              [
+                0,
+                24,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                6,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                16
+              ]
+            ]
+          }
+        },
+        "per_scene": {
+          "test_0001": {
+            "frames": 26,
+            "azimuth_mae_deg": 17.126864026453454,
+            "angle_3d_mae_deg": 17.12714677629702,
+            "median_azimuth_error_deg": 10.782065417451292,
+            "p90_azimuth_error_deg": 41.85962303026649,
+            "within_20_deg_fraction": 0.6538461538461539,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.05083780523521874,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                5,
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                10,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                7
+              ]
+            ]
+          },
+          "test_0002": {
+            "frames": 51,
+            "azimuth_mae_deg": 27.165544684076522,
+            "angle_3d_mae_deg": 27.165650894202425,
+            "median_azimuth_error_deg": 21.08591294486439,
+            "p90_azimuth_error_deg": 67.3299378281053,
+            "within_20_deg_fraction": 0.4117647058823529,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.11764705882352941,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.02731704741975595,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                10,
+                17,
+                0,
+                7
+              ],
+              [
+                3,
+                9,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                5
+              ]
+            ]
+          },
+          "test_0003": {
+            "frames": 0
+          },
+          "test_0004": {
+            "frames": 27,
+            "azimuth_mae_deg": 35.47638424380802,
+            "angle_3d_mae_deg": 35.47655401886185,
+            "median_azimuth_error_deg": 14.90621541904207,
+            "p90_azimuth_error_deg": 121.14119456823536,
+            "within_20_deg_fraction": 0.5185185185185185,
+            "above_90_deg_fraction": 0.18518518518518517,
+            "front_back_like_fraction": 0.14814814814814814,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.06712430216548082,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                4,
+                1
+              ],
+              [
+                0,
+                16,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                6
+              ]
+            ]
+          },
+          "test_0005": {
+            "frames": 9,
+            "azimuth_mae_deg": 112.59665870578908,
+            "angle_3d_mae_deg": 112.59634886117061,
+            "median_azimuth_error_deg": 161.06654889837193,
+            "p90_azimuth_error_deg": 164.53719852639207,
+            "within_20_deg_fraction": 0.0,
+            "above_90_deg_fraction": 0.5555555555555556,
+            "front_back_like_fraction": 0.5555555555555556,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.09237948918161247,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                5,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "test_0006": {
+            "frames": 15,
+            "azimuth_mae_deg": 21.72560192214393,
+            "angle_3d_mae_deg": 21.726122300842942,
+            "median_azimuth_error_deg": 25.95156577321353,
+            "p90_azimuth_error_deg": 41.42720406439935,
+            "within_20_deg_fraction": 0.4666666666666667,
+            "above_90_deg_fraction": 0.0,
+            "front_back_like_fraction": 0.0,
+            "left_right_like_fraction": 0.0,
+            "mean_abs_predicted_elevation_deg": 0.06984046912680326,
+            "true_row_predicted_column_front_right_back_left": [
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                6,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  "existing_test_metric_reproduced": true,
+  "checkpoint_epoch_zero_based": 338,
+  "checkpoint_epoch_one_based": 339
+}

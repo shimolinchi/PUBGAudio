@@ -1,0 +1,15 @@
+{
+  "status": "captured",
+  "training_budget_epochs": 30,
+  "checkpoint_epochs": {
+    "best.pt": 19,
+    "best_detection.pt": 28,
+    "last.pt": 30
+  },
+  "sha256": {
+    "best.pt": "af51b008fa794d41d90bbf9c0355212b101f3bcdaa14c673112906dc835c3349",
+    "best_detection.pt": "44934a1873d32cf703b73a4f0d0278796f6d68d3768feb3ac63a70d29cbb7db3",
+    "last.pt": "05177b518c606ec82a24c4ec7b40c8ac2b9ae33e1ffe91d411a5331b3b9f3177"
+  },
+  "reason": "paired first-30-epochs reference inside the same 250-epoch trajectory; original GPU rerun is not bitwise identical"
+}

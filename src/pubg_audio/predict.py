@@ -9,6 +9,7 @@ import torch
 from .features import extract,FeatureNormalizer
 from .model import ModelConfig,PaperSELD
 from .dataset import read_crop
+from .confidence import load_calibration, presence_predictions
 
 
 def main():
@@ -17,8 +18,10 @@ def main():
     p.add_argument('--audio',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--threads',type=int,default=2)
+    p.add_argument('--calibration',type=Path,help='Optional class-presence calibration fitted for this exact checkpoint')
     args=p.parse_args(); torch.set_num_threads(args.threads)
     checkpoint=torch.load(args.checkpoint,map_location='cpu',weights_only=True)
+    calibration=load_calibration(args.calibration,args.checkpoint)
     config=ModelConfig(**checkpoint['model_config'])
     model=PaperSELD(config).eval(); model.load_state_dict(checkpoint['model'])
     normalize=FeatureNormalizer(**checkpoint['normalizer'])
@@ -42,13 +45,20 @@ def main():
                         predictions.append(dict(slot=slot,class_index=cls,activity_vector_norm=activity,
                             azimuth_degrees=math.degrees(math.atan2(float(value[0]),float(value[1])))%360,
                             distance_units=float(value[3])*checkpoint['config'].get('distance_scale',100.),
-                            raw_xyzd=value.tolist()))
+                            raw_xyzd=value.tolist(),direction_confidence=None,distance_confidence=None))
+                scores=np.linalg.norm(tracks[...,:3],axis=-1).max(axis=0)
                 frames.append(dict(start_seconds=round(float(start)+i*.1,4),raw_external_tracks=predictions,
-                    self_probabilities=own[i]))
+                    self_probabilities=own[i],
+                    external_class_predictions=presence_predictions(scores,'external',calibration),
+                    self_class_predictions=presence_predictions(own[i],'self',calibration)))
     result=dict(audio=str(args.audio),checkpoint=str(args.checkpoint),hop_seconds=.1,
-        noncausal_window_seconds=5.,adpit_tracks_not_deduplicated=True,real_game_accuracy_not_evaluated=True,frames=frames)
+        noncausal_window_seconds=5.,adpit_tracks_not_deduplicated=True,real_game_accuracy_not_evaluated=True,
+        confidence_schema='class-presence-v1',probability_scope=calibration['scope'] if calibration else None,
+        calibration_file=str(args.calibration) if args.calibration else None,
+        legacy_self_probabilities_are_uncalibrated=True,
+        position_estimates_have_no_calibrated_uncertainty=True,frames=frames)
     args.output.parent.mkdir(parents=True,exist_ok=True)
-    args.output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    args.output.write_text(json.dumps(result,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
     print(json.dumps(dict(frames=len(frames),output=str(args.output))))
 
 

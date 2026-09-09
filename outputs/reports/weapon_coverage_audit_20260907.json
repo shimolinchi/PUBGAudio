@@ -1,0 +1,555 @@
+{
+  "scope": "current source metadata and configured eligibility; not a new decoding/semantic audit",
+  "source_manifest_sha256": "4020f2529b9d89dd8ab4e01d9b4a71c90e5137fa41decf5e3de43c5cd55d3c79",
+  "weapon_sound_groups": 50,
+  "source_files": 373,
+  "groups_with_firing_profile": 6,
+  "configured_groups_by_split": {
+    "train": 4,
+    "test": 1,
+    "validation": 1
+  },
+  "groups": [
+    {
+      "group": "gunfire:Weapons_AK47",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": true,
+      "current_split": "train"
+    },
+    {
+      "group": "gunfire:Weapons_AWM",
+      "source_files": 6,
+      "unique_pcm": 6,
+      "roles": {
+        "shot": 3,
+        "local_shot": 3
+      },
+      "has_firing_profile": true,
+      "current_split": "train"
+    },
+    {
+      "group": "gunfire:Weapons_Ace32",
+      "source_files": 8,
+      "unique_pcm": 8,
+      "roles": {
+        "shot": 4,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Berreta686",
+      "source_files": 8,
+      "unique_pcm": 8,
+      "roles": {
+        "shot": 4,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_BerretaM9",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Bizon",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_DP12",
+      "source_files": 4,
+      "unique_pcm": 4,
+      "roles": {
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_DP28",
+      "source_files": 4,
+      "unique_pcm": 4,
+      "roles": {
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_DesertEagle",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Dragunov",
+      "source_files": 4,
+      "unique_pcm": 4,
+      "roles": {
+        "shot": 2,
+        "local_shot": 2
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_FNFAL",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_FamasG2",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_G36C",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Glock18C",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Groza",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_HK416",
+      "source_files": 5,
+      "unique_pcm": 5,
+      "roles": {
+        "shot": 5
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_JS9",
+      "source_files": 4,
+      "unique_pcm": 4,
+      "roles": {
+        "shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_K2",
+      "source_files": 8,
+      "unique_pcm": 8,
+      "roles": {
+        "shot": 4,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Kar98k",
+      "source_files": 8,
+      "unique_pcm": 8,
+      "roles": {
+        "shot": 4,
+        "local_shot": 4
+      },
+      "has_firing_profile": true,
+      "current_split": "test"
+    },
+    {
+      "group": "gunfire:Weapons_L6",
+      "source_files": 3,
+      "unique_pcm": 3,
+      "roles": {
+        "local_shot": 3
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_M14EBR",
+      "source_files": 8,
+      "unique_pcm": 8,
+      "roles": {
+        "shot": 4,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_M16A4",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": true,
+      "current_split": "validation"
+    },
+    {
+      "group": "gunfire:Weapons_M1911",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_M24",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_M249",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_M762",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": true,
+      "current_split": "train"
+    },
+    {
+      "group": "gunfire:Weapons_MK12",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_MP5K",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": true,
+      "current_split": "train"
+    },
+    {
+      "group": "gunfire:Weapons_MicroUzi",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Mini14",
+      "source_files": 8,
+      "unique_pcm": 8,
+      "roles": {
+        "shot": 4,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Mk47",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_MosinNagant",
+      "source_files": 1,
+      "unique_pcm": 1,
+      "roles": {
+        "local_shot": 1
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_NagantM1895",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_O12",
+      "source_files": 7,
+      "unique_pcm": 7,
+      "roles": {
+        "shot": 5,
+        "local_shot": 2
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_QBU",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_QBZ",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Rhino",
+      "source_files": 6,
+      "unique_pcm": 6,
+      "roles": {
+        "shot": 3,
+        "local_shot": 3
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_RocketLancher",
+      "source_files": 3,
+      "unique_pcm": 3,
+      "roles": {
+        "local_shot": 3
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_SCAR_L",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_SKS",
+      "source_files": 4,
+      "unique_pcm": 4,
+      "roles": {
+        "shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Saiga12",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_SawedOffShotgun",
+      "source_files": 8,
+      "unique_pcm": 8,
+      "roles": {
+        "shot": 4,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Scorpion",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Steyr_AUG_A3",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Thompson",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_UMP",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_VSS",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Vector",
+      "source_files": 2,
+      "unique_pcm": 2,
+      "roles": {
+        "shot": 1,
+        "local_shot": 1
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Winchester1894",
+      "source_files": 9,
+      "unique_pcm": 9,
+      "roles": {
+        "shot": 5,
+        "local_shot": 4
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    },
+    {
+      "group": "gunfire:Weapons_Winchester1897",
+      "source_files": 3,
+      "unique_pcm": 3,
+      "roles": {
+        "local_shot": 3
+      },
+      "has_firing_profile": false,
+      "current_split": null
+    }
+  ]
+}

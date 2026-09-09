@@ -1,0 +1,110 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PUBGAudio · 连续场景试听 v5</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#e6edf6;background:#0c1421;color-scheme:dark}*{box-sizing:border-box}body{margin:0;padding:24px;max-width:1560px;margin:auto}h1{font-size:26px;margin:0 0 8px}p{line-height:1.7;color:#aebed2}.top{display:flex;align-items:center;justify-content:space-between;gap:20px}.badge{color:#74d8ba;font-size:13px}.grid{display:grid;grid-template-columns:260px minmax(400px,1fr) 330px;gap:18px;margin-top:20px}.card{background:#142033;border:1px solid #29394e;border-radius:12px;padding:16px}button,select,textarea{font:inherit;border:1px solid #3a4d66;border-radius:7px;background:#1c2c43;color:#e6edf6;padding:8px;cursor:pointer}button:hover{background:#2b4160}.list{display:grid;gap:6px;max-height:720px;overflow:auto}.clip{text-align:left;line-height:1.6;font-size:13px}.clip.selected{border-color:#74d8ba;background:#173c3c}.muted{color:#95a9c1;font-size:12px}.player{margin:10px 0;width:100%}canvas{display:block;width:100%;aspect-ratio:1;border-radius:9px;background:#101b2b}.source{border-top:1px solid #29394e;padding:9px 0;font-size:13px;line-height:1.6}.source b{font-size:14px}.timeline{position:relative;height:18px;background:#0b1727;margin:7px 0 14px;border-radius:4px;overflow:hidden}.event{position:absolute;top:3px;height:12px;min-width:3px;border:0;padding:0;border-radius:2px}.playhead{position:absolute;top:0;bottom:0;width:2px;background:white;pointer-events:none}.wide{grid-column:2 / 4}.feedback{display:grid;gap:10px}textarea{resize:vertical;cursor:text;width:100%;min-height:110px}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}details{margin-top:18px}summary{cursor:pointer;font-weight:600}table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13px}td,th{padding:8px;border-bottom:1px solid #29394e;text-align:left}a{color:#79c9ef}.warning{color:#f7cc81;font-size:12px;line-height:1.65}.legend{font-size:12px;line-height:1.7;color:#9fb4ce}#now{font-variant-numeric:tabular-nums;font-size:18px}#sources{max-height:520px;overflow:auto}@media(max-width:1150px){.grid{grid-template-columns:210px minmax(350px,1fr)}.right{grid-column:2}.wide{grid-column:1/3}}@media(max-width:680px){body{padding:12px}.grid{display:block}.card{margin-bottom:12px}.list{max-height:190px}.top{display:block}}
+</style>
+<div class="top"><div><h1>PUBGAudio · 连续场景试听</h1><div class="badge">v5 · 动作先后关系 · 曲线运动 · 10ms 详细标注</div></div><button id="export">导出试听反馈</button></div>
+<p>先选择样本，再播放或拖动进度。地图显示声源生成位置；彩色点正在发声，空心点表示当前未发声。右侧会注明是否被遮蔽。点击时间条可跳到事件附近。</p>
+<div class="grid">
+<section class="card"><b>样本列表</b><p class="muted" id="batch"></p><div id="clips" class="list"></div></section>
+<section class="card"><div class="row"><b id="title"></b><span id="now">0.00s</span></div><p id="description" class="muted"></p><audio id="audio" class="player" controls preload="metadata"></audio><div class="row"><button id="first">跳到首个动作</button><a id="wav" download>音频文件</a><a id="labels" download>10ms 详细标注</a><label>地图 <select id="view"><option value="world">世界坐标</option><option value="listener">相对玩家视角</option></select></label></div><p id="viewInfo" class="muted"></p><canvas id="map" width="720" height="720"></canvas><p class="legend" id="mapLegend">↑ 世界初始前方　→ 世界右侧；中心箭头为玩家当前朝向。合成距离尚未实录标定，俯视图每 50ms 更新。</p></section>
+<section class="card right"><b>当前声源与状态</b><div id="sources"></div><div class="feedback"><b>试听反馈</b><label>自然程度 <select id="natural"><option>未标注</option><option>自然</option><option>需要调整</option></select></label><label>方向 <select id="direction"><option>未标注</option><option>基本正确</option><option>有问题</option></select></label><textarea id="notes" placeholder="例如：S06 17 秒处滑车声切换太突然；S04 提示音应更快……"></textarea><span class="muted">填写时暂存浏览器；点导出后保存到数据集的 feedback 目录。</span></div></section>
+<section class="card wide"><b>动作时间线</b><div id="timelines"></div><p class="warning" id="caveat"></p></section>
+</div>
+<details class="card"><summary>生成概率、实际抽样和标注规则</summary><p>随机样本与专项覆盖样本分开统计。发生概率作用于满足条件的调度步；动作开始后按持续时间、合法后继和因果关系推进，不在每一帧任意换状态。</p><div id="probabilities"></div><p class="warning">C4 提示音使用本机原声，间隔加速曲线为试听近似；燃烧瓶固定燃烧 10 秒暂为待校准值。尚未覆盖全部 31 类声音；缺少可靠来源的动作没有被伪造。该批用于试听，未划分训练/验证/测试。</p><p>自身标签用于本玩家直接操作声。投掷物投出后的爆炸/燃烧不标投掷者。完整标签保留动作、状态、来源和可听性；训练可选三类目标，其余音频作为干扰保留。前奏动作存在并不保证其在远处或遮蔽下仍然可听。</p></details>
+<details class="card" id="acousticDetails"><summary>衰减范围、转头概率与长片段计划</summary><p class="warning">以下米数按客户端事件半径和厘米单位推定，不是保证听清的距离；中间音量曲线仍为试听估算。枪声、闪光爆响和部分准备动作的原生半径未确认。旧25小时数据没有更新，本批未用于训练。</p><div id="acousticTables"></div><p>正式生成建议120 / 180 / 300秒，概率25% / 50% / 25%。未来比较10 / 20 / 30秒过去窗口，监督当前末尾时间步；当前模型仍为5秒基线，长窗口训练尚未实施。</p></details>
+<script>
+const DATA=__DATA__;
+const $=x=>document.getElementById(x), audio=$('audio'), canvas=$('map'), ctx=canvas.getContext('2d');
+const palette=['#7be0bc','#eeae6b','#8cadff','#e48bea','#e6da75','#ea8484','#82d6e1','#cab8ff','#a3cc79'];
+const names={footsteps:'脚步',vehicle:'车辆',gunfire:'武器发射',aircraft:'运输飞机',action:'直接操作',explosion:'爆炸/爆响',fire:'燃烧',weather:'环境天气',throwable:'投掷物',c4:'C4',warning:'提示声'};
+const scenarios={self_frag:'自身拉环 → 投出 → 外部位置手雷爆炸',external_flash:'外部拉环 → 飞行/碰地 → 闪光弹',self_molotov:'自身点燃 → 投出 → 命中与固定燃烧',c4:'放置 C4 → 完整提示声倒计时 → 爆炸',curved_gait:'远处曲线与自身脚步 · 同地面持续步态',coast_collision:'曲线车辆 · 熄火滑行与碰撞',tire:'车辆受射击 → 爆胎 → 降速',vehicle_fire:'车辆受射击 → 熄火起火 → 延迟爆炸',aircraft:'空投运输机 · 直线匀速完整飞越',cabin_mask:'自身车与外部脚步/枪声 · 遮蔽对照'};
+const stateName={locomotion:'移动',standing_to_crouched:'站立→蹲姿',crouched_to_standing:'蹲姿→站立',standing_to_prone:'站立→趴姿',prone_to_standing:'趴姿→站立',crouched_to_prone:'蹲姿→趴姿',prone_to_crouched:'趴姿→蹲姿',standing:'站立',crouched:'蹲姿',prone:'趴姿',crouch_down:'蹲下',crouch_up:'蹲起',prone_down:'趴下',prone_up:'趴下后站起',crouch_to_prone:'蹲姿趴下',prone_to_crouch:'趴姿蹲起',vault:'翻越',transition_rustle:'共享转换衣物声',vault_grab:'抓扶',vault_climb:'攀越接触',vault_contact:'翻越脚接触',vault_rustle:'翻越衣物声',walk:'行走',run:'跑步',sprint:'冲刺',crouch_walk:'蹲行',prone_crawl:'匍匐',pause:'停步',starting:'启动',accelerate:'加速',cruise:'巡航',decelerate:'减速',coast_off:'熄火滑行',brake:'制动',stopped:'停车',stopped_off:'熄火停车',collision_contact:'碰撞',tire_damaged:'轮胎损坏',destroyed_burning:'受损起火',exploded:'已爆炸',flight:'飞行',burn:'燃烧',detonated:'引爆',armed_countdown:'提示声倒计时',constant_speed_flyby:'匀速飞越'};
+let current, buttons=[], sourceEls=[], radius=200, audioRequest=0, blobUrl=null, pendingSeek=null;
+const mediaStatus=document.createElement('p');mediaStatus.className='muted';audio.after(mediaStatus);
+const exportStatus=document.createElement('span');exportStatus.className='muted';$('export').after(exportStatus);
+async function loadAudio(s){
+ const request=++audioRequest;pendingSeek=null;audio.removeAttribute('src');audio.load();mediaStatus.textContent='正在载入本地音频…';
+ if(blobUrl){URL.revokeObjectURL(blobUrl);blobUrl=null}
+ try{const response=await fetch('audio/'+s.id+'.wav');if(!response.ok)throw new Error('Audio read failed');const data=await response.blob();if(request!==audioRequest)return;blobUrl=URL.createObjectURL(data);audio.src=blobUrl;audio.load()}
+ catch(error){if(request===audioRequest)mediaStatus.textContent='音频载入失败，请重新选择样本。';console.error(error)}
+}
+function seekTo(time){pendingSeek=time;if(audio.readyState>=1){audio.currentTime=time;pendingSeek=null;draw()}}
+audio.addEventListener('loadedmetadata',()=>{mediaStatus.textContent='可播放 · '+audio.duration.toFixed(0)+' 秒';if(pendingSeek!==null)seekTo(pendingSeek)});
+audio.addEventListener('error',()=>{mediaStatus.textContent='此音频暂时无法播放，请重新选择样本。'});
+function txt(tag,value,parent){const el=document.createElement(tag);el.textContent=value;if(parent)parent.append(el);return el;}
+function bearing(angle){return ['正前','右前','正右','右后','正后','左后','正左','左前'][Math.floor((angle+22.5)/45)%8]+' '+angle.toFixed(0)+'°'}
+function rangeName(distance){return distance<Math.sqrt(8*30)?'近处':distance<Math.sqrt(30*90)?'中距离':'远处'}
+async function exportFeedback(){
+ const rows=DATA.scenes.map(s=>{let f={};try{f=JSON.parse(localStorage.getItem(DATA.dataset_id+':'+s.id)||'{}')}catch{}return {id:s.id,natural:f.natural||'',direction:f.direction||'',notes:f.notes||''}});
+ exportStatus.textContent='正在保存…';
+ try{const response=await fetch('feedback/export',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(rows)});if(!response.ok)throw new Error('Feedback save failed');const saved=await response.json();exportStatus.replaceChildren();const link=document.createElement('a');link.href=saved.url;link.download='试听反馈.csv';link.textContent='已保存到数据集 · 打开 CSV';exportStatus.append(link)}
+ catch(error){exportStatus.textContent='保存失败，请保持页面打开后重试。';console.error(error)}
+}
+function key(){return DATA.dataset_id+':'+current.id;}
+function save(){localStorage.setItem(key(),JSON.stringify({natural:$('natural').value,direction:$('direction').value,notes:$('notes').value}));}
+for(const id of ['natural','direction','notes'])$(id).addEventListener('input',save);
+$('batch').textContent=`${DATA.scenes.length} 段，共 ${(DATA.scenes.reduce((a,s)=>a+s.seconds,0)/60).toFixed(1)} 分钟；R 为随机，其余为专项。`;
+const forwardThrows=DATA.probabilities.throwable?.self_throws_forward_at_release;
+if(DATA.probabilities.listener_view){const pageTitle=forwardThrows?'PUBGAudio · 前向投掷与视角试听':'PUBGAudio · 衰减与转头试听';document.title=pageTitle;document.querySelector('h1').textContent=pageTitle;document.querySelector('.badge').textContent=forwardThrows?'v5.2 · 向前投掷 · 更频繁转头 · 车辆增加加速 · 10ms 标注':'v5.1 · 分声音衰减 · 世界轨迹 / 玩家视角 · 10ms 标注';document.querySelector('.top + p').textContent=forwardThrows?'先听 T03 的燃烧瓶：出手方向锁定后，玩家转头，火留在原处。L01 可连续观察轻晃、大转向和停留，V01/V02 可检查车辆。白色箭头表示玩家朝向，切换地图可看声音相对耳朵的位置。':'同一设备、同一播放音量比较样本；远处声音不会单独放大。世界图中白色箭头表示玩家转头，运输机仍沿直线飞行。切换地图可看声音相对耳朵的位置。';$('mapLegend').textContent='距离采用 1 合成单位≈1 米的待标定假设；有事件半径也不代表一定能听清。当前只模拟水平转头，未模拟玩家位置移动和俯仰。'}
+const throwInfo=document.createElement('p');throwInfo.className='legend';$('viewInfo').after(throwInfo);
+function sceneTitle(s){return s.title||scenarios[s.scenario]||({low:'低密度',medium:'中密度',high:'高密度'}[s.density]+'随机场景')}
+if(DATA.probabilities.body_actions){
+ document.title='PUBGAudio · 跑步与身体动作试听';document.querySelector('h1').textContent=document.title;
+ document.querySelector('.badge').textContent='v5.3 · 减少普通行走 · 增加跑步 / 蹲起 / 趴起 / 翻越 · 10ms 标注';
+ document.querySelector('.top + p').textContent='C01/C02 为外部与自身蹲起，P01/P02 为趴起，V01/V02 为翻越；R01–R04 按自然概率混合。动作发生在同一人物的移动与停步之间，世界轨迹和玩家转头继续保留。蹲起、趴起使用共享原生转换衣物声，具体姿态是生成标签，不能单靠这种音色区分。';
+}
+function select(s){audio.pause();current=s;loadAudio(s);$('wav').href='audio/'+s.id+'.wav';$('labels').href='audio/'+s.id+'.npz';$('title').textContent=s.id+' · '+sceneTitle(s);$('description').textContent=s.description||(s.tracks.length?s.selection==='independent_random'?'按概率直接抽样，未强制凑齐类别。':'专项示例用于检查事件过程，不计入随机出现比例。':'安静负样本：本次抽样未生成声音事件。');buttons.forEach(([b,id])=>b.classList.toggle('selected',id===s.id));radius=Math.max(40,...s.tracks.flatMap(t=>t.points.map(p=>Math.hypot(p[1],p[2]))))*1.12;$('timelines').replaceChildren();$('sources').replaceChildren();sourceEls=[];
+ s.tracks.forEach((tr,i)=>{const color=palette[i%palette.length];const d=document.createElement('div');d.className='source';const title=txt('b',tr.id+' · '+names[tr.kind]+' / '+(stateName[tr.subtype]||tr.subtype),d);title.style.color=color;const info=txt('div','',d);$('sources').append(d);sourceEls.push(info);const row=txt('div',tr.id+' '+(stateName[tr.subtype]||names[tr.kind]),$('timelines'));row.style.color=color;const line=document.createElement('div');line.className='timeline';const laneEnds=[];for(const e of [...tr.events].sort((a,b)=>a.start-b.start)){let lane=laneEnds.findIndex(end=>end<=e.start);if(lane<0)lane=laneEnds.length;laneEnds[lane]=e.start+e.duration;const event=document.createElement('button');event.className='event';event.style.cssText=`top:${3+18*lane}px;left:${100*e.start/s.seconds}%;width:${100*e.duration/s.seconds}%;background:${color}`;event.title=`${stateName[e.action||e.role]||e.role} · ${e.start.toFixed(2)}s · ${e.duration.toFixed(2)}s`;event.addEventListener('click',()=>{seekTo(Math.max(0,e.start-.25))});line.append(event);}line.style.height=(Math.max(1,laneEnds.length)*18+6)+'px';const head=document.createElement('span');head.className='playhead';line.append(head);$('timelines').append(line);});
+ let feedback={};try{feedback=JSON.parse(localStorage.getItem(key())||'{}')}catch{}for(const id of ['natural','direction'])$(id).value=feedback[id]||'未标注';$('notes').value=feedback.notes||'';$('caveat').textContent=s.scenario==='c4'?'提示音音色为原声；精确鸣叫间隔尚未实测，当前使用逐渐加快的近似曲线。':s.scenario==='self_molotov'?'燃烧持续 10 秒为当前试听设定，尚未核验为现版本官方时长。':'';draw();}
+for(const s of DATA.scenes){const b=document.createElement('button');b.className='clip';b.textContent=s.id+' · '+sceneTitle(s);b.addEventListener('click',()=>select(s));$('clips').append(b);buttons.push([b,s.id]);}
+$('first').onclick=()=>{const events=current.tracks.flatMap(t=>t.events);seekTo(events.length?Math.max(0,Math.min(...events.map(e=>e.start))-.3):0)};
+function draw(){
+ if(!current)return;const t=audio.currentTime||0;$('now').textContent=t.toFixed(2)+'s';const cx=360,scale=320/radius;
+ const yawAt=time=>current.listener_yaw?current.listener_yaw[Math.min(current.listener_yaw.length-1,Math.max(0,Math.round(time/.05)))]:0;
+ const yaw=yawAt(t),headView=$('view').value==='listener';
+ const position=(p,time)=>{const a=(headView?yawAt(time):0)*Math.PI/180;return [p[1]*Math.cos(a)-p[2]*Math.sin(a),p[1]*Math.sin(a)+p[2]*Math.cos(a)]};
+ $('viewInfo').textContent='玩家朝向 '+((yaw%360+360)%360).toFixed(1)+'° · '+({fixed:'视角不变',natural:'自然轻晃 / 转向 / 停留',slow_turn:'缓慢转头',quick_turn:'较快转头',scripted:'专项转头'}[current.listener_mode]||'视角不变')+' · '+(headView?'上方始终是耳朵的正前方':'白色箭头表示当前视角，轨迹保持世界位置');
+ const throws=(current.chains||[]).filter(c=>c.launch_direction_binding).sort((a,b)=>a.release-b.release),launch=throws.filter(c=>c.release<=t).at(-1)||throws[0];
+ throwInfo.hidden=!launch;if(launch)throwInfo.textContent=({frag:'手雷',flash:'闪光弹',molotov:'燃烧瓶'}[launch.kind]||launch.kind)+` · 出手 ${launch.release.toFixed(2)}s · 锁定世界朝向 ${((launch.release_listener_yaw_degrees%360+360)%360).toFixed(1)}° · `+(t>=launch.release?'已出手，后续转头不改变世界落点':'出手前，投掷方向以出手瞬间的视角为准');
+ if(current.selection==='calibration_control_not_random_not_training')$('viewInfo').textContent+=' · 当前距离对照 '+[5,10,20,30,35,40,45,50,60,80][Math.min(9,Math.floor(t/4))]+' 推定米';
+ ctx.clearRect(0,0,720,720);ctx.strokeStyle='#294057';ctx.fillStyle='#8fa5c0';ctx.font='14px system-ui';
+ for(const f of [.25,.5,.75,1]){ctx.beginPath();ctx.arc(cx,cx,320*f,0,Math.PI*2);ctx.stroke();ctx.fillText((radius*f).toFixed(0),cx+4,cx-320*f+16)}
+ ctx.beginPath();ctx.moveTo(cx,24);ctx.lineTo(cx,696);ctx.moveTo(24,cx);ctx.lineTo(696,cx);ctx.stroke();ctx.fillStyle='#fff';ctx.fillText(headView?'当前前方':'世界 +Y',328,19);
+ ctx.save();ctx.translate(cx,cx);ctx.rotate((headView?0:yaw)*Math.PI/180);ctx.beginPath();ctx.moveTo(0,-19);ctx.lineTo(-8,10);ctx.lineTo(0,5);ctx.lineTo(8,10);ctx.closePath();ctx.fill();ctx.restore();
+ current.tracks.forEach((tr,i)=>{const color=palette[i%palette.length],ps=tr.points;if(!tr.actor_parent){ctx.strokeStyle=color+'50';ctx.lineWidth=2;ctx.beginPath();(tr.actor_parent?ps.filter(p=>p[0]>=tr.start&&p[0]<=tr.end):ps).forEach((p,j)=>{const q=position(p,p[0]);const x=cx+q[0]*scale,y=cx-q[1]*scale;j?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke();}
+ const p=ps[Math.min(ps.length-1,Math.round(t/.05))],q=position(p,t),frame=Math.min(tr.active.length-1,Math.max(0,Math.floor((t-.016)/.05)));
+ const active=tr.active[frame],seen=tr.observable[frame],outside=tr.outside?.[frame];const actorActive=active||current.tracks.some(child=>child.actor_parent===tr.id&&child.active[frame]);if(!tr.actor_parent){ctx.strokeStyle=color;ctx.fillStyle=actorActive?color:'#101b2b';ctx.beginPath();ctx.arc(cx+q[0]*scale,cx-q[1]*scale,actorActive?7:5,0,Math.PI*2);ctx.fill();ctx.stroke();ctx.fillStyle=color;ctx.fillText(tr.id,cx+q[0]*scale+10,cx-q[1]*scale-8);}
+ const distance=Math.hypot(p[1],p[2]),worldAngle=(Math.atan2(p[1],p[2])*180/Math.PI+360)%360,angle=((worldAngle-yaw)%360+360)%360;
+ const states=tr.states.filter(s=>s.start<=t&&s.end>t),state=states.length?states[states.length-1].state:'';
+ const location=tr.source_role==='self'?'自身直接声 · 方位不适用':tr.kind==='weather'?'周围环境背景 · 无单一方位':distance<.0001?'与听者位置重合 · 方位无效':`${distance.toFixed(1)} ${DATA.probabilities.listener_view?'推定米':'单位'} · 相对耳朵 ${bearing(angle)} · 世界 ${worldAngle.toFixed(0)}°`;
+ const pose=(tr.posture_states||[]).filter(s=>s.start<=t&&s.end>t).at(-1)?.state;
+ const poseInfo=pose?' · 姿态 '+(stateName[pose]||pose):'';
+ const ownership=tr.actor_parent?' · 同一角色 '+tr.actor_parent:'';
+ const evidence=tr.acoustic_identity==='shared_transition_rustle'?' · 共享衣物原声，细姿态由计划标注':'';
+ const cutoff=tr.cutoff?.[frame],gain=tr.distance_gain?.[frame];
+ sourceEls[i].textContent=location+poseInfo+ownership+evidence+' · '+(active?(seen?'声学标签有效':'有声但被遮蔽'):outside?'超出估算脚步范围':'当前无有效声音')+(state?' · '+(stateName[state]||state):'')+(tr.kind==='vehicle'?` · 速度 ${p[3].toFixed(1)} · 发动机${p[4]>.5?'开':'关'}`:'')+(tr.surface?' · '+tr.surface:'')+(cutoff?` · 脚步半径≈${cutoff}m · 距离振幅 ${((gain||0)*100).toFixed(2)}%`:'');
+ });
+ for(const c of current.chains||[]){if(c.kind!=='vault')continue;const actor=current.tracks.find(x=>x.id===c.actor);if(actor?.source_role==='self')continue;const q=position([t,...c.obstacle_xy],t),x=cx+q[0]*scale,y=cx-q[1]*scale;ctx.strokeStyle='#d8c291';ctx.setLineDash([4,3]);ctx.strokeRect(x-9,y-5,18,10);ctx.setLineDash([]);ctx.fillStyle='#d8c291';ctx.fillText('规划障碍',x+12,y+5);}
+ document.querySelectorAll('.playhead').forEach(el=>el.style.left=100*t/current.seconds+'%');
+}
+function frame(){draw();requestAnimationFrame(frame)}
+$('export').onclick=exportFeedback;
+const table=document.createElement('table');const header=document.createElement('tr');['新事件','低密度/步','中密度/步','高密度/步','抽中候选/有效抽样','条件跳过'].forEach(s=>txt('th',s,header));table.append(header);for(const kind of Object.keys(DATA.probabilities.spawn_probability_per_eligible_step.low)){const tr=document.createElement('tr');const values=[names[kind]||kind,...['low','medium','high'].map(d=>(DATA.probabilities.spawn_probability_per_eligible_step[d][kind]*100).toFixed(2)+'%'),`${DATA.observed.spawn_successes[kind]||0} / ${DATA.observed.eligible[kind]||0}`,DATA.observed.skipped[kind]||0];values.forEach(v=>txt('td',v,tr));table.append(tr)}$('probabilities').append(table);txt('p','随机密度实际数量：'+JSON.stringify(DATA.observed.density)+'；配置中低/中/高等权。状态维持率和事件时间参数见输出 config.json。',$('probabilities'));
+txt('p','候选抽中后仍可因车内遮蔽策略被拒绝：'+JSON.stringify(DATA.observed.rejected)+'；最终各类声轨数（含关联效果）：'+JSON.stringify(DATA.observed.retained_tracks),$('probabilities'));
+if(DATA.probabilities.body_actions){
+ const out=$('probabilities'),g=DATA.probabilities.footsteps.initial_weights,a=DATA.probabilities.body_actions;
+ const tab=txt('table','',out),h=txt('tr','',tab);['选择','权重 / 条件概率','前提'].forEach(x=>txt('th',x,h));
+ const total=Object.values(g).reduce((x,y)=>x+y,0);
+ for(const [k,w] of Object.entries(g)){const r=txt('tr','',tab);[stateName[k]||k,`${w} / ${(100*w/total).toFixed(1)}%`,'五步态均可用时；缺素材重新归一化'].forEach(x=>txt('td',x,r))}
+ for(const [k,w] of Object.entries(a.after_bout_weights)){const r=txt('tr','',tab);[{continue:'不追加动作',crouch_cycle:'蹲下—保持—蹲起',prone_cycle:'趴下—保持—站起',vault:'翻越'}[k],(100*w).toFixed(0)+'%',`站立步态停步后；间隔≥${a.minimum_action_gap_seconds}s且剩余≥${a.required_remaining_seconds}s`].forEach(x=>txt('td',x,r))}
+ txt('p','动作不是每0.5秒独立切换。附加动作之间有间隔，蹲/趴后保持2–3.5秒再起身；因下一步态不同而必须改变姿态时另行转换。共享转换衣物声不能证明细姿态可由音频唯一辨认。专项覆盖不计随机比例。',out);
+}
+if(DATA.probabilities.listener_view){
+ const out=$('acousticTables'),v=DATA.probabilities.listener_view,percent=x=>(100*x).toFixed(0)+'%',interval=x=>x.join('–');txt('p',`整段不转头 ${percent(v.mode_weights.fixed||0)}；自然活动 ${percent(v.mode_weights.natural||0)}。自然段内小晃动 ${percent(v.episode_weights.small_sway)}、观察 ${percent(v.episode_weights.look_around)}、大转向 ${percent(v.episode_weights.large_turn)}。每次先停留：${percent(v.long_hold_probability)} 概率停 ${interval(v.long_hold_seconds)} 秒，其余停 ${interval(v.hold_seconds)} 秒。小晃 ${interval(v.episodes.small_sway.amplitude_degrees)}°、观察 ${interval(v.episodes.look_around.amplitude_degrees)}°、大转 ${interval(v.episodes.large_turn.amplitude_degrees)}°，转速上限 ${v.maximum_angular_speed_degrees_per_second}°/s。`,out);
+ if(forwardThrows){const car=DATA.probabilities.vehicle;txt('p',`车辆后继权重：${Object.entries(car.next_state_weights).map(([k,w])=>(stateName[k]||k)+' '+w).join('；')}。这是合法候选中的选择权重，不是最终时间占比。刹停后停留 ${interval(car.stopped_seconds)} 秒；保留短滑车，音量不额外放大。`,out)}
+ const tab=txt('table','',out),h=txt('tr','',tab);['声音 / 事件分层','估算半径','证据'].forEach(x=>txt('th',x,h));
+ for(const [kind,profile] of Object.entries({...DATA.probabilities.footstep_acoustics.profiles,...DATA.probabilities.event_acoustics.profiles})){const r=txt('tr','',tab);[stateName[kind]||kind,profile.cutoff_m_estimate+' m',(profile.evidence||'').startsWith('provisional')||profile.evidence==='proxy_from_surface_spin_event_not_native_skid_radius'?'相近事件代理值':profile.evidence==='composite_event_upper_bound_child_radius_unknown'?'复合事件上界，子声音待标定':'客户端事件上界；曲线仍为估算'].forEach(x=>txt('td',x,r))}
+}else{$('acousticDetails').hidden=true}
+select(DATA.scenes[0]);requestAnimationFrame(frame);
+</script></html>

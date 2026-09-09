@@ -1,0 +1,68 @@
+{
+  "base_config": "configs/generation_v5_3.json",
+  "dataset_id": "light-v5_3-gunvehicle-20260907",
+  "seed": 203609077,
+  "clip_seconds": 120,
+  "split_counts": {
+    "train": 96,
+    "validation": 6,
+    "test": 6
+  },
+  "included_spawn_kinds": [
+    "footsteps",
+    "vehicle",
+    "gunfire"
+  ],
+  "included_gaits": [
+    "walk",
+    "run",
+    "sprint"
+  ],
+  "source_groups_by_split": {
+    "train": [
+      "footsteps:Concrete",
+      "footsteps:Dirt",
+      "footsteps:Fabric",
+      "vehicle:Vehicle_BuggyBank",
+      "vehicle:Vehicle_CoupeRB",
+      "vehicle:Vehicle_DaciaBank",
+      "vehicle:Vehicle_PickupTruck",
+      "vehicle:Vehicle_UAZBank",
+      "gunfire:Weapons_AK47",
+      "gunfire:Weapons_M762",
+      "gunfire:Weapons_MP5K",
+      "gunfire:Weapons_AWM",
+      "tyres:Dirt",
+      "collision:common"
+    ],
+    "validation": [
+      "footsteps:Rock",
+      "vehicle:Vehicle_Rony",
+      "gunfire:Weapons_M16A4",
+      "tyres:Concrete",
+      "collision:brdm_light_dry"
+    ],
+    "test": [
+      "footsteps:Snow",
+      "vehicle:Vehicle_Minibus",
+      "vehicle:Vehicle_Sedan",
+      "gunfire:Weapons_Kar98k",
+      "tyres:BuggySkidDirt",
+      "collision:snowmobile"
+    ]
+  },
+  "notes": [
+    "Whole scene, surface, vehicle bank, weapon family, auxiliary recording family and PCM isolation.",
+    "Retain v5.3 density, far-biased paths, listener yaw, self roles and vehicle motion probabilities.",
+    "Standing walk/run/sprint only; no body actions, throwables, C4, aircraft, weather or vehicle damage chains.",
+    "Tyre recordings have only two roll/brake families and one skid family: each stays in its assigned split; unavailable layers are omitted and recorded, never borrowed.",
+    "Synthetic held-out family evaluation, not real game accuracy.",
+    "F034: append 48 two-minute training scenes; retain all parent recordings and held-out hashes.",
+    "New eligible-step relative spawn intensities: footsteps/vehicle/gunfire 20/40/40, not duration quotas."
+  ],
+  "spawn_probability_multipliers": {
+    "footsteps": 0.6,
+    "vehicle": 1.2,
+    "gunfire": 1.2
+  }
+}

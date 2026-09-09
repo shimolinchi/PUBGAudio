@@ -1,0 +1,38 @@
+{
+  "state": "finished",
+  "url": "https://wandb.ai/simonlynch-harbin-institute-of-technology/PUBGAudio/runs/06d00717d476",
+  "completed_epochs": 250,
+  "best_detection_epoch": 206,
+  "streams": {
+    "test": {
+      "checkpoint_epoch": 19,
+      "f1": {
+        "external": {
+          "footsteps": 0.740608228980322,
+          "vehicle": 0.7288033674082982,
+          "gunfire": 0.25874125874125875
+        },
+        "self": {
+          "footsteps": 0.8998968008255934,
+          "vehicle": 0.9871433051113202,
+          "gunfire": 0.8288973384030418
+        }
+      }
+    },
+    "test_detection": {
+      "checkpoint_epoch": 206,
+      "f1": {
+        "external": {
+          "footsteps": 0.9108910891089109,
+          "vehicle": 0.8586065573770492,
+          "gunfire": 0.6484210526315789
+        },
+        "self": {
+          "footsteps": 0.9394495412844037,
+          "vehicle": 0.9876084262701363,
+          "gunfire": 0.8134328358208955
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "model": {
+    "classes": 3,
+    "output_mode": "multi_accddoa",
+    "self_classes": 3
+  },
+  "seed": 2026090800,
+  "learning_rate": 0.001,
+  "epochs": 400,
+  "early_stopping_enabled": false,
+  "patience": 75,
+  "save_detection_checkpoint": true,
+  "save_localization_checkpoint": true,
+  "distance_scale": 100.0,
+  "loss": {
+    "mode": "spatial_balanced",
+    "activity_weight": 1.0,
+    "direction_weight": 2.0,
+    "distance_weight": 0.2,
+    "self_weight": 0.5
+  },
+  "selection": {
+    "metric": "validation_localization_macro_f1",
+    "angular_tolerance_deg": 20,
+    "duplicate_tolerance_deg": 15
+  },
+  "cache_train_features": false,
+  "normalization_max_crops": 1200,
+  "augmentation": {
+    "enabled": true,
+    "mirror_probability": 0.5,
+    "crops_per_scene": 12
+  },
+  "purpose": "v6 combined update: known target types, scene independence, quieter finite-range footsteps, physical air loss, automatic gun patterns, task-masked angular training; paper topology and5s context retained."
+}

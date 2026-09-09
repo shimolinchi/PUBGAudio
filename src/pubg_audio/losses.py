@@ -37,8 +37,45 @@ def adpit_loss(prediction, target, active_count, mask, error='mse'):
     return masked_mean(result, mask)
 
 
-def training_loss(outputs, batch, self_weight=.5):
-    if 'accddoa' in outputs:
+def spatial_adpit_loss(prediction, batch, config):
+    """Match tracks once using the sum of distinct activity/angle/distance terms."""
+    target, count, mask = batch['target'], batch['counts'], batch['mask']
+    loc = batch.get('localization_mask', (target[...,:3].square().sum(-1)>0).to(target.dtype))
+    norm = torch.linalg.vector_norm(prediction[...,:3], dim=-1)
+    direction = F.normalize(prediction[...,:3], dim=-1, eps=1e-4)
+    mappings = {0:[(0,0,0)],1:[(0,0,0)],
+        2:[p for p in itertools.product(range(2),repeat=3) if len(set(p))==2],
+        3:list(itertools.permutations(range(3)))}
+    result = torch.zeros_like(count, dtype=prediction.dtype)
+    spatial_frames = (loc.sum(dim=2)>0).to(mask.dtype)*mask
+    spatial_scale = mask.sum()/spatial_frames.sum().clamp_min(1)
+    for n, choices in mappings.items():
+        losses = []
+        for indices in choices:
+            truth = target[:,:,list(indices)]
+            active = (truth[...,:3].square().sum(-1)>0).to(prediction.dtype)
+            loc_weight = loc[:,:,list(indices)]*active
+            activity = (norm-active).square().mean(dim=2)
+            angle = (1-(direction*truth[...,:3]).sum(-1).clamp(-1,1))*loc_weight
+            distance = F.smooth_l1_loss(prediction[...,3],truth[...,3],reduction='none')*loc_weight
+            # Each observed positive contributes equally, regardless of quiet
+            # negatives. Missing spatial evidence still trains class presence.
+            denom = loc_weight.sum(dim=2).clamp_min(1)
+            value = config.get('activity_weight',1.)*activity
+            value += spatial_scale*config.get('direction_weight',2.)*angle.sum(dim=2)/denom
+            value += spatial_scale*config.get('distance_weight',.2)*distance.sum(dim=2)/denom
+            losses.append(value)
+        best = torch.stack(losses).amin(dim=0)
+        result = torch.where(count==n,best,result)
+    return masked_mean(result, mask)
+
+
+def training_loss(outputs, batch, self_weight=.5, loss_config=None):
+    loss_config = loss_config or {}
+    if loss_config.get('mode') == 'spatial_balanced':
+        if 'accddoa' not in outputs:raise ValueError('Spatial balanced loss requires the multi-track head')
+        external = spatial_adpit_loss(outputs['accddoa'], batch, loss_config)
+    elif 'accddoa' in outputs:
         external = adpit_loss(outputs['accddoa'], batch['target'], batch['counts'], batch['mask'])
     else:
         # MT cannot represent multiple sources from one class. Never average them.
@@ -49,4 +86,4 @@ def training_loss(outputs, batch, self_weight=.5):
     own = external * 0
     if 'self_logits' in outputs:
         own = masked_mean(F.binary_cross_entropy_with_logits(outputs['self_logits'], batch['self_target'], reduction='none'), batch['self_mask'])
-    return external + self_weight * own, {'external': external.detach(), 'self': own.detach()}
+    return external + loss_config.get('self_weight', self_weight) * own, {'external': external.detach(), 'self': own.detach()}

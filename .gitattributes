@@ -1,0 +1,3 @@
+# Registry snapshots and manifests are verified by byte-level SHA256.
+# Preserve their original line endings on every platform.
+datasets/registry/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

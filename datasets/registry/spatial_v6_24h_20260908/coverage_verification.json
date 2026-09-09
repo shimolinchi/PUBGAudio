@@ -1,0 +1,1522 @@
+{
+  "status": "passed",
+  "protocol": "known_assets_new_scenes",
+  "independent_source_recordings": false,
+  "every_evaluation_gun_type_and_role_seen_in_training": true,
+  "all_available_gun_type_roles_audible_in_training": true,
+  "all_selected_external_target_types_audible_in_training": true,
+  "training_external_types_cover_four_quadrants": true,
+  "scope": "v6 acoustic, semantic and firing gates; frame counts are correlated and units are not calibrated game metres",
+  "splits": {
+    "train": {
+      "scenes": 600,
+      "audible_group_frames": {
+        "vehicle:Vehicle_Minibus|self": 163082,
+        "gunfire:Weapons_Berreta686|external": 6145,
+        "gunfire:Weapons_Thompson|external": 16137,
+        "vehicle:Vehicle_BuggyBank|external": 270830,
+        "gunfire:Weapons_MK12|external": 19356,
+        "gunfire:Weapons_M16A4|external": 9827,
+        "gunfire:Weapons_Scorpion|external": 11942,
+        "vehicle:Vehicle_PickupTruck|external": 215606,
+        "vehicle:Vehicle_Rony|external": 253934,
+        "vehicle:Vehicle_DaciaBank|self": 202228,
+        "gunfire:Weapons_QBZ|external": 18075,
+        "gunfire:Weapons_VSS|external": 7456,
+        "gunfire:Weapons_K2|external": 12694,
+        "gunfire:Weapons_Glock18C|external": 7178,
+        "gunfire:Weapons_QBU|self": 5530,
+        "gunfire:Weapons_Winchester1894|external": 6847,
+        "vehicle:Vehicle_Sedan|external": 223577,
+        "gunfire:Weapons_AK47|external": 15205,
+        "footsteps:Rock|external": 52973,
+        "vehicle:Vehicle_UAZBank|external": 275992,
+        "vehicle:Vehicle_Minibus|external": 266592,
+        "footsteps:Fabric|self": 78231,
+        "vehicle:Vehicle_CoupeRB|external": 221472,
+        "gunfire:Weapons_SCAR_L|external": 17661,
+        "vehicle:Vehicle_BuggyBank|self": 169653,
+        "gunfire:Weapons_Bizon|external": 21494,
+        "gunfire:Weapons_Vector|external": 9922,
+        "vehicle:Vehicle_PickupTruck|self": 189679,
+        "footsteps:Fabric|external": 45312,
+        "gunfire:Weapons_Berreta686|self": 2805,
+        "gunfire:Weapons_M14EBR|self": 8288,
+        "vehicle:Vehicle_Sedan|self": 189291,
+        "gunfire:Weapons_NagantM1895|self": 9278,
+        "gunfire:Weapons_BerretaM9|external": 20754,
+        "vehicle:Vehicle_CoupeRB|self": 180397,
+        "gunfire:Weapons_M24|external": 14884,
+        "gunfire:Weapons_M1911|external": 13969,
+        "footsteps:Rock|self": 71745,
+        "gunfire:Weapons_JS9|external": 14440,
+        "footsteps:Snow|external": 73695,
+        "gunfire:Weapons_FamasG2|external": 15644,
+        "gunfire:Weapons_MicroUzi|external": 11772,
+        "gunfire:Weapons_Ace32|self": 4181,
+        "gunfire:Weapons_Saiga12|external": 11782,
+        "vehicle:Vehicle_DaciaBank|external": 265124,
+        "footsteps:Concrete|external": 42461,
+        "gunfire:Weapons_Mk47|self": 4661,
+        "gunfire:Weapons_Steyr_AUG_A3|external": 9387,
+        "gunfire:Weapons_Kar98k|external": 6035,
+        "gunfire:Weapons_UMP|external": 8656,
+        "gunfire:Weapons_MP5K|external": 13178,
+        "vehicle:Vehicle_UAZBank|self": 190692,
+        "vehicle:Vehicle_Rony|self": 210857,
+        "gunfire:Weapons_Rhino|external": 13786,
+        "gunfire:Weapons_Saiga12|self": 5034,
+        "gunfire:Weapons_Glock18C|self": 3373,
+        "footsteps:Dirt|external": 38005,
+        "gunfire:Weapons_M16A4|self": 6827,
+        "gunfire:Weapons_HK416|external": 9482,
+        "gunfire:Weapons_Bizon|self": 7323,
+        "gunfire:Weapons_MK12|self": 6357,
+        "gunfire:Weapons_SKS|external": 22179,
+        "gunfire:Weapons_Ace32|external": 15540,
+        "gunfire:Weapons_Kar98k|self": 3083,
+        "gunfire:Weapons_G36C|external": 20753,
+        "gunfire:Weapons_FamasG2|self": 6308,
+        "gunfire:Weapons_AWM|external": 10995,
+        "gunfire:Weapons_O12|external": 18067,
+        "gunfire:Weapons_M762|external": 12417,
+        "gunfire:Weapons_MosinNagant|self": 7502,
+        "gunfire:Weapons_Mk47|external": 15448,
+        "gunfire:Weapons_SCAR_L|self": 5697,
+        "gunfire:Weapons_AK47|self": 5710,
+        "footsteps:Snow|self": 94132,
+        "gunfire:Weapons_Rhino|self": 5559,
+        "gunfire:Weapons_Winchester1897|self": 3248,
+        "footsteps:Dirt|self": 56740,
+        "gunfire:Weapons_DesertEagle|external": 12246,
+        "gunfire:Weapons_FNFAL|external": 17676,
+        "gunfire:Weapons_NagantM1895|external": 14026,
+        "gunfire:Weapons_Groza|self": 4341,
+        "gunfire:Weapons_M14EBR|external": 20309,
+        "gunfire:Weapons_M249|self": 8860,
+        "gunfire:Weapons_Dragunov|external": 15924,
+        "footsteps:Concrete|self": 63270,
+        "gunfire:Weapons_BerretaM9|self": 9971,
+        "gunfire:Weapons_MicroUzi|self": 3219,
+        "gunfire:Weapons_Groza|external": 12239,
+        "gunfire:Weapons_Dragunov|self": 6819,
+        "gunfire:Weapons_G36C|self": 5887,
+        "gunfire:Weapons_SawedOffShotgun|external": 6734,
+        "gunfire:Weapons_O12|self": 4455,
+        "gunfire:Weapons_QBU|external": 14842,
+        "gunfire:Weapons_Mini14|external": 34577,
+        "gunfire:Weapons_AWM|self": 4275,
+        "gunfire:Weapons_K2|self": 3370,
+        "gunfire:Weapons_SawedOffShotgun|self": 2911,
+        "gunfire:Weapons_Vector|self": 3360,
+        "gunfire:Weapons_VSS|self": 4022,
+        "gunfire:Weapons_M1911|self": 5413,
+        "gunfire:Weapons_DP28|self": 4188,
+        "gunfire:Weapons_FNFAL|self": 8325,
+        "gunfire:Weapons_M762|self": 4400,
+        "gunfire:Weapons_M249|external": 23069,
+        "gunfire:Weapons_M24|self": 7845,
+        "gunfire:Weapons_DP12|self": 8452,
+        "gunfire:Weapons_Steyr_AUG_A3|self": 2902,
+        "gunfire:Weapons_Scorpion|self": 4212,
+        "gunfire:Weapons_UMP|self": 3518,
+        "gunfire:Weapons_Winchester1894|self": 2670,
+        "gunfire:Weapons_Thompson|self": 4039,
+        "gunfire:Weapons_MP5K|self": 3436,
+        "gunfire:Weapons_Mini14|self": 13665,
+        "gunfire:Weapons_DesertEagle|self": 3582,
+        "gunfire:Weapons_L6|self": 8680,
+        "gunfire:Weapons_QBZ|self": 4714
+      },
+      "direction_quadrants": {
+        "gunfire:Weapons_Berreta686|external": [
+          1805,
+          1573,
+          1523,
+          1244
+        ],
+        "gunfire:Weapons_Thompson|external": [
+          3471,
+          5227,
+          3548,
+          3891
+        ],
+        "gunfire:Weapons_MK12|external": [
+          6012,
+          3362,
+          2841,
+          7141
+        ],
+        "gunfire:Weapons_M16A4|external": [
+          2208,
+          2531,
+          2375,
+          2713
+        ],
+        "gunfire:Weapons_Scorpion|external": [
+          4397,
+          2113,
+          4259,
+          1173
+        ],
+        "vehicle:Vehicle_PickupTruck|external": [
+          58311,
+          57874,
+          46019,
+          53402
+        ],
+        "vehicle:Vehicle_Rony|external": [
+          52328,
+          74453,
+          66064,
+          61089
+        ],
+        "gunfire:Weapons_QBZ|external": [
+          4543,
+          3838,
+          3567,
+          6127
+        ],
+        "gunfire:Weapons_VSS|external": [
+          2516,
+          2176,
+          1520,
+          1244
+        ],
+        "gunfire:Weapons_K2|external": [
+          2970,
+          4375,
+          3329,
+          2020
+        ],
+        "gunfire:Weapons_Glock18C|external": [
+          1814,
+          2199,
+          1718,
+          1447
+        ],
+        "gunfire:Weapons_Winchester1894|external": [
+          1679,
+          1968,
+          1780,
+          1420
+        ],
+        "vehicle:Vehicle_Sedan|external": [
+          57331,
+          51936,
+          49498,
+          64812
+        ],
+        "gunfire:Weapons_AK47|external": [
+          3687,
+          4479,
+          3403,
+          3636
+        ],
+        "footsteps:Rock|external": [
+          14690,
+          13376,
+          14645,
+          10262
+        ],
+        "vehicle:Vehicle_UAZBank|external": [
+          66041,
+          63338,
+          78001,
+          68612
+        ],
+        "vehicle:Vehicle_Minibus|external": [
+          65217,
+          69706,
+          62534,
+          69135
+        ],
+        "vehicle:Vehicle_CoupeRB|external": [
+          50411,
+          50979,
+          54744,
+          65338
+        ],
+        "gunfire:Weapons_SCAR_L|external": [
+          3529,
+          3774,
+          5280,
+          5078
+        ],
+        "vehicle:Vehicle_BuggyBank|external": [
+          62626,
+          73196,
+          62412,
+          72596
+        ],
+        "gunfire:Weapons_Bizon|external": [
+          4397,
+          6680,
+          5962,
+          4455
+        ],
+        "gunfire:Weapons_Vector|external": [
+          3040,
+          2109,
+          3038,
+          1735
+        ],
+        "gunfire:Weapons_BerretaM9|external": [
+          3750,
+          6968,
+          5409,
+          4627
+        ],
+        "gunfire:Weapons_M24|external": [
+          4576,
+          3817,
+          2427,
+          4064
+        ],
+        "gunfire:Weapons_M1911|external": [
+          2761,
+          4208,
+          3847,
+          3153
+        ],
+        "gunfire:Weapons_JS9|external": [
+          2902,
+          4807,
+          2672,
+          4059
+        ],
+        "footsteps:Snow|external": [
+          15276,
+          22674,
+          19865,
+          15880
+        ],
+        "gunfire:Weapons_FamasG2|external": [
+          3750,
+          5059,
+          3397,
+          3438
+        ],
+        "gunfire:Weapons_MicroUzi|external": [
+          3513,
+          2460,
+          3184,
+          2615
+        ],
+        "gunfire:Weapons_Saiga12|external": [
+          3447,
+          2837,
+          1805,
+          3693
+        ],
+        "vehicle:Vehicle_DaciaBank|external": [
+          75802,
+          61630,
+          55504,
+          72188
+        ],
+        "footsteps:Concrete|external": [
+          13481,
+          7923,
+          8659,
+          12398
+        ],
+        "gunfire:Weapons_Steyr_AUG_A3|external": [
+          2632,
+          1899,
+          2145,
+          2711
+        ],
+        "gunfire:Weapons_Kar98k|external": [
+          1783,
+          973,
+          1668,
+          1611
+        ],
+        "gunfire:Weapons_UMP|external": [
+          2004,
+          2077,
+          2961,
+          1614
+        ],
+        "gunfire:Weapons_MP5K|external": [
+          2290,
+          3687,
+          3172,
+          4029
+        ],
+        "gunfire:Weapons_Rhino|external": [
+          2739,
+          3587,
+          4444,
+          3016
+        ],
+        "footsteps:Fabric|external": [
+          14009,
+          12311,
+          8490,
+          10502
+        ],
+        "footsteps:Dirt|external": [
+          8195,
+          9787,
+          10115,
+          9908
+        ],
+        "gunfire:Weapons_HK416|external": [
+          2645,
+          2265,
+          1519,
+          3053
+        ],
+        "gunfire:Weapons_SKS|external": [
+          6176,
+          6251,
+          6243,
+          3509
+        ],
+        "gunfire:Weapons_Ace32|external": [
+          3327,
+          2843,
+          3424,
+          5946
+        ],
+        "gunfire:Weapons_G36C|external": [
+          5126,
+          6141,
+          5556,
+          3930
+        ],
+        "gunfire:Weapons_AWM|external": [
+          2970,
+          2493,
+          2632,
+          2900
+        ],
+        "gunfire:Weapons_O12|external": [
+          2824,
+          3334,
+          6090,
+          5819
+        ],
+        "gunfire:Weapons_M762|external": [
+          3110,
+          2541,
+          3305,
+          3461
+        ],
+        "gunfire:Weapons_Mk47|external": [
+          4646,
+          2807,
+          4649,
+          3346
+        ],
+        "gunfire:Weapons_DesertEagle|external": [
+          2818,
+          3123,
+          2800,
+          3505
+        ],
+        "gunfire:Weapons_FNFAL|external": [
+          5508,
+          2792,
+          5519,
+          3857
+        ],
+        "gunfire:Weapons_NagantM1895|external": [
+          3249,
+          4099,
+          4135,
+          2543
+        ],
+        "gunfire:Weapons_M14EBR|external": [
+          3865,
+          5748,
+          6473,
+          4223
+        ],
+        "gunfire:Weapons_Dragunov|external": [
+          4069,
+          4096,
+          2892,
+          4867
+        ],
+        "gunfire:Weapons_Groza|external": [
+          2945,
+          3579,
+          2653,
+          3062
+        ],
+        "gunfire:Weapons_SawedOffShotgun|external": [
+          2372,
+          1622,
+          1316,
+          1424
+        ],
+        "gunfire:Weapons_QBU|external": [
+          1756,
+          4707,
+          4772,
+          3607
+        ],
+        "gunfire:Weapons_Mini14|external": [
+          8855,
+          12125,
+          7673,
+          5924
+        ],
+        "gunfire:Weapons_M249|external": [
+          5016,
+          6121,
+          4929,
+          7003
+        ]
+      },
+      "audible_10ms_track_frames": {
+        "vehicle/self": 1495879,
+        "gunfire/external": 630749,
+        "vehicle/external": 1993127,
+        "gunfire/self": 252295,
+        "footsteps/external": 252446,
+        "footsteps/self": 364118
+      },
+      "localizable_10ms_track_frames": {
+        "vehicle/self": 0,
+        "gunfire/external": 444806,
+        "vehicle/external": 1516893,
+        "gunfire/self": 0,
+        "footsteps/external": 161791,
+        "footsteps/self": 0
+      },
+      "gun_patterns": {
+        "single": 1710,
+        "short_auto": 415,
+        "sustained_auto": 734,
+        "burst": 81
+      },
+      "automatic_shots_by_weapon": {
+        "Weapons_Scorpion": 1066,
+        "Weapons_QBZ": 1672,
+        "Weapons_K2": 1346,
+        "Weapons_Glock18C": 758,
+        "Weapons_AK47": 1631,
+        "Weapons_SCAR_L": 1667,
+        "Weapons_Bizon": 2147,
+        "Weapons_JS9": 1340,
+        "Weapons_MicroUzi": 1186,
+        "Weapons_Ace32": 1422,
+        "Weapons_UMP": 1044,
+        "Weapons_MP5K": 1353,
+        "Weapons_Thompson": 1717,
+        "Weapons_HK416": 839,
+        "Weapons_G36C": 1660,
+        "Weapons_FamasG2": 1712,
+        "Weapons_O12": 607,
+        "Weapons_M762": 1092,
+        "Weapons_Groza": 934,
+        "Weapons_M249": 2705,
+        "Weapons_Vector": 940,
+        "Weapons_Steyr_AUG_A3": 1009,
+        "Weapons_DP28": 343
+      },
+      "maximum_observable_external_footstep_distance_units": 48.831886291503906
+    },
+    "validation": {
+      "scenes": 60,
+      "audible_group_frames": {
+        "gunfire:Weapons_QBU|external": 722,
+        "vehicle:Vehicle_DaciaBank|external": 36481,
+        "gunfire:Weapons_M249|external": 946,
+        "footsteps:Concrete|external": 2945,
+        "gunfire:Weapons_Winchester1894|external": 518,
+        "vehicle:Vehicle_DaciaBank|self": 11057,
+        "gunfire:Weapons_M16A4|external": 751,
+        "gunfire:Weapons_Winchester1894|self": 589,
+        "gunfire:Weapons_M16A4|self": 1570,
+        "footsteps:Dirt|external": 3019,
+        "gunfire:Weapons_M14EBR|external": 2091,
+        "vehicle:Vehicle_PickupTruck|self": 29244,
+        "gunfire:Weapons_M1911|external": 2210,
+        "vehicle:Vehicle_UAZBank|self": 16609,
+        "gunfire:Weapons_FamasG2|external": 770,
+        "vehicle:Vehicle_BuggyBank|external": 19414,
+        "gunfire:Weapons_Rhino|external": 2594,
+        "gunfire:Weapons_Ace32|self": 815,
+        "vehicle:Vehicle_CoupeRB|external": 21369,
+        "gunfire:Weapons_Bizon|external": 1816,
+        "footsteps:Rock|self": 3549,
+        "vehicle:Vehicle_PickupTruck|external": 37414,
+        "gunfire:Weapons_AWM|external": 2314,
+        "gunfire:Weapons_MK12|external": 1778,
+        "gunfire:Weapons_QBZ|self": 344,
+        "gunfire:Weapons_MicroUzi|external": 1813,
+        "gunfire:Weapons_Dragunov|external": 1251,
+        "vehicle:Vehicle_Minibus|self": 32738,
+        "gunfire:Weapons_K2|external": 1695,
+        "gunfire:Weapons_M24|external": 1861,
+        "gunfire:Weapons_M14EBR|self": 994,
+        "gunfire:Weapons_VSS|self": 439,
+        "gunfire:Weapons_AK47|external": 1220,
+        "vehicle:Vehicle_CoupeRB|self": 19079,
+        "vehicle:Vehicle_Sedan|external": 24940,
+        "gunfire:Weapons_G36C|external": 2724,
+        "gunfire:Weapons_Kar98k|external": 268,
+        "vehicle:Vehicle_BuggyBank|self": 21869,
+        "gunfire:Weapons_Groza|external": 1492,
+        "gunfire:Weapons_Berreta686|external": 500,
+        "gunfire:Weapons_Thompson|external": 1223,
+        "gunfire:Weapons_K2|self": 447,
+        "gunfire:Weapons_FNFAL|external": 1516,
+        "gunfire:Weapons_SawedOffShotgun|external": 352,
+        "gunfire:Weapons_Mk47|external": 465,
+        "vehicle:Vehicle_Minibus|external": 18326,
+        "gunfire:Weapons_Glock18C|external": 826,
+        "gunfire:Weapons_QBZ|external": 1530,
+        "vehicle:Vehicle_Sedan|self": 12449,
+        "gunfire:Weapons_Kar98k|self": 173,
+        "gunfire:Weapons_UMP|external": 707,
+        "gunfire:Weapons_Rhino|self": 662,
+        "gunfire:Weapons_L6|self": 1874,
+        "gunfire:Weapons_Ace32|external": 1091,
+        "gunfire:Weapons_Scorpion|external": 471,
+        "gunfire:Weapons_G36C|self": 727,
+        "vehicle:Vehicle_Rony|self": 5115,
+        "gunfire:Weapons_Vector|external": 1475,
+        "gunfire:Weapons_M762|external": 2618,
+        "gunfire:Weapons_Mk47|self": 899,
+        "gunfire:Weapons_SCAR_L|external": 1059,
+        "gunfire:Weapons_MP5K|external": 602,
+        "gunfire:Weapons_QBU|self": 833,
+        "footsteps:Snow|external": 9224,
+        "vehicle:Vehicle_UAZBank|external": 17049,
+        "gunfire:Weapons_Glock18C|self": 261,
+        "footsteps:Snow|self": 13608,
+        "footsteps:Rock|external": 3959,
+        "footsteps:Fabric|external": 3879,
+        "vehicle:Vehicle_Rony|external": 23004,
+        "footsteps:Fabric|self": 4517,
+        "gunfire:Weapons_DesertEagle|external": 1145,
+        "gunfire:Weapons_M762|self": 1851,
+        "footsteps:Dirt|self": 6602,
+        "gunfire:Weapons_Saiga12|self": 555,
+        "gunfire:Weapons_Mini14|external": 5734,
+        "gunfire:Weapons_Steyr_AUG_A3|self": 379,
+        "gunfire:Weapons_FNFAL|self": 1197,
+        "gunfire:Weapons_NagantM1895|external": 1623,
+        "gunfire:Weapons_Saiga12|external": 1572,
+        "gunfire:Weapons_DP28|self": 943,
+        "gunfire:Weapons_Thompson|self": 961,
+        "gunfire:Weapons_BerretaM9|self": 2484,
+        "gunfire:Weapons_Groza|self": 357,
+        "gunfire:Weapons_VSS|external": 962,
+        "gunfire:Weapons_SKS|external": 1176,
+        "gunfire:Weapons_NagantM1895|self": 818,
+        "gunfire:Weapons_Steyr_AUG_A3|external": 1494,
+        "gunfire:Weapons_BerretaM9|external": 1318,
+        "gunfire:Weapons_Berreta686|self": 488,
+        "gunfire:Weapons_M249|self": 802,
+        "gunfire:Weapons_AK47|self": 1356,
+        "gunfire:Weapons_M1911|self": 785,
+        "gunfire:Weapons_Bizon|self": 2138,
+        "gunfire:Weapons_Mini14|self": 441,
+        "gunfire:Weapons_SawedOffShotgun|self": 175,
+        "gunfire:Weapons_HK416|external": 918,
+        "gunfire:Weapons_AWM|self": 112,
+        "gunfire:Weapons_O12|external": 456,
+        "gunfire:Weapons_SCAR_L|self": 339,
+        "gunfire:Weapons_Winchester1897|self": 250,
+        "gunfire:Weapons_JS9|external": 200
+      },
+      "direction_quadrants": {
+        "gunfire:Weapons_QBU|external": [
+          0,
+          700,
+          22,
+          0
+        ],
+        "vehicle:Vehicle_DaciaBank|external": [
+          11895,
+          9877,
+          9616,
+          5093
+        ],
+        "gunfire:Weapons_M249|external": [
+          0,
+          946,
+          0,
+          0
+        ],
+        "gunfire:Weapons_Winchester1894|external": [
+          102,
+          268,
+          68,
+          80
+        ],
+        "gunfire:Weapons_M16A4|external": [
+          369,
+          273,
+          79,
+          30
+        ],
+        "footsteps:Dirt|external": [
+          1187,
+          567,
+          783,
+          482
+        ],
+        "gunfire:Weapons_M14EBR|external": [
+          505,
+          1059,
+          335,
+          192
+        ],
+        "gunfire:Weapons_M1911|external": [
+          736,
+          750,
+          685,
+          39
+        ],
+        "gunfire:Weapons_FamasG2|external": [
+          601,
+          0,
+          169,
+          0
+        ],
+        "vehicle:Vehicle_BuggyBank|external": [
+          2630,
+          5397,
+          8805,
+          2582
+        ],
+        "gunfire:Weapons_Rhino|external": [
+          584,
+          323,
+          1355,
+          332
+        ],
+        "vehicle:Vehicle_CoupeRB|external": [
+          6521,
+          6035,
+          3768,
+          5045
+        ],
+        "gunfire:Weapons_Bizon|external": [
+          375,
+          0,
+          721,
+          720
+        ],
+        "vehicle:Vehicle_PickupTruck|external": [
+          10240,
+          10098,
+          11013,
+          6063
+        ],
+        "gunfire:Weapons_AWM|external": [
+          525,
+          997,
+          559,
+          233
+        ],
+        "gunfire:Weapons_MK12|external": [
+          846,
+          0,
+          565,
+          367
+        ],
+        "gunfire:Weapons_MicroUzi|external": [
+          232,
+          491,
+          779,
+          311
+        ],
+        "gunfire:Weapons_Dragunov|external": [
+          863,
+          343,
+          0,
+          45
+        ],
+        "gunfire:Weapons_K2|external": [
+          686,
+          561,
+          345,
+          103
+        ],
+        "gunfire:Weapons_M24|external": [
+          570,
+          260,
+          274,
+          757
+        ],
+        "gunfire:Weapons_AK47|external": [
+          18,
+          184,
+          642,
+          376
+        ],
+        "vehicle:Vehicle_Sedan|external": [
+          5368,
+          4427,
+          4407,
+          10738
+        ],
+        "gunfire:Weapons_G36C|external": [
+          753,
+          219,
+          989,
+          763
+        ],
+        "gunfire:Weapons_Kar98k|external": [
+          0,
+          137,
+          0,
+          131
+        ],
+        "gunfire:Weapons_Groza|external": [
+          70,
+          115,
+          557,
+          750
+        ],
+        "gunfire:Weapons_Berreta686|external": [
+          171,
+          7,
+          124,
+          198
+        ],
+        "gunfire:Weapons_Thompson|external": [
+          358,
+          253,
+          313,
+          299
+        ],
+        "gunfire:Weapons_FNFAL|external": [
+          373,
+          561,
+          112,
+          470
+        ],
+        "gunfire:Weapons_SawedOffShotgun|external": [
+          0,
+          90,
+          141,
+          121
+        ],
+        "gunfire:Weapons_Mk47|external": [
+          0,
+          465,
+          0,
+          0
+        ],
+        "vehicle:Vehicle_Minibus|external": [
+          4866,
+          4815,
+          6354,
+          2291
+        ],
+        "gunfire:Weapons_Glock18C|external": [
+          253,
+          59,
+          443,
+          71
+        ],
+        "gunfire:Weapons_QBZ|external": [
+          411,
+          654,
+          28,
+          437
+        ],
+        "gunfire:Weapons_UMP|external": [
+          309,
+          0,
+          398,
+          0
+        ],
+        "gunfire:Weapons_Ace32|external": [
+          196,
+          0,
+          352,
+          543
+        ],
+        "gunfire:Weapons_Scorpion|external": [
+          32,
+          0,
+          0,
+          439
+        ],
+        "gunfire:Weapons_Vector|external": [
+          621,
+          0,
+          530,
+          324
+        ],
+        "gunfire:Weapons_M762|external": [
+          485,
+          478,
+          792,
+          863
+        ],
+        "gunfire:Weapons_SCAR_L|external": [
+          528,
+          429,
+          102,
+          0
+        ],
+        "gunfire:Weapons_MP5K|external": [
+          95,
+          123,
+          384,
+          0
+        ],
+        "footsteps:Snow|external": [
+          3479,
+          1774,
+          2202,
+          1769
+        ],
+        "vehicle:Vehicle_UAZBank|external": [
+          4249,
+          4262,
+          5151,
+          3387
+        ],
+        "footsteps:Rock|external": [
+          696,
+          415,
+          1918,
+          930
+        ],
+        "footsteps:Fabric|external": [
+          593,
+          1483,
+          739,
+          1064
+        ],
+        "vehicle:Vehicle_Rony|external": [
+          2156,
+          7325,
+          4758,
+          8765
+        ],
+        "gunfire:Weapons_DesertEagle|external": [
+          118,
+          49,
+          402,
+          576
+        ],
+        "gunfire:Weapons_Mini14|external": [
+          1237,
+          2116,
+          1006,
+          1375
+        ],
+        "gunfire:Weapons_NagantM1895|external": [
+          381,
+          852,
+          203,
+          187
+        ],
+        "gunfire:Weapons_Saiga12|external": [
+          244,
+          0,
+          507,
+          821
+        ],
+        "footsteps:Concrete|external": [
+          866,
+          703,
+          595,
+          781
+        ],
+        "gunfire:Weapons_VSS|external": [
+          364,
+          125,
+          427,
+          46
+        ],
+        "gunfire:Weapons_SKS|external": [
+          215,
+          70,
+          0,
+          891
+        ],
+        "gunfire:Weapons_Steyr_AUG_A3|external": [
+          452,
+          503,
+          345,
+          194
+        ],
+        "gunfire:Weapons_BerretaM9|external": [
+          134,
+          130,
+          1054,
+          0
+        ],
+        "gunfire:Weapons_HK416|external": [
+          423,
+          105,
+          78,
+          312
+        ],
+        "gunfire:Weapons_O12|external": [
+          317,
+          46,
+          46,
+          47
+        ],
+        "gunfire:Weapons_JS9|external": [
+          200,
+          0,
+          0,
+          0
+        ]
+      },
+      "audible_10ms_track_frames": {
+        "gunfire/external": 59867,
+        "vehicle/external": 197997,
+        "footsteps/external": 23026,
+        "vehicle/self": 148160,
+        "gunfire/self": 27058,
+        "footsteps/self": 28276
+      },
+      "localizable_10ms_track_frames": {
+        "gunfire/external": 41775,
+        "vehicle/external": 153064,
+        "footsteps/external": 16373,
+        "vehicle/self": 0,
+        "gunfire/self": 0,
+        "footsteps/self": 0
+      },
+      "gun_patterns": {
+        "single": 172,
+        "sustained_auto": 70,
+        "burst": 8,
+        "short_auto": 33
+      },
+      "automatic_shots_by_weapon": {
+        "Weapons_M249": 128,
+        "Weapons_FamasG2": 47,
+        "Weapons_Bizon": 311,
+        "Weapons_QBZ": 138,
+        "Weapons_MicroUzi": 147,
+        "Weapons_K2": 166,
+        "Weapons_G36C": 198,
+        "Weapons_Groza": 119,
+        "Weapons_Thompson": 180,
+        "Weapons_Glock18C": 68,
+        "Weapons_UMP": 50,
+        "Weapons_Ace32": 124,
+        "Weapons_Scorpion": 40,
+        "Weapons_AK47": 210,
+        "Weapons_Vector": 109,
+        "Weapons_M762": 326,
+        "Weapons_SCAR_L": 119,
+        "Weapons_MP5K": 57,
+        "Weapons_Steyr_AUG_A3": 144,
+        "Weapons_DP28": 53,
+        "Weapons_HK416": 96,
+        "Weapons_O12": 12,
+        "Weapons_JS9": 22
+      },
+      "maximum_observable_external_footstep_distance_units": 48.927330017089844
+    },
+    "test": {
+      "scenes": 60,
+      "audible_group_frames": {
+        "gunfire:Weapons_MP5K|external": 1393,
+        "gunfire:Weapons_Kar98k|self": 229,
+        "vehicle:Vehicle_PickupTruck|self": 11771,
+        "vehicle:Vehicle_Minibus|external": 18886,
+        "footsteps:Rock|self": 5600,
+        "gunfire:Weapons_Mini14|external": 3455,
+        "vehicle:Vehicle_Sedan|external": 19415,
+        "footsteps:Snow|external": 8607,
+        "gunfire:Weapons_M762|external": 1588,
+        "vehicle:Vehicle_UAZBank|external": 18920,
+        "gunfire:Weapons_Dragunov|external": 2716,
+        "gunfire:Weapons_QBZ|external": 1044,
+        "vehicle:Vehicle_PickupTruck|external": 20150,
+        "footsteps:Rock|external": 6413,
+        "gunfire:Weapons_Steyr_AUG_A3|self": 276,
+        "footsteps:Concrete|external": 4362,
+        "gunfire:Weapons_AWM|self": 723,
+        "gunfire:Weapons_SCAR_L|self": 680,
+        "vehicle:Vehicle_DaciaBank|external": 29279,
+        "gunfire:Weapons_Rhino|external": 2053,
+        "vehicle:Vehicle_DaciaBank|self": 19399,
+        "gunfire:Weapons_Bizon|external": 2523,
+        "gunfire:Weapons_M16A4|external": 1506,
+        "gunfire:Weapons_AWM|external": 342,
+        "footsteps:Snow|self": 7858,
+        "gunfire:Weapons_SCAR_L|external": 1516,
+        "gunfire:Weapons_Glock18C|external": 1367,
+        "vehicle:Vehicle_Rony|external": 15282,
+        "footsteps:Concrete|self": 6361,
+        "gunfire:Weapons_Berreta686|external": 921,
+        "gunfire:Weapons_Saiga12|external": 1449,
+        "gunfire:Weapons_M762|self": 1338,
+        "gunfire:Weapons_SawedOffShotgun|external": 637,
+        "footsteps:Dirt|self": 1886,
+        "footsteps:Dirt|external": 5840,
+        "vehicle:Vehicle_CoupeRB|external": 22022,
+        "vehicle:Vehicle_Rony|self": 17763,
+        "vehicle:Vehicle_CoupeRB|self": 29276,
+        "gunfire:Weapons_Vector|external": 1440,
+        "vehicle:Vehicle_BuggyBank|external": 11861,
+        "gunfire:Weapons_DP12|self": 495,
+        "footsteps:Fabric|external": 2489,
+        "gunfire:Weapons_M24|external": 1387,
+        "gunfire:Weapons_M14EBR|external": 5405,
+        "gunfire:Weapons_BerretaM9|self": 593,
+        "vehicle:Vehicle_BuggyBank|self": 21539,
+        "gunfire:Weapons_FamasG2|self": 329,
+        "gunfire:Weapons_Mk47|external": 934,
+        "gunfire:Weapons_L6|self": 2088,
+        "gunfire:Weapons_Thompson|external": 880,
+        "gunfire:Weapons_DP28|self": 1436,
+        "gunfire:Weapons_Ace32|external": 1206,
+        "gunfire:Weapons_Dragunov|self": 2513,
+        "gunfire:Weapons_Vector|self": 222,
+        "gunfire:Weapons_O12|self": 1344,
+        "gunfire:Weapons_QBU|external": 1456,
+        "gunfire:Weapons_Steyr_AUG_A3|external": 1800,
+        "gunfire:Weapons_AK47|external": 1594,
+        "gunfire:Weapons_Berreta686|self": 241,
+        "gunfire:Weapons_K2|self": 493,
+        "gunfire:Weapons_MicroUzi|external": 913,
+        "vehicle:Vehicle_Minibus|self": 10453,
+        "gunfire:Weapons_SKS|external": 2058,
+        "gunfire:Weapons_G36C|external": 2846,
+        "gunfire:Weapons_MK12|external": 2821,
+        "gunfire:Weapons_FNFAL|external": 1381,
+        "gunfire:Weapons_UMP|self": 583,
+        "gunfire:Weapons_BerretaM9|external": 1091,
+        "gunfire:Weapons_K2|external": 1532,
+        "gunfire:Weapons_MosinNagant|self": 1037,
+        "gunfire:Weapons_M1911|external": 1162,
+        "gunfire:Weapons_Mini14|self": 360,
+        "gunfire:Weapons_DesertEagle|self": 913,
+        "gunfire:Weapons_Scorpion|external": 1290,
+        "gunfire:Weapons_QBU|self": 1422,
+        "gunfire:Weapons_Scorpion|self": 244,
+        "gunfire:Weapons_Saiga12|self": 796,
+        "gunfire:Weapons_FamasG2|external": 1237,
+        "gunfire:Weapons_O12|external": 1392,
+        "gunfire:Weapons_Kar98k|external": 813,
+        "gunfire:Weapons_UMP|external": 545,
+        "gunfire:Weapons_Winchester1894|external": 1278,
+        "gunfire:Weapons_Thompson|self": 144,
+        "gunfire:Weapons_Groza|self": 456,
+        "gunfire:Weapons_VSS|external": 454,
+        "footsteps:Fabric|self": 2967,
+        "gunfire:Weapons_M249|self": 194,
+        "gunfire:Weapons_Groza|external": 1914,
+        "gunfire:Weapons_M1911|self": 407,
+        "gunfire:Weapons_HK416|external": 412,
+        "vehicle:Vehicle_UAZBank|self": 11659,
+        "gunfire:Weapons_DesertEagle|external": 805,
+        "gunfire:Weapons_MK12|self": 1000,
+        "gunfire:Weapons_NagantM1895|self": 986,
+        "vehicle:Vehicle_Sedan|self": 7704,
+        "gunfire:Weapons_NagantM1895|external": 377,
+        "gunfire:Weapons_Mk47|self": 541,
+        "gunfire:Weapons_FNFAL|self": 556,
+        "gunfire:Weapons_M16A4|self": 424,
+        "gunfire:Weapons_G36C|self": 711,
+        "gunfire:Weapons_Winchester1894|self": 425,
+        "gunfire:Weapons_AK47|self": 559,
+        "gunfire:Weapons_M249|external": 690,
+        "gunfire:Weapons_M14EBR|self": 446,
+        "gunfire:Weapons_Ace32|self": 360,
+        "gunfire:Weapons_MicroUzi|self": 229,
+        "gunfire:Weapons_SawedOffShotgun|self": 173,
+        "gunfire:Weapons_QBZ|self": 491
+      },
+      "direction_quadrants": {
+        "gunfire:Weapons_MP5K|external": [
+          451,
+          158,
+          185,
+          599
+        ],
+        "vehicle:Vehicle_Minibus|external": [
+          7432,
+          4474,
+          3839,
+          3141
+        ],
+        "gunfire:Weapons_Mini14|external": [
+          796,
+          948,
+          1489,
+          222
+        ],
+        "vehicle:Vehicle_Sedan|external": [
+          3351,
+          5464,
+          4245,
+          6355
+        ],
+        "footsteps:Snow|external": [
+          3741,
+          2186,
+          903,
+          1777
+        ],
+        "gunfire:Weapons_M762|external": [
+          731,
+          368,
+          354,
+          135
+        ],
+        "vehicle:Vehicle_UAZBank|external": [
+          6268,
+          4154,
+          3049,
+          5449
+        ],
+        "gunfire:Weapons_Dragunov|external": [
+          160,
+          1783,
+          389,
+          384
+        ],
+        "gunfire:Weapons_QBZ|external": [
+          0,
+          503,
+          431,
+          110
+        ],
+        "vehicle:Vehicle_PickupTruck|external": [
+          1782,
+          8750,
+          3883,
+          5735
+        ],
+        "footsteps:Rock|external": [
+          1276,
+          1865,
+          2181,
+          1091
+        ],
+        "footsteps:Concrete|external": [
+          1080,
+          637,
+          1758,
+          887
+        ],
+        "vehicle:Vehicle_DaciaBank|external": [
+          8110,
+          7666,
+          5251,
+          8252
+        ],
+        "gunfire:Weapons_Rhino|external": [
+          1136,
+          737,
+          0,
+          180
+        ],
+        "gunfire:Weapons_Bizon|external": [
+          677,
+          1393,
+          201,
+          252
+        ],
+        "gunfire:Weapons_M16A4|external": [
+          448,
+          626,
+          393,
+          39
+        ],
+        "gunfire:Weapons_AWM|external": [
+          0,
+          174,
+          168,
+          0
+        ],
+        "gunfire:Weapons_SCAR_L|external": [
+          116,
+          417,
+          279,
+          704
+        ],
+        "gunfire:Weapons_Glock18C|external": [
+          360,
+          88,
+          807,
+          112
+        ],
+        "vehicle:Vehicle_Rony|external": [
+          451,
+          2417,
+          8097,
+          4317
+        ],
+        "gunfire:Weapons_Berreta686|external": [
+          467,
+          291,
+          119,
+          44
+        ],
+        "gunfire:Weapons_Saiga12|external": [
+          195,
+          226,
+          585,
+          443
+        ],
+        "gunfire:Weapons_SawedOffShotgun|external": [
+          0,
+          123,
+          373,
+          141
+        ],
+        "footsteps:Dirt|external": [
+          1322,
+          1498,
+          742,
+          2278
+        ],
+        "vehicle:Vehicle_CoupeRB|external": [
+          3272,
+          7503,
+          7454,
+          3793
+        ],
+        "gunfire:Weapons_Vector|external": [
+          0,
+          320,
+          526,
+          594
+        ],
+        "vehicle:Vehicle_BuggyBank|external": [
+          4185,
+          2697,
+          1967,
+          3012
+        ],
+        "footsteps:Fabric|external": [
+          687,
+          397,
+          597,
+          808
+        ],
+        "gunfire:Weapons_M24|external": [
+          426,
+          489,
+          80,
+          392
+        ],
+        "gunfire:Weapons_M14EBR|external": [
+          2171,
+          904,
+          1280,
+          1050
+        ],
+        "gunfire:Weapons_Mk47|external": [
+          330,
+          407,
+          0,
+          197
+        ],
+        "gunfire:Weapons_Thompson|external": [
+          271,
+          336,
+          184,
+          89
+        ],
+        "gunfire:Weapons_Ace32|external": [
+          194,
+          264,
+          82,
+          666
+        ],
+        "gunfire:Weapons_QBU|external": [
+          619,
+          388,
+          0,
+          449
+        ],
+        "gunfire:Weapons_Steyr_AUG_A3|external": [
+          228,
+          486,
+          298,
+          788
+        ],
+        "gunfire:Weapons_AK47|external": [
+          879,
+          64,
+          343,
+          308
+        ],
+        "gunfire:Weapons_MicroUzi|external": [
+          0,
+          0,
+          779,
+          134
+        ],
+        "gunfire:Weapons_SKS|external": [
+          1138,
+          141,
+          456,
+          323
+        ],
+        "gunfire:Weapons_G36C|external": [
+          362,
+          1247,
+          345,
+          892
+        ],
+        "gunfire:Weapons_MK12|external": [
+          711,
+          1399,
+          674,
+          37
+        ],
+        "gunfire:Weapons_FNFAL|external": [
+          693,
+          688,
+          0,
+          0
+        ],
+        "gunfire:Weapons_BerretaM9|external": [
+          0,
+          0,
+          8,
+          1083
+        ],
+        "gunfire:Weapons_K2|external": [
+          587,
+          493,
+          216,
+          236
+        ],
+        "gunfire:Weapons_M1911|external": [
+          394,
+          0,
+          768,
+          0
+        ],
+        "gunfire:Weapons_Scorpion|external": [
+          249,
+          293,
+          425,
+          323
+        ],
+        "gunfire:Weapons_FamasG2|external": [
+          0,
+          489,
+          407,
+          341
+        ],
+        "gunfire:Weapons_O12|external": [
+          571,
+          419,
+          254,
+          148
+        ],
+        "gunfire:Weapons_Kar98k|external": [
+          166,
+          349,
+          216,
+          82
+        ],
+        "gunfire:Weapons_UMP|external": [
+          105,
+          0,
+          0,
+          440
+        ],
+        "gunfire:Weapons_Winchester1894|external": [
+          390,
+          214,
+          340,
+          334
+        ],
+        "gunfire:Weapons_VSS|external": [
+          0,
+          337,
+          117,
+          0
+        ],
+        "gunfire:Weapons_Groza|external": [
+          526,
+          130,
+          240,
+          1018
+        ],
+        "gunfire:Weapons_HK416|external": [
+          0,
+          83,
+          280,
+          49
+        ],
+        "gunfire:Weapons_DesertEagle|external": [
+          0,
+          0,
+          245,
+          560
+        ],
+        "gunfire:Weapons_NagantM1895|external": [
+          158,
+          0,
+          118,
+          101
+        ],
+        "gunfire:Weapons_M249|external": [
+          0,
+          0,
+          283,
+          407
+        ]
+      },
+      "audible_10ms_track_frames": {
+        "gunfire/external": 63623,
+        "gunfire/self": 26457,
+        "vehicle/self": 129564,
+        "vehicle/external": 155815,
+        "footsteps/self": 24672,
+        "footsteps/external": 27711
+      },
+      "localizable_10ms_track_frames": {
+        "gunfire/external": 45924,
+        "gunfire/self": 0,
+        "vehicle/self": 0,
+        "vehicle/external": 119374,
+        "footsteps/self": 0,
+        "footsteps/external": 19232
+      },
+      "gun_patterns": {
+        "single": 172,
+        "short_auto": 43,
+        "sustained_auto": 66,
+        "burst": 8
+      },
+      "automatic_shots_by_weapon": {
+        "Weapons_QBZ": 114,
+        "Weapons_SCAR_L": 120,
+        "Weapons_Glock18C": 114,
+        "Weapons_M762": 170,
+        "Weapons_Vector": 108,
+        "Weapons_FamasG2": 133,
+        "Weapons_Thompson": 73,
+        "Weapons_DP28": 131,
+        "Weapons_Ace32": 99,
+        "Weapons_O12": 84,
+        "Weapons_Steyr_AUG_A3": 140,
+        "Weapons_AK47": 171,
+        "Weapons_MicroUzi": 108,
+        "Weapons_G36C": 255,
+        "Weapons_Bizon": 198,
+        "Weapons_UMP": 94,
+        "Weapons_K2": 168,
+        "Weapons_Scorpion": 120,
+        "Weapons_MP5K": 89,
+        "Weapons_M249": 77,
+        "Weapons_Groza": 113,
+        "Weapons_HK416": 28
+      },
+      "maximum_observable_external_footstep_distance_units": 48.65141296386719
+    }
+  }
+}

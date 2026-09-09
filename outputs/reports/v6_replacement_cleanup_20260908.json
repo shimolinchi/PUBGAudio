@@ -1,0 +1,2784 @@
+{
+  "status": "completed",
+  "targets": {
+    "light-v5_3-20260907": {
+      "path": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\light-v5_3-20260907",
+      "files": 414,
+      "bytes": 1881120923,
+      "metadata_files": [
+        {
+          "path": "light-v5_3-20260907/config.json",
+          "sha256": "f6f3db7479674b3c89296f12827a41bd47643936520711c30bbb27ab651d49f4"
+        },
+        {
+          "path": "light-v5_3-20260907/generation_identity.json",
+          "sha256": "a194e8fcf29918d6504a28fa0f3e54e63a03d23f69305672735784101b33f69c"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/audit_attenuation.py",
+          "sha256": "258cc71375a0f24c5951affb06e254fce76251d2e46706254a7bc6ac43331db9"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/audit_body_actions.py",
+          "sha256": "b2075f0a9913f012dbe2d5ae6fcc579c955dd2b13d2b2b8ffd7d29d082ec85d5"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/audit_source_inventory.py",
+          "sha256": "04d83a215d6a562430a92018923233371d5e657ba4e6a6ce67c4266a434e4861"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/body_actions.py",
+          "sha256": "f3f4cec98712da78032023930ada8f13b09f82d47ecd06d2742cebfcbc035f56"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/build_causal_preview.py",
+          "sha256": "5c109e34f9abbec74904eb8b2111de1f6f55d5d2fa7735ad88b3ed0d9e8a0be6"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/build_motion_preview.py",
+          "sha256": "c9af39d0b66b712ca75f6416019721e2ce23ff7c5b217fccc6e0c46923c683b2"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/build_scenario_preview.py",
+          "sha256": "8f5a6c2e1bceb5e0fb2d3b61bbb057c0f9f2d23f394886fcafe98f96108ffdf1"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/causal_render.py",
+          "sha256": "12f1d83b9f8ba9cb606950ae0506186a13662271e9b6fc57a5320bb0df8bd769"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/causal_scene.py",
+          "sha256": "2a0dc5b37665e98be103850b79fd256cb887adc9680c8fc18d8e53874713cb9a"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/event_acoustics.py",
+          "sha256": "45c859dfaa33bbe7cea4a34043631bb20e09e9675e50604979afb9b699065bd3"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/export_motion_labels.py",
+          "sha256": "3a85ff8acbe2af59105ad2353ed73eabb2b369196851ff8946ef32919a483e51"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/footstep_acoustics.py",
+          "sha256": "1b8e191a9e967b8c5ef1170737974f3f26a42943e0892b029b56ddab45f155fb"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/generate_attenuation_preview.py",
+          "sha256": "553077748d3cfbda5d8baa82d864f2a0ce7068afdf2a3803791594d796017258"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/generate_behavior_preview.py",
+          "sha256": "61ea7a35fd3bcea18928e9903bd9c669dc2a8f0534e0f7974ccc62ee97dc4472"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/generate_body_preview.py",
+          "sha256": "7330c923824d757d083abe90c5b51eb3e67048e3230cd2f39e85027bce0170b0"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/generate_causal_preview.py",
+          "sha256": "693caab530795c27660414dd8836a3f4892838bab0c1c0439baced1dba42f311"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/generate_light_dataset.py",
+          "sha256": "8bb559b46b79497920513d36bb4cbaa50044384bceba788e5ada4c54998add87"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/generate_mixed_dataset.py",
+          "sha256": "4ebe03a646a8958797f3d294f34267ee7f73a232f12e7cd559a790094b86ba77"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/generate_motion_dataset.py",
+          "sha256": "0f3904dedb0b0ada8b53464e5ad2e1941861a4691dc36a6d18135cf38d18d523"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/generate_scenario_dataset.py",
+          "sha256": "d35a846c368d63739edfe2a54bd0ae2938f688bc3ca90dd9e6cf3928e5c1b5e9"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/generate_self_audio_dataset.py",
+          "sha256": "df8dac5dfbe93552e208b4a44f5914b82bf7cc36daec7aad0cd17d73283ec8f1"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/listener_view.py",
+          "sha256": "c99d62d093c54a9f29068eda588e0f02fff4039fdd6f768f4612b469762631d4"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/merge_source_pools.py",
+          "sha256": "e3731568c4182605608e4332c567ba019124cee9bebabfe428a02d57326083d6"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/motion_synthesis.py",
+          "sha256": "c17e4064c9379b676347376bc3b954acc0c681e120377acd265ecfcc91a580dd"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/prepare_body_sources.py",
+          "sha256": "e108485435a3ce18dc610f9065dd117848ad7e8b89d15e051d8ccbd16d6aabac"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/prepare_confuser_sources.py",
+          "sha256": "8fb227d88a06d5a57cc44b4113e11765558a136fe311b49d074584038f15fd4d"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/prepare_event_sources.py",
+          "sha256": "880cb1b5f8563027f2d1e93b931893ea7b19042b755781e13713168990e8a7a4"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/prepare_motion_sources.py",
+          "sha256": "e76071a5a6eb88cc3b1722e0154170bcefa19c2ef370a6feb39eb990e739669b"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/prepare_self_audio_sources.py",
+          "sha256": "3c7a28eca0a0734ee27bd0fac922b9ceeddf07041fac925610d2d4ceafc1b607"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/prepare_synthetic_sources.py",
+          "sha256": "74f561207d7e381e320e1a0b805ba66cc5abbdd9ba99bd8de497f890b1e34b81"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/project_causal_labels.py",
+          "sha256": "87aca4ff0b650dce65d983b0a98357e8e7eeda85830a68a223277189027d7784"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/scenario_synthesis.py",
+          "sha256": "9354c04b1f15861d040aef23d60cd00361e97a3f81ecddfc0ec3b5e49453941b"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/self_audio_synthesis.py",
+          "sha256": "5ff70468b982529a5cd3bbc437254dc6dfdb86e8abb09fe0883bcfd7d6c57f80"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/serve_preview.py",
+          "sha256": "2a383ba928b8005c865ee67c1286c5720cb8abaa53aac1f6c387e83338d57654"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/verify_causal_preview.py",
+          "sha256": "7ad2d9c039eeb27afd3a0088b68351047de36dd2b530225dd158e475b6044d76"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/verify_scenario_dataset.py",
+          "sha256": "af50ef931de1880c121c336f96f54d4741ebcbbb435fe1ecb7667a87b31eb307"
+        },
+        {
+          "path": "light-v5_3-20260907/generator_snapshot/write_probability_reference.py",
+          "sha256": "ef84b843e4e146c01210f5c63632d523b565d86b7c74eee0e32e4fe010ed8f02"
+        },
+        {
+          "path": "light-v5_3-20260907/manifest_test.jsonl",
+          "sha256": "99b7be6bedc05034b201fb80274d58f4153e5921c7d50c184988d47f58c46a76"
+        },
+        {
+          "path": "light-v5_3-20260907/manifest_train.jsonl",
+          "sha256": "7e4ff5483972a5a865fad06ab00cc8908ef32791ffed876b04867a39e72ed98d"
+        },
+        {
+          "path": "light-v5_3-20260907/manifest_validation.jsonl",
+          "sha256": "706eb25de4045c11a32980fea67ea11a79f68db2e2d3a4671985dbc5121a43cb"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/test_0001.json",
+          "sha256": "7b1ca69bf1435994f92906b29dbac7517601327aafe0e0f855ffe142a2a1588d"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/test_0002.json",
+          "sha256": "b1b66070dbed049bbe7a37949d3e3e2277b8cce86a13b26cba6456287f99d1fa"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/test_0003.json",
+          "sha256": "f1bd286ad787e504efb158a167280ef507456001caeec142683d8a05ddcda80d"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/test_0004.json",
+          "sha256": "8a54d74724cf688433fbeb7f658b1b8955586bccc7fbcc62fbf9d0295a1c1036"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/test_0005.json",
+          "sha256": "c8b6e909fd6dbba57f45441a9a3abbe75fa793b34d59a25cb7184ece1d9f9bb6"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/test_0006.json",
+          "sha256": "15591f5e68e12e12c4128e750737fa5e37a53558b8c62d1b026fcbacddb5d65c"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0001.json",
+          "sha256": "61745d94bd963b4cc2683bdc0fdb44412fae8e7d7e191dc54aa2f1e4fe0fc937"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0002.json",
+          "sha256": "1a7060d68b861555ee817fd89f15bd31a635aa37e243b0a21e5dd5c38a7de7ed"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0003.json",
+          "sha256": "2c4e68895f83e0e71eadaf488711bddd277ac39b54cc6e73b60c41d9cbb0a068"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0004.json",
+          "sha256": "59bfaddb789e5417dfcc4493644c26fedd5a32cb74f11f07fbc5a62b7d94e0cb"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0005.json",
+          "sha256": "93278e1a5921013fd2773659acf9752317ede127280546693d54f99b67e2acc4"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0006.json",
+          "sha256": "3033199913096356e033c079a63b0df88de6f9ecf5bb5dc7deec1f2153efe081"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0007.json",
+          "sha256": "f8ff50f6589f8610f8284153161bd2a0c36b5286bdab1ea45eeb9143b3a4e002"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0008.json",
+          "sha256": "a632fc31f4f15b02ede24c30033debb748045ac19ee7577139912251ee9e4041"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0009.json",
+          "sha256": "4b66f3a4b88bb786e2db603912151109b6d9097d47b233dee825fb6ad771c543"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0010.json",
+          "sha256": "628a446fce9f65a1acca512f417fd4b747929269655df5f1f3b8ee5b2b9e01a3"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0011.json",
+          "sha256": "a241905ce6623e6f9fe00d3dfa74e97bcd8e6b915c19ae9b92540d480f896217"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0012.json",
+          "sha256": "e43222cf340b6ac2d74f1d7fab057e2f793133068a158d9997c11b40f85ad3de"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0013.json",
+          "sha256": "b715ad4af99be422f06ad97fe262eda7cee05d1e9cf30d770c8062b929e3e392"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0014.json",
+          "sha256": "fcbf208c53f5970b853532d7b384dcdf052ed485846923aab1a56e58e9f21165"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0015.json",
+          "sha256": "74cb1279cce513a7b5fa9f6bb2067f370221bf815614953b810c9acde327fdc8"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0016.json",
+          "sha256": "b9c9e643472def709f664fe8168fa1c06f5f15325d4c457ef01620e2e04943f7"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0017.json",
+          "sha256": "84f75dbaf3c928cec56d65cabe77bed99db829a401b3fb6c4ed739997bd78f0d"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0018.json",
+          "sha256": "76e4a05a1f1885a2a68f047e43d120dbd2aab55b011951ef1f849274d792daaf"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0019.json",
+          "sha256": "62f6a2d690f69f3b19a4f69e4960ff6bb015892ae4ee53ec2f6a100d7f0aa270"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0020.json",
+          "sha256": "12333f4814e9ce97e8706e10ac40829e9a6140290b92d5e5c33383947ae5fcab"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0021.json",
+          "sha256": "1420ae9ded45af7cf55594bac8a234755cf66156e0eeceddaf0cd0d03871ecc6"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0022.json",
+          "sha256": "09179466d81e66c29224b3ac9ee31bc0c6088acc3cfab1084f5b2efe98fa003b"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0023.json",
+          "sha256": "da16faa1a8c995e41dc63c2e32c67945bfcff390013f4ab53e13f13cab26b066"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0024.json",
+          "sha256": "4f49d707fe74a316e9701412915fb5fb3ab4ab32028def0200e204337cacd855"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0025.json",
+          "sha256": "ee2e483d600978ca005fcc655144084aa2e21e8da0e67c3a3da6b9df889cbe37"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0026.json",
+          "sha256": "e2e78d5b58abbddb32ff6ede4b5736d96d7c398f0caaa9aa4740cd7803acd73e"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0027.json",
+          "sha256": "d15ee80ed127850a3b269c5efa418ae5b3804da6fc15fcf4767945485288b77f"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0028.json",
+          "sha256": "315fab39e9ac3ae80ff297545d44e573b92ffd588a3b1ebb22c609f08ecf8802"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0029.json",
+          "sha256": "3d49ec12c0338bc53f267e1d97fbbcb9bd98a421437b9aa980b9ac880f96108f"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0030.json",
+          "sha256": "682f6c196ed6a57496626eb121ba7ac20492a9f0dec737c7fa587261d39c4740"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0031.json",
+          "sha256": "690fba8cef70faddfb6b275030ed5c0373ffe02794fead7310a4758a749dd50c"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0032.json",
+          "sha256": "6780128ee65890af5b93289dd0722039b28347a70ecb14a0146d99ab90d164bb"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0033.json",
+          "sha256": "c5324e81475bfa63691979d2e457e4db96fe484ba14ee79e26c541630ce26395"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0034.json",
+          "sha256": "f773bb3e0328b5033976616a616bbad8914e681a1befa4e150a01b707425291e"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0035.json",
+          "sha256": "2837150319ad4d34ff5ce4dd4c9915e094b489d7642d046caf5aa05a73fac80d"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0036.json",
+          "sha256": "673d61b1a2fae08a03b42b3fd9fd7ea8c86176b6ab5b05123f7db3fe2cf89a26"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0037.json",
+          "sha256": "111f862b17bab2a021d6671f2cd60ced4b73be9ebf3b5812aad623c76984d0aa"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0038.json",
+          "sha256": "dd9e7cf9d172de1a9fb10fd1e1c2a8974fe23dc44580a524e040f5d765537a12"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0039.json",
+          "sha256": "f10a67e0d4010fb55aaeb47da1bf78274a4c0e378a61401da448451ae5267cc8"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0040.json",
+          "sha256": "81dde20a8b8d2c03b7ba652ac83b7a42e35182a3f4a98a4ea1505a47e4500fc8"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0041.json",
+          "sha256": "a0d3acf9d2106d02e44aff2f0e307b89645ccbada937e0d9e57270ba6d2f551d"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0042.json",
+          "sha256": "438c24efc473137347d62884c0100aae1a416d84b239804fd0b0dc3924b3d26a"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0043.json",
+          "sha256": "b42447d9a1c241fb1314ff5c3e956f4fb2cc30137dd129e9aed10f0dcf5303ed"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0044.json",
+          "sha256": "e7daf2255dfc97bf9c96e3041a67f948e5bdb19a2a886df5941e11bcfd6033fc"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0045.json",
+          "sha256": "943afa0508a7ee0db6fe7aeca17d008c44925204edc1cbb2a2db0cd0b03ae9e8"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0046.json",
+          "sha256": "ec6cc176ba859d729f5f5a9de0d18a0065306175829e649384cfe51ed8da5704"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0047.json",
+          "sha256": "3f8f5d5f4924e8e4015dccc75d6d78ab3b23116087f34c49d22997883eee9c0c"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/train_0048.json",
+          "sha256": "6fc2b0f9dae2722438e24fc4c065ff7d865dc6d28b9a7fd1975cb31313bcf9e2"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/validation_0001.json",
+          "sha256": "a80fe1bd551f66478b2ffe65cbe87712232c8b242bf48d19da0e0b337104c5b6"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/validation_0002.json",
+          "sha256": "a8c4183d4438c2117d05c9d5a999970f15019c7e46c722bf329d3a67bd28d98a"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/validation_0003.json",
+          "sha256": "57b15d32fd38b674ce12a7227880d56770e95924ef53c6cea9180b4778e3ae2c"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/validation_0004.json",
+          "sha256": "91d71132d7cb7c53872ee1a256fa9d370851fa7dc90da063d5c370623e0fb21e"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/validation_0005.json",
+          "sha256": "15f289dd304d099d36a359796cb357f273e575914b176a308513c8fc90a26834"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes/validation_0006.json",
+          "sha256": "0af504979d8d283177f4064d3c801eddf427a7743e88da2fcd61407010e4b2d1"
+        },
+        {
+          "path": "light-v5_3-20260907/recipes.jsonl",
+          "sha256": "4d10278bf5916a598875f3780a084cd9e283052faabe6522a8aeddc703fd3a35"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0001.json",
+          "sha256": "95ec586f5829d46c96767628c80862e70193407e27456c92f71163a358fca150"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0001.stats.json",
+          "sha256": "d430933684ddf2abef231c974992f4a1a433047faa2e8ea9a4f88c40af4dc709"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0002.json",
+          "sha256": "312a5b2a370aeb79f46ecc83081768815a19fecdc4d20f72a38274a83c0acae3"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0002.stats.json",
+          "sha256": "f88f060830c6d51df058dc3b0cb17679010986eb8d393775f429ad19c3fa9ffd"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0003.json",
+          "sha256": "e4df58ea150acbcb430c4bf2e917edf4a4dbea86e58a272e747de446a12e8314"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0003.stats.json",
+          "sha256": "bd90eda048ec7c50e94fe96d80f1d0e7decf017c8f7f0faae55364fee927619e"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0004.json",
+          "sha256": "e43cab91130e641cd0f33b205b4c58625ab823330957e2157c922caa903f72f1"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0004.stats.json",
+          "sha256": "119f7c4429defa69914cd49565556127dd33586a1cd5385b3ad6ed531ec2e399"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0005.json",
+          "sha256": "6b6729de7b998009ca31a005560733cfc659cc19ab61df08bc73171bee67bf54"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0005.stats.json",
+          "sha256": "93561b69a9adbab5fd8c12f291f17d3fd764bacc38ea2ec3ba1da9f598b85a2b"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0006.json",
+          "sha256": "df3efc54b3762caee31b883476de06e694513b009000146a2d26200ad66b29ac"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/test_0006.stats.json",
+          "sha256": "1dd22b00cf9e41229a697fa09dbc94f5f1edee8b46f4a67a7ebea15f0727beec"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0001.json",
+          "sha256": "d4daaacb7628fd9d65f0d3dc9df4e36adc326ff751d44d96b37e8dd759bc27a7"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0001.stats.json",
+          "sha256": "c8334eaa6b80fd432380d33c7ac3cf7358af307792862e5a735f80e0ff528856"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0002.json",
+          "sha256": "64a20c305bb96c1ce161bcb9dff60a0832616db4f0becd5144dceb3bdafcaad3"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0002.stats.json",
+          "sha256": "4729b3707d6d0dd15b51191e7bcd5dc1ebe4c9433ff331eef6ef81b1da4df7c4"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0003.json",
+          "sha256": "949f4b861e57ecfa835e4ccb7d3d143e5060e2df10e16397ae60f17a261f16b1"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0003.stats.json",
+          "sha256": "3855751cf415b7e7ca67f9a3c946eca1525f44d60411b1c2d41605ee59ae4d73"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0004.json",
+          "sha256": "6501495be5e3f36fa3a8f7f1a6b7d8d4be89d4ef0dcb61d3d8b920d617147354"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0004.stats.json",
+          "sha256": "a74337cac9ce3a05ac42abaeab0c4fe4d274e05950e18ac15944310b90376c5c"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0005.json",
+          "sha256": "f9de16195753086a03d681ff113193f4a6ac1f252ef6eaf00980cecacb27fd61"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0005.stats.json",
+          "sha256": "67f95ae8df7506bbecd8177d7e368abd491487e9119a6c8c294655f87c635810"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0006.json",
+          "sha256": "cd5c8b2673d39cd18bc98aa328520b56d7513982a69862dcd615f1b039423627"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0006.stats.json",
+          "sha256": "6f474108632a58e6d4cdbc363a185def40a2e482d28c66b1368e5ac8d0a6d6ee"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0007.json",
+          "sha256": "8de317bb3c1a3752ac8f58720bcb57074a8804ab081d5f4827b3a8a6320c6029"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0007.stats.json",
+          "sha256": "2de0565d3c791813cb8b57bd82c7ea4506c350b137ff3f8213a974424cb34823"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0008.json",
+          "sha256": "70770d20198ca19b1dce99347cd724a15c3071c2c54d52bbf64e3c5017ce72bc"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0008.stats.json",
+          "sha256": "35f2d77f100f04edc397c41fa6d86f8e8b2fb64ba2ff7e50bb057ccae3dd87c7"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0009.json",
+          "sha256": "387520be2f0deb2263dcbba14445a3744a422ab9c68e90598032d1590469a794"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0009.stats.json",
+          "sha256": "4fd80f5903d2e80dfa5ef01228b77e062778915d9a7441b18be735e4c9f9b7a4"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0010.json",
+          "sha256": "ae46aedf7a8644e61908562f597cc3890e635f671a146022a8e4244f4e0d866d"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0010.stats.json",
+          "sha256": "75166f8952e21fb99e8bbaeb833dc3128a724097b3f6087fcd5b2ea7258db660"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0011.json",
+          "sha256": "f85be0285b5f2a965279a559bd71fede837ccf9d5635d71393bd2c7121a5912b"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0011.stats.json",
+          "sha256": "d8cb3d2753d98bdbab5a77531a5e620387de3c97bc07d7982a824e2270be9f09"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0012.json",
+          "sha256": "ffc18f325838bbccc0188dc2444aa346cac8a1e56075f2aa2be51e4816e664ff"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0012.stats.json",
+          "sha256": "9fa936019f7f26279c70ebf8d6f788dcae55908ce01d097468f44a179edc1626"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0013.json",
+          "sha256": "853d663256f98157967a978717927246f408ae9c4306b4dcbe6c696059643da1"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0013.stats.json",
+          "sha256": "b60a6657b3f59a920acda5bbc853599fe792382ed09cae89b8a23d2f76cebc79"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0014.json",
+          "sha256": "8dde53658955f42a4a0379b766bfd8d62be347153899df995e83124686d45a30"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0014.stats.json",
+          "sha256": "00731e9b0d3d6e50db808c27d8ebc32e2fd66d725c7f751ad6e99819a74629b1"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0015.json",
+          "sha256": "d303496ccfe7f818969caca37f5c9b6d48ce747e2e5318b94daeb23c149bb169"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0015.stats.json",
+          "sha256": "0262740b87767269b2939aec3f9bc65588c7522ed43841351681574e30ed82e9"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0016.json",
+          "sha256": "cd42d418d6cbf83d759ad8fce86b8545b70e933669b9dfded70fd27a6d7697bf"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0016.stats.json",
+          "sha256": "738385e955c73538fb7eb1b95c50d2ae767334584851dcf2f60370a67d1ccf8e"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0017.json",
+          "sha256": "a1f32a02796f7acb2eb371acc80457e7fb8e94c218e315e38f83c8537c278dcb"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0017.stats.json",
+          "sha256": "510ca46885671a3e1a67328f37486ee4b8014d283037c52df1204b779efe5d96"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0018.json",
+          "sha256": "540b884928e4bf92e94e084fc1361ab8502993d468bd2d64288c98ea672c141a"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0018.stats.json",
+          "sha256": "eb7ab74757930070aac0deff6df27adc66d7e4f20ceb7b6234515231fed239da"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0019.json",
+          "sha256": "3c61ee8791e5f67191196cd274bdeaa42b75420aa0363f0cd6fe0ac7e1a80694"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0019.stats.json",
+          "sha256": "4a8d68a553ce628960d14d16484a72d7fa7abdb55da1e7251f81bb1c590f2ced"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0020.json",
+          "sha256": "6af7a89b0226bdbd99f841a97406c0a26d76f82d539c288abff4f60144e63bd5"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0020.stats.json",
+          "sha256": "417900a8d64e0b1634cf236adf1e96c07f9f16edb4929487b5146db30841abc3"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0021.json",
+          "sha256": "d2ec5fcc680c98e88f6e626f6f4bc79584f76a3ff24743fb89d1f087db43ef53"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0021.stats.json",
+          "sha256": "77748c9330d9efb864d6c69b110e4c1bcfddc1c0e8b2b34dd4e04a5ba185ad21"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0022.json",
+          "sha256": "8f67de03e2e05be5de7a2aad95223558d660aa7978b54c1c3097d67186a3f939"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0022.stats.json",
+          "sha256": "69757dff88f79bd8336b98c9e96174cb94abbbd5475a092aa06dd9c1b1f649f9"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0023.json",
+          "sha256": "164dacf6ad03474153cf9907df9b13e7c3d2c5ff2a71bf7be565668bcfdbec37"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0023.stats.json",
+          "sha256": "93ec281eef6c7d20b089f5470b569600af0d5910865e204cab4c357c2fceb224"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0024.json",
+          "sha256": "a709a2929ff181c1d8d99d7ef97e9a059fa3a605ea404462a22a84dfeb5ee5fe"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0024.stats.json",
+          "sha256": "28c6e85cf61ef17fbdab1ca2f63fa6e2385767068074870a2b5eff7e0c83bb74"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0025.json",
+          "sha256": "197280ab06394f7bf55306dd5ee6bc4fd3cd3e7b32b2fee5514d6d5862c503e2"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0025.stats.json",
+          "sha256": "7ef22ff0ad1a0e625ab6f274b2e5d307c412bee7d8b213b8dfff09c295f61691"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0026.json",
+          "sha256": "5103c2636563dc2bf3b76651a41560e58ee50c813a77799daff1d42f6ecf455e"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0026.stats.json",
+          "sha256": "cc80f6bfc9f1580a6590a30bb7f59d1e87962272e47b363dc5d90d87a4765531"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0027.json",
+          "sha256": "80850020116667bc01dd5108850c4f2ac1bd75bde51ea7b0b4fc2ef797c57810"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0027.stats.json",
+          "sha256": "9ea00c073c067375be8e00f26f1bb974497ccc2006e766b7e87e33a1c4e667e4"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0028.json",
+          "sha256": "e6a68128f2fe6c1421c64a0b6bd802e5ea2f34ac510ad1c56f59b9f07dfedb90"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0028.stats.json",
+          "sha256": "888158befa98e8e03aa1c14a7e90cd37e7aa824960959280c070d75a3744b629"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0029.json",
+          "sha256": "d694d7011d56d705212582a8e32cb2dfe8760bfd069ba106250b3d4147e9ab9c"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0029.stats.json",
+          "sha256": "b8fcf8d0c034b23848610008c1cbaeff090807ecd0f5e639241be1af1da01259"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0030.json",
+          "sha256": "9177de12d42264873eef640b15d3a9a757270861ba1a9187182169c495754cae"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0030.stats.json",
+          "sha256": "0e1cf20afee3ee3ee81c711e1cab5ce2acc88166a448b8cd6288a55c0a152a58"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0031.json",
+          "sha256": "3b31ec9c9eabcdab38953500a20ef5c59a69b3eccb2d52d4dc7fb82c21e791ab"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0031.stats.json",
+          "sha256": "40acb960422c8c7588d3dc301d0d3f7a431d2e5d54ed6aae71602d215180732b"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0032.json",
+          "sha256": "74f465bd71ed077bd3d9af0b4ed2b3470f38fc53a9a4f9eeee57712bd01c5867"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0032.stats.json",
+          "sha256": "9811ac730f1adb69cf07ffcd59ba6155e2d988aa8e34fb1966f9c298871bf0b1"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0033.json",
+          "sha256": "29e22ff0bb0c581f1aa7706926b2f67f858b4ec8d9543b52168cff1e6ad6d3f4"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0033.stats.json",
+          "sha256": "d6f2ce6082de02fa88b2653243941a29730044f5ba01ec3409e5b68817a7d27b"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0034.json",
+          "sha256": "716f2f90b4a475a496465140959c6d1e7a278fe9c108270e130b39186bb303bc"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0034.stats.json",
+          "sha256": "78bbe71dd54aa9e3cea612f48a7acb60ee91a2977ff5db59f2024c162506f333"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0035.json",
+          "sha256": "3cd28b32c60f0aa103bbdc401152de87163d658e861d88fd91b0dcd100a63a71"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0035.stats.json",
+          "sha256": "b397c9bd2847efa25d6eb7cb28c6cf089e40060550d3c5ca5c6d53f584759934"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0036.json",
+          "sha256": "7fbd80122dfaab03742bc5245d72040f967ef3f9e967b38d4084e279d4151c38"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0036.stats.json",
+          "sha256": "93e34d7d3a2bf0fadb8f89187ad9f9be07a3fc76460bc38bd755b2405638572d"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0037.json",
+          "sha256": "2453e3079685fb78e34e7c909a423f0a0f80506a2efb65772940dcce512f74ea"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0037.stats.json",
+          "sha256": "1aa0cf3c0dc8c12a47262b3ff54f2efb59fb14f57af42c27d6ba53c9fc407e0f"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0038.json",
+          "sha256": "7ee9822cd8178bdb874972478ab20428285968d3dab14e86e32923b82d90e585"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0038.stats.json",
+          "sha256": "18c37b9fd8c41763881e0e12e9678572c8f7e7a18e0343aea452362d4268310a"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0039.json",
+          "sha256": "941734104619d3b3c17a1d7e463c51fc045171acd9233f2d15afaa7f25ff09de"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0039.stats.json",
+          "sha256": "28b6f3a878ee6b6f1d765cabb5e5ce97d5eced092b131d0dfe7ec77a89407154"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0040.json",
+          "sha256": "fbef6fc317298b11eacd1923df9db01509af3467de028da043f7c51cb39a05ab"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0040.stats.json",
+          "sha256": "8c1962b2f42a179fd2b45092984a61edf5b8b84693714b6aaa7f51bc0b7085ee"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0041.json",
+          "sha256": "f27a4df3e1cf54a3094f8454ef5c85121c826ec3e17d6de8209d3f01f0088839"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0041.stats.json",
+          "sha256": "2db6b169c07c52fa0781d2053e7e95daa50822d9a7352a17fc7081e9a49638fd"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0042.json",
+          "sha256": "d2d30bf756bb472b792e73f6510859fa964c2a1321d6e38e02434b4acd273309"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0042.stats.json",
+          "sha256": "af4b75a7a96bc7e4e611cbc524959453b5808b945d1d6bee9ffd1af4b981cc1d"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0043.json",
+          "sha256": "6234f4eb6740ea2194c2e5da3c1c0f2941180cea4a3e3d3342663ba7e9d60278"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0043.stats.json",
+          "sha256": "1c428a01acc6dc77105a40a72e5150bddf68f0fcdaabc216950e9701c74db12e"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0044.json",
+          "sha256": "a4fc8f6a8e814247fde55d9700bd37a13138fbc62b192416066338246d1efd4f"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0044.stats.json",
+          "sha256": "6b508348d5aff4a9aacb1a5b761aad4774ad82adb3af484259c4540570bc804c"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0045.json",
+          "sha256": "469a1a2581a52b4ae92354c45e71eeea014afd35340a1f82a20631da5283f8db"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0045.stats.json",
+          "sha256": "8421a16fe5935d418f19b47e087cea608294d71a5a65661de1a1bf6ac7b951b7"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0046.json",
+          "sha256": "7ac3994871231ee46e7ada521665e4c54b5b1d8ee856331f65e119aa6bfb9c3a"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0046.stats.json",
+          "sha256": "1589030a0a00d2c7c3761401aeeb012fcdaed0b79e064411bc75fad6f456530c"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0047.json",
+          "sha256": "15df029c5dcc57e9efd4cc067f10305ab6a8ec6b7fbb83eeb9e6a941550193a1"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0047.stats.json",
+          "sha256": "8fe1998c3212c25d926f83bd9a6b91b501ea2b5da34ae352be0261fe3756df77"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0048.json",
+          "sha256": "9a56392406d63305f2d7e5c559401b2f2ee60bf4b7a6c156965e7a485ba13feb"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/train_0048.stats.json",
+          "sha256": "082d3060c5761be6e96bd11db6a994953126cb49a4443a948462fd8e1afd77d2"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0001.json",
+          "sha256": "e24b2fe8c8f8f09b0d78c82c9c625829b437382882e7c9e25b119e5b1892b789"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0001.stats.json",
+          "sha256": "11b5893049381eb8b32e98f7b2772c0e2fcd35fecc70d629b5e5b78069316d6a"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0002.json",
+          "sha256": "728a31e18a865c4be403b0aa862843a497bebfa50caa631cd67d998b4dad27c0"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0002.stats.json",
+          "sha256": "780312366c0220fa95497f8aec7685c651f5284a3909d3531bd9ce5bfa44edfe"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0003.json",
+          "sha256": "400ab17a4921632f615bfe4a7cfd3705af7b0040f7713c06ff1f4838baaaec67"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0003.stats.json",
+          "sha256": "01460287c02fbfc51002e59dedb1809c61979b83dcf2af9d4ed72a4e5aa24e7b"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0004.json",
+          "sha256": "5010458d27273aa7cfc4ca9b079f7a99251472a44ace75229586c487c7dbae41"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0004.stats.json",
+          "sha256": "0165379900ea3eec3491ed4a0954851d64dfee79fb1d7bea8739f824cbb34893"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0005.json",
+          "sha256": "371e340241f5021bd1c77c2825d04bde9a2c069b5dbfe2cfa52ccb274a1fb101"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0005.stats.json",
+          "sha256": "35d86f769fa28ebca3993d0339214e9f57099cbc6e11207795f0146197f21001"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0006.json",
+          "sha256": "523a103228c214b1186002c658bd2fc911711417d7ffc327c0cc0b75d070ff76"
+        },
+        {
+          "path": "light-v5_3-20260907/rows/validation_0006.stats.json",
+          "sha256": "3637c066bd411fa0f79c8bac06fbe514d5b1b91187df0d5cd68797f67ece5620"
+        },
+        {
+          "path": "light-v5_3-20260907/source_manifest.json",
+          "sha256": "66f4c7539de266c57c1c716e148b427d896f5b6ce9cf74194c7fe68a3b0ebd64"
+        },
+        {
+          "path": "light-v5_3-20260907/source_split.json",
+          "sha256": "c25baf6cbc197e698e2c2a88db93b4758bec319f9a31a6ebb4128a42ea679eff"
+        },
+        {
+          "path": "light-v5_3-20260907/summary.json",
+          "sha256": "7e510402b1da5eee3b1893b51ea93df221f410ac9ef8c783c16f667bdf2edb75"
+        },
+        {
+          "path": "light-v5_3-20260907/training_targets.json",
+          "sha256": "b770956f4bca4755d7da4b14e9f0d63b80554ec361c54e7cd4a0704da61f263a"
+        },
+        {
+          "path": "light-v5_3-20260907/verification.json",
+          "sha256": "824a6ca9ed6c00cf3711cf0c03630b8b1ec1b3cc125eadb3c46c7eb3c30c6102"
+        }
+      ]
+    },
+    "light-v5_3-gunvehicle-20260907": {
+      "path": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\light-v5_3-gunvehicle-20260907",
+      "files": 748,
+      "bytes": 3283230862,
+      "metadata_files": [
+        {
+          "path": "light-v5_3-gunvehicle-20260907/config.json",
+          "sha256": "5baccedf2bcb485b5a52c384213d40f90cc51293756c264c0ef92e8b809f5021"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/extension.json",
+          "sha256": "d9db09113e3c1ed35a6bead780658b07051d97606482e6dc0a76505a22026e26"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generation_identity.json",
+          "sha256": "ea02e6fb1c2a8384710754827131c822924dfab43975b5b267efde54e501d342"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/audit_attenuation.py",
+          "sha256": "258cc71375a0f24c5951affb06e254fce76251d2e46706254a7bc6ac43331db9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/audit_body_actions.py",
+          "sha256": "b2075f0a9913f012dbe2d5ae6fcc579c955dd2b13d2b2b8ffd7d29d082ec85d5"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/audit_source_inventory.py",
+          "sha256": "04d83a215d6a562430a92018923233371d5e657ba4e6a6ce67c4266a434e4861"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/body_actions.py",
+          "sha256": "f3f4cec98712da78032023930ada8f13b09f82d47ecd06d2742cebfcbc035f56"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/build_causal_preview.py",
+          "sha256": "5c109e34f9abbec74904eb8b2111de1f6f55d5d2fa7735ad88b3ed0d9e8a0be6"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/build_motion_preview.py",
+          "sha256": "c9af39d0b66b712ca75f6416019721e2ce23ff7c5b217fccc6e0c46923c683b2"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/build_scenario_preview.py",
+          "sha256": "8f5a6c2e1bceb5e0fb2d3b61bbb057c0f9f2d23f394886fcafe98f96108ffdf1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/causal_render.py",
+          "sha256": "12f1d83b9f8ba9cb606950ae0506186a13662271e9b6fc57a5320bb0df8bd769"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/causal_scene.py",
+          "sha256": "2a0dc5b37665e98be103850b79fd256cb887adc9680c8fc18d8e53874713cb9a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/event_acoustics.py",
+          "sha256": "45c859dfaa33bbe7cea4a34043631bb20e09e9675e50604979afb9b699065bd3"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/export_motion_labels.py",
+          "sha256": "3a85ff8acbe2af59105ad2353ed73eabb2b369196851ff8946ef32919a483e51"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/extend_light_dataset.py",
+          "sha256": "215e7dcddc528367bf3586ab7a99a237febefc80e01aba3820fc9cd15b41e2ec"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/footstep_acoustics.py",
+          "sha256": "1b8e191a9e967b8c5ef1170737974f3f26a42943e0892b029b56ddab45f155fb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/generate_attenuation_preview.py",
+          "sha256": "553077748d3cfbda5d8baa82d864f2a0ce7068afdf2a3803791594d796017258"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/generate_behavior_preview.py",
+          "sha256": "61ea7a35fd3bcea18928e9903bd9c669dc2a8f0534e0f7974ccc62ee97dc4472"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/generate_body_preview.py",
+          "sha256": "7330c923824d757d083abe90c5b51eb3e67048e3230cd2f39e85027bce0170b0"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/generate_causal_preview.py",
+          "sha256": "693caab530795c27660414dd8836a3f4892838bab0c1c0439baced1dba42f311"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/generate_light_dataset.py",
+          "sha256": "2e12147661095c62ac7a14c1d61c77d059ec1a03bf62d381419ea2768cd34780"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/generate_mixed_dataset.py",
+          "sha256": "4ebe03a646a8958797f3d294f34267ee7f73a232f12e7cd559a790094b86ba77"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/generate_motion_dataset.py",
+          "sha256": "0f3904dedb0b0ada8b53464e5ad2e1941861a4691dc36a6d18135cf38d18d523"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/generate_scenario_dataset.py",
+          "sha256": "d35a846c368d63739edfe2a54bd0ae2938f688bc3ca90dd9e6cf3928e5c1b5e9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/generate_self_audio_dataset.py",
+          "sha256": "df8dac5dfbe93552e208b4a44f5914b82bf7cc36daec7aad0cd17d73283ec8f1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/listener_view.py",
+          "sha256": "c99d62d093c54a9f29068eda588e0f02fff4039fdd6f768f4612b469762631d4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/merge_source_pools.py",
+          "sha256": "e3731568c4182605608e4332c567ba019124cee9bebabfe428a02d57326083d6"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/motion_synthesis.py",
+          "sha256": "c17e4064c9379b676347376bc3b954acc0c681e120377acd265ecfcc91a580dd"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/prepare_body_sources.py",
+          "sha256": "e108485435a3ce18dc610f9065dd117848ad7e8b89d15e051d8ccbd16d6aabac"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/prepare_confuser_sources.py",
+          "sha256": "8fb227d88a06d5a57cc44b4113e11765558a136fe311b49d074584038f15fd4d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/prepare_event_sources.py",
+          "sha256": "880cb1b5f8563027f2d1e93b931893ea7b19042b755781e13713168990e8a7a4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/prepare_motion_sources.py",
+          "sha256": "e76071a5a6eb88cc3b1722e0154170bcefa19c2ef370a6feb39eb990e739669b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/prepare_self_audio_sources.py",
+          "sha256": "3c7a28eca0a0734ee27bd0fac922b9ceeddf07041fac925610d2d4ceafc1b607"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/prepare_synthetic_sources.py",
+          "sha256": "74f561207d7e381e320e1a0b805ba66cc5abbdd9ba99bd8de497f890b1e34b81"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/project_causal_labels.py",
+          "sha256": "87aca4ff0b650dce65d983b0a98357e8e7eeda85830a68a223277189027d7784"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/scenario_synthesis.py",
+          "sha256": "9354c04b1f15861d040aef23d60cd00361e97a3f81ecddfc0ec3b5e49453941b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/self_audio_synthesis.py",
+          "sha256": "5ff70468b982529a5cd3bbc437254dc6dfdb86e8abb09fe0883bcfd7d6c57f80"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/serve_preview.py",
+          "sha256": "2a383ba928b8005c865ee67c1286c5720cb8abaa53aac1f6c387e83338d57654"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/verify_causal_preview.py",
+          "sha256": "7ad2d9c039eeb27afd3a0088b68351047de36dd2b530225dd158e475b6044d76"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/verify_scenario_dataset.py",
+          "sha256": "af50ef931de1880c121c336f96f54d4741ebcbbb435fe1ecb7667a87b31eb307"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/generator_snapshot/write_probability_reference.py",
+          "sha256": "ef84b843e4e146c01210f5c63632d523b565d86b7c74eee0e32e4fe010ed8f02"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/manifest_test.jsonl",
+          "sha256": "99b7be6bedc05034b201fb80274d58f4153e5921c7d50c184988d47f58c46a76"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/manifest_train.jsonl",
+          "sha256": "b8b80376faf046e7d69dbdd403ba28898b3cdaf5591d2d0586ebddace0d05a2a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/manifest_validation.jsonl",
+          "sha256": "706eb25de4045c11a32980fea67ea11a79f68db2e2d3a4671985dbc5121a43cb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_config.json",
+          "sha256": "f6f3db7479674b3c89296f12827a41bd47643936520711c30bbb27ab651d49f4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generation_identity.json",
+          "sha256": "a194e8fcf29918d6504a28fa0f3e54e63a03d23f69305672735784101b33f69c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/audit_attenuation.py",
+          "sha256": "258cc71375a0f24c5951affb06e254fce76251d2e46706254a7bc6ac43331db9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/audit_body_actions.py",
+          "sha256": "b2075f0a9913f012dbe2d5ae6fcc579c955dd2b13d2b2b8ffd7d29d082ec85d5"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/audit_source_inventory.py",
+          "sha256": "04d83a215d6a562430a92018923233371d5e657ba4e6a6ce67c4266a434e4861"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/body_actions.py",
+          "sha256": "f3f4cec98712da78032023930ada8f13b09f82d47ecd06d2742cebfcbc035f56"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/build_causal_preview.py",
+          "sha256": "5c109e34f9abbec74904eb8b2111de1f6f55d5d2fa7735ad88b3ed0d9e8a0be6"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/build_motion_preview.py",
+          "sha256": "c9af39d0b66b712ca75f6416019721e2ce23ff7c5b217fccc6e0c46923c683b2"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/build_scenario_preview.py",
+          "sha256": "8f5a6c2e1bceb5e0fb2d3b61bbb057c0f9f2d23f394886fcafe98f96108ffdf1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/causal_render.py",
+          "sha256": "12f1d83b9f8ba9cb606950ae0506186a13662271e9b6fc57a5320bb0df8bd769"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/causal_scene.py",
+          "sha256": "2a0dc5b37665e98be103850b79fd256cb887adc9680c8fc18d8e53874713cb9a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/event_acoustics.py",
+          "sha256": "45c859dfaa33bbe7cea4a34043631bb20e09e9675e50604979afb9b699065bd3"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/export_motion_labels.py",
+          "sha256": "3a85ff8acbe2af59105ad2353ed73eabb2b369196851ff8946ef32919a483e51"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/footstep_acoustics.py",
+          "sha256": "1b8e191a9e967b8c5ef1170737974f3f26a42943e0892b029b56ddab45f155fb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/generate_attenuation_preview.py",
+          "sha256": "553077748d3cfbda5d8baa82d864f2a0ce7068afdf2a3803791594d796017258"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/generate_behavior_preview.py",
+          "sha256": "61ea7a35fd3bcea18928e9903bd9c669dc2a8f0534e0f7974ccc62ee97dc4472"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/generate_body_preview.py",
+          "sha256": "7330c923824d757d083abe90c5b51eb3e67048e3230cd2f39e85027bce0170b0"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/generate_causal_preview.py",
+          "sha256": "693caab530795c27660414dd8836a3f4892838bab0c1c0439baced1dba42f311"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/generate_light_dataset.py",
+          "sha256": "8bb559b46b79497920513d36bb4cbaa50044384bceba788e5ada4c54998add87"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/generate_mixed_dataset.py",
+          "sha256": "4ebe03a646a8958797f3d294f34267ee7f73a232f12e7cd559a790094b86ba77"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/generate_motion_dataset.py",
+          "sha256": "0f3904dedb0b0ada8b53464e5ad2e1941861a4691dc36a6d18135cf38d18d523"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/generate_scenario_dataset.py",
+          "sha256": "d35a846c368d63739edfe2a54bd0ae2938f688bc3ca90dd9e6cf3928e5c1b5e9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/generate_self_audio_dataset.py",
+          "sha256": "df8dac5dfbe93552e208b4a44f5914b82bf7cc36daec7aad0cd17d73283ec8f1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/listener_view.py",
+          "sha256": "c99d62d093c54a9f29068eda588e0f02fff4039fdd6f768f4612b469762631d4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/merge_source_pools.py",
+          "sha256": "e3731568c4182605608e4332c567ba019124cee9bebabfe428a02d57326083d6"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/motion_synthesis.py",
+          "sha256": "c17e4064c9379b676347376bc3b954acc0c681e120377acd265ecfcc91a580dd"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/prepare_body_sources.py",
+          "sha256": "e108485435a3ce18dc610f9065dd117848ad7e8b89d15e051d8ccbd16d6aabac"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/prepare_confuser_sources.py",
+          "sha256": "8fb227d88a06d5a57cc44b4113e11765558a136fe311b49d074584038f15fd4d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/prepare_event_sources.py",
+          "sha256": "880cb1b5f8563027f2d1e93b931893ea7b19042b755781e13713168990e8a7a4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/prepare_motion_sources.py",
+          "sha256": "e76071a5a6eb88cc3b1722e0154170bcefa19c2ef370a6feb39eb990e739669b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/prepare_self_audio_sources.py",
+          "sha256": "3c7a28eca0a0734ee27bd0fac922b9ceeddf07041fac925610d2d4ceafc1b607"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/prepare_synthetic_sources.py",
+          "sha256": "74f561207d7e381e320e1a0b805ba66cc5abbdd9ba99bd8de497f890b1e34b81"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/project_causal_labels.py",
+          "sha256": "87aca4ff0b650dce65d983b0a98357e8e7eeda85830a68a223277189027d7784"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/scenario_synthesis.py",
+          "sha256": "9354c04b1f15861d040aef23d60cd00361e97a3f81ecddfc0ec3b5e49453941b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/self_audio_synthesis.py",
+          "sha256": "5ff70468b982529a5cd3bbc437254dc6dfdb86e8abb09fe0883bcfd7d6c57f80"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/serve_preview.py",
+          "sha256": "2a383ba928b8005c865ee67c1286c5720cb8abaa53aac1f6c387e83338d57654"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/verify_causal_preview.py",
+          "sha256": "7ad2d9c039eeb27afd3a0088b68351047de36dd2b530225dd158e475b6044d76"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/verify_scenario_dataset.py",
+          "sha256": "af50ef931de1880c121c336f96f54d4741ebcbbb435fe1ecb7667a87b31eb307"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_generator_snapshot/write_probability_reference.py",
+          "sha256": "ef84b843e4e146c01210f5c63632d523b565d86b7c74eee0e32e4fe010ed8f02"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_manifests/manifest_test.jsonl",
+          "sha256": "99b7be6bedc05034b201fb80274d58f4153e5921c7d50c184988d47f58c46a76"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_manifests/manifest_train.jsonl",
+          "sha256": "7e4ff5483972a5a865fad06ab00cc8908ef32791ffed876b04867a39e72ed98d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/parent_manifests/manifest_validation.jsonl",
+          "sha256": "706eb25de4045c11a32980fea67ea11a79f68db2e2d3a4671985dbc5121a43cb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/test_0001.json",
+          "sha256": "7b1ca69bf1435994f92906b29dbac7517601327aafe0e0f855ffe142a2a1588d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/test_0002.json",
+          "sha256": "b1b66070dbed049bbe7a37949d3e3e2277b8cce86a13b26cba6456287f99d1fa"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/test_0003.json",
+          "sha256": "f1bd286ad787e504efb158a167280ef507456001caeec142683d8a05ddcda80d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/test_0004.json",
+          "sha256": "8a54d74724cf688433fbeb7f658b1b8955586bccc7fbcc62fbf9d0295a1c1036"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/test_0005.json",
+          "sha256": "c8b6e909fd6dbba57f45441a9a3abbe75fa793b34d59a25cb7184ece1d9f9bb6"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/test_0006.json",
+          "sha256": "15591f5e68e12e12c4128e750737fa5e37a53558b8c62d1b026fcbacddb5d65c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0001.json",
+          "sha256": "61745d94bd963b4cc2683bdc0fdb44412fae8e7d7e191dc54aa2f1e4fe0fc937"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0002.json",
+          "sha256": "1a7060d68b861555ee817fd89f15bd31a635aa37e243b0a21e5dd5c38a7de7ed"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0003.json",
+          "sha256": "2c4e68895f83e0e71eadaf488711bddd277ac39b54cc6e73b60c41d9cbb0a068"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0004.json",
+          "sha256": "59bfaddb789e5417dfcc4493644c26fedd5a32cb74f11f07fbc5a62b7d94e0cb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0005.json",
+          "sha256": "93278e1a5921013fd2773659acf9752317ede127280546693d54f99b67e2acc4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0006.json",
+          "sha256": "3033199913096356e033c079a63b0df88de6f9ecf5bb5dc7deec1f2153efe081"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0007.json",
+          "sha256": "f8ff50f6589f8610f8284153161bd2a0c36b5286bdab1ea45eeb9143b3a4e002"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0008.json",
+          "sha256": "a632fc31f4f15b02ede24c30033debb748045ac19ee7577139912251ee9e4041"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0009.json",
+          "sha256": "4b66f3a4b88bb786e2db603912151109b6d9097d47b233dee825fb6ad771c543"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0010.json",
+          "sha256": "628a446fce9f65a1acca512f417fd4b747929269655df5f1f3b8ee5b2b9e01a3"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0011.json",
+          "sha256": "a241905ce6623e6f9fe00d3dfa74e97bcd8e6b915c19ae9b92540d480f896217"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0012.json",
+          "sha256": "e43222cf340b6ac2d74f1d7fab057e2f793133068a158d9997c11b40f85ad3de"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0013.json",
+          "sha256": "b715ad4af99be422f06ad97fe262eda7cee05d1e9cf30d770c8062b929e3e392"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0014.json",
+          "sha256": "fcbf208c53f5970b853532d7b384dcdf052ed485846923aab1a56e58e9f21165"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0015.json",
+          "sha256": "74cb1279cce513a7b5fa9f6bb2067f370221bf815614953b810c9acde327fdc8"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0016.json",
+          "sha256": "b9c9e643472def709f664fe8168fa1c06f5f15325d4c457ef01620e2e04943f7"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0017.json",
+          "sha256": "84f75dbaf3c928cec56d65cabe77bed99db829a401b3fb6c4ed739997bd78f0d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0018.json",
+          "sha256": "76e4a05a1f1885a2a68f047e43d120dbd2aab55b011951ef1f849274d792daaf"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0019.json",
+          "sha256": "62f6a2d690f69f3b19a4f69e4960ff6bb015892ae4ee53ec2f6a100d7f0aa270"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0020.json",
+          "sha256": "12333f4814e9ce97e8706e10ac40829e9a6140290b92d5e5c33383947ae5fcab"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0021.json",
+          "sha256": "1420ae9ded45af7cf55594bac8a234755cf66156e0eeceddaf0cd0d03871ecc6"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0022.json",
+          "sha256": "09179466d81e66c29224b3ac9ee31bc0c6088acc3cfab1084f5b2efe98fa003b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0023.json",
+          "sha256": "da16faa1a8c995e41dc63c2e32c67945bfcff390013f4ab53e13f13cab26b066"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0024.json",
+          "sha256": "4f49d707fe74a316e9701412915fb5fb3ab4ab32028def0200e204337cacd855"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0025.json",
+          "sha256": "ee2e483d600978ca005fcc655144084aa2e21e8da0e67c3a3da6b9df889cbe37"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0026.json",
+          "sha256": "e2e78d5b58abbddb32ff6ede4b5736d96d7c398f0caaa9aa4740cd7803acd73e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0027.json",
+          "sha256": "d15ee80ed127850a3b269c5efa418ae5b3804da6fc15fcf4767945485288b77f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0028.json",
+          "sha256": "315fab39e9ac3ae80ff297545d44e573b92ffd588a3b1ebb22c609f08ecf8802"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0029.json",
+          "sha256": "3d49ec12c0338bc53f267e1d97fbbcb9bd98a421437b9aa980b9ac880f96108f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0030.json",
+          "sha256": "682f6c196ed6a57496626eb121ba7ac20492a9f0dec737c7fa587261d39c4740"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0031.json",
+          "sha256": "690fba8cef70faddfb6b275030ed5c0373ffe02794fead7310a4758a749dd50c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0032.json",
+          "sha256": "6780128ee65890af5b93289dd0722039b28347a70ecb14a0146d99ab90d164bb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0033.json",
+          "sha256": "c5324e81475bfa63691979d2e457e4db96fe484ba14ee79e26c541630ce26395"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0034.json",
+          "sha256": "f773bb3e0328b5033976616a616bbad8914e681a1befa4e150a01b707425291e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0035.json",
+          "sha256": "2837150319ad4d34ff5ce4dd4c9915e094b489d7642d046caf5aa05a73fac80d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0036.json",
+          "sha256": "673d61b1a2fae08a03b42b3fd9fd7ea8c86176b6ab5b05123f7db3fe2cf89a26"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0037.json",
+          "sha256": "111f862b17bab2a021d6671f2cd60ced4b73be9ebf3b5812aad623c76984d0aa"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0038.json",
+          "sha256": "dd9e7cf9d172de1a9fb10fd1e1c2a8974fe23dc44580a524e040f5d765537a12"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0039.json",
+          "sha256": "f10a67e0d4010fb55aaeb47da1bf78274a4c0e378a61401da448451ae5267cc8"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0040.json",
+          "sha256": "81dde20a8b8d2c03b7ba652ac83b7a42e35182a3f4a98a4ea1505a47e4500fc8"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0041.json",
+          "sha256": "a0d3acf9d2106d02e44aff2f0e307b89645ccbada937e0d9e57270ba6d2f551d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0042.json",
+          "sha256": "438c24efc473137347d62884c0100aae1a416d84b239804fd0b0dc3924b3d26a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0043.json",
+          "sha256": "b42447d9a1c241fb1314ff5c3e956f4fb2cc30137dd129e9aed10f0dcf5303ed"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0044.json",
+          "sha256": "e7daf2255dfc97bf9c96e3041a67f948e5bdb19a2a886df5941e11bcfd6033fc"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0045.json",
+          "sha256": "943afa0508a7ee0db6fe7aeca17d008c44925204edc1cbb2a2db0cd0b03ae9e8"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0046.json",
+          "sha256": "ec6cc176ba859d729f5f5a9de0d18a0065306175829e649384cfe51ed8da5704"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0047.json",
+          "sha256": "3f8f5d5f4924e8e4015dccc75d6d78ab3b23116087f34c49d22997883eee9c0c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0048.json",
+          "sha256": "6fc2b0f9dae2722438e24fc4c065ff7d865dc6d28b9a7fd1975cb31313bcf9e2"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0049.json",
+          "sha256": "380be621ea7823f31d79abf2ca341ca0b0b109dae4397c1b9012b962510dce02"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0050.json",
+          "sha256": "f2e6ebd6d82ddd73114ce96d5f141eac40de98245cff2ad0da319cde6139f3c0"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0051.json",
+          "sha256": "89517d3b86fff9b69a579b3ea41dbffbcf4b7a33bbcb070daed65a23ae919493"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0052.json",
+          "sha256": "75dfbcb3b13483391c140f724ba22f6e7017b934d5b457268484afbdb78ef223"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0053.json",
+          "sha256": "19f60f72340758c9d6d7596afd4493e5d7eecb378f6f15c4613d0bcd7199621f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0054.json",
+          "sha256": "faa43c86a523a4930f60a1b88640a9555d417f6856598137315647e8437bf2d0"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0055.json",
+          "sha256": "3dd0cc72f742e448fec9f77cfd3e17cc2c9f1ad0f773e2a3840315b8dcd1c69b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0056.json",
+          "sha256": "0a3c0788df0ff1c5638bf997e5b3a088dab50263c4baeffb282161244392cff3"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0057.json",
+          "sha256": "b821d7f9119db3d72870e8724f713a7b38c8b6f987caa090ad584654dca5551f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0058.json",
+          "sha256": "58c4ba2ccdfd3586e9951c4c6878529eea5dd77d248e83f6d6daf3986f2ce565"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0059.json",
+          "sha256": "b4744ca3a136dfa63c5b81d77202ed252c10ac8d640969bd4bc2ba837b107bbc"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0060.json",
+          "sha256": "905eb40891b35dc4cbddf0aa90d53cbc0b5f9a7a96c2fb6067b589d27b47bb93"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0061.json",
+          "sha256": "fc3ed0df662153c4f04821823b811041c7a1c585404892056d78f43e3401860b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0062.json",
+          "sha256": "949b30d4ad3f6711f8d3b33f596b4b5460a9baf5cf2fcd4cf9ee464467414703"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0063.json",
+          "sha256": "d573abbd9def87b34c6d5f0c870fa53be797b514ea1ce8d98c1ec9b2fb669433"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0064.json",
+          "sha256": "628de986ec02338334033769b5c90338d95b63dae1fe1aa7de891e8bd4626722"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0065.json",
+          "sha256": "623a56627303ff63930591cb0733b84f7c7d7509d8bffe02e586f576f938a72d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0066.json",
+          "sha256": "3f4537d8fa1ab173e3df86f95fd301cb3a325c2b0cb888a3ba39e772f7fdcb71"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0067.json",
+          "sha256": "84ae91d66be99c5528732846fbcf23f32f53cfd2df696cdc62f247b9bd02794d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0068.json",
+          "sha256": "fb66fbc4b0c1ef57ecca65830bf2f10b655fb82266b64cca270f42850d6221da"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0069.json",
+          "sha256": "bdc95bbb03daf89815eadc45d869e3212d952706f81e2703a9aba068e1ec2952"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0070.json",
+          "sha256": "3cca1fc34fdbaa140a155d26061d1f6794788f552ec1c071ffd4b048b93d37a5"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0071.json",
+          "sha256": "afec6a4f0f4006fd5d9c20bc3cb0bfdcbfd4a7302634fbbb912e2f5de09baa27"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0072.json",
+          "sha256": "d834b75ab99b7c0705e58612dddb28152620c209b645a026202e65091e384966"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0073.json",
+          "sha256": "422223f45e74deb737529ac35c7654c8e39c323726d1452064730ba664793ffb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0074.json",
+          "sha256": "37f1375dc15cce8a3d3b3af8b88556fa0e9a452397e84321baa33786231671c9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0075.json",
+          "sha256": "aef024ae2a835eb7f0b33c4a0049de82b6da66551fdea4393e273a5aa455fcf4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0076.json",
+          "sha256": "3105bb69d0fe7c6c3d872ccd96b72cef7de866a96b577e8058ff5c37e753c5f0"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0077.json",
+          "sha256": "5a5757a19125ef35e77e9bf52bfc3fc0ed56e3405207ed2de5dcf0b97cd51ef6"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0078.json",
+          "sha256": "b9ad9bcf823697a97ddef3ae21d37b03a23a6182e7f6697dc067c1f49a8d9e5a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0079.json",
+          "sha256": "f357f6f3e3f0ae67555bc1cccb0975584dc78374d413a9ff5bf6139e85774abf"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0080.json",
+          "sha256": "216a65706347eec107e772c5c7d7f4ad9e74f7eca7029e1cade610f13552e097"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0081.json",
+          "sha256": "f63b9a0a1693822c4327b405a6b13be28a89d75ebf66162a01631129634097f1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0082.json",
+          "sha256": "5b5d0a1d63114001128168023c930a70e2fabc4f8d4ad22634740b72bc980451"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0083.json",
+          "sha256": "efe4d47441e4c65f64a177df62936444918c41c5ca73b6df49424a588644d262"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0084.json",
+          "sha256": "075bf065422898ca68ec133a387da4155ac0ebb242c0c0eb352a719989f46565"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0085.json",
+          "sha256": "579a145e4597c7c4eadcd0bcc01401c1d81e4d1c5c6bcc3e64e0481c11e31107"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0086.json",
+          "sha256": "4d8105c7b5faa26d6bce2f79c8958c26ba57beb96f2bb8b8583fc26c3bbdf16f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0087.json",
+          "sha256": "d08ad309d7a45623cd7158e03e135fea74f5fe3498199e04882be4bf1055efc3"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0088.json",
+          "sha256": "dbde7189b8f1dfaa369e7f27ab2a2d67d50b7a9c5d38ff75ace50f1faa703579"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0089.json",
+          "sha256": "9a6baa8634effc557ceb97de5ea222672709f625ca2837efaa81383693fbd48c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0090.json",
+          "sha256": "ca4a7b1a5c1a2e7e62d80b887a7af29d0779091ac9dd3fc5b272969c9cd7ba16"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0091.json",
+          "sha256": "47bab5b570504b29dcfe9908b5ff41d33b401a70a2c8ecd31e597f825da6fc07"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0092.json",
+          "sha256": "a20605ca70e43f54f41cde298fd7c58c0f24cee56f6de19cbb4ad7657fb840f7"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0093.json",
+          "sha256": "d415d2fd4649a9dd6aba7c08c24b5f848fa4ff820c32f5517b678db58a0d1fc8"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0094.json",
+          "sha256": "c4ba80cf30080c3a3bff51b2cfe81772a3ee33d56dedf941391d9b6dab8d3a6f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0095.json",
+          "sha256": "4a7f7413328cf09462241edacb02f238ebfd58eb67e1b4f401ef70c16815bfc0"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/train_0096.json",
+          "sha256": "4eb65f81104ac70cfea2dc4e0583ae7c9f8309b801ddae06b91f5744d8b1d382"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/validation_0001.json",
+          "sha256": "a80fe1bd551f66478b2ffe65cbe87712232c8b242bf48d19da0e0b337104c5b6"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/validation_0002.json",
+          "sha256": "a8c4183d4438c2117d05c9d5a999970f15019c7e46c722bf329d3a67bd28d98a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/validation_0003.json",
+          "sha256": "57b15d32fd38b674ce12a7227880d56770e95924ef53c6cea9180b4778e3ae2c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/validation_0004.json",
+          "sha256": "91d71132d7cb7c53872ee1a256fa9d370851fa7dc90da063d5c370623e0fb21e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/validation_0005.json",
+          "sha256": "15f289dd304d099d36a359796cb357f273e575914b176a308513c8fc90a26834"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes/validation_0006.json",
+          "sha256": "0af504979d8d283177f4064d3c801eddf427a7743e88da2fcd61407010e4b2d1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/recipes.jsonl",
+          "sha256": "16edd02e313159dbfa977502fbfc46b8b13756fe873f7ccdc1fd355063b534ba"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0001.json",
+          "sha256": "95ec586f5829d46c96767628c80862e70193407e27456c92f71163a358fca150"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0001.stats.json",
+          "sha256": "d430933684ddf2abef231c974992f4a1a433047faa2e8ea9a4f88c40af4dc709"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0002.json",
+          "sha256": "312a5b2a370aeb79f46ecc83081768815a19fecdc4d20f72a38274a83c0acae3"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0002.stats.json",
+          "sha256": "f88f060830c6d51df058dc3b0cb17679010986eb8d393775f429ad19c3fa9ffd"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0003.json",
+          "sha256": "e4df58ea150acbcb430c4bf2e917edf4a4dbea86e58a272e747de446a12e8314"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0003.stats.json",
+          "sha256": "bd90eda048ec7c50e94fe96d80f1d0e7decf017c8f7f0faae55364fee927619e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0004.json",
+          "sha256": "e43cab91130e641cd0f33b205b4c58625ab823330957e2157c922caa903f72f1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0004.stats.json",
+          "sha256": "119f7c4429defa69914cd49565556127dd33586a1cd5385b3ad6ed531ec2e399"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0005.json",
+          "sha256": "6b6729de7b998009ca31a005560733cfc659cc19ab61df08bc73171bee67bf54"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0005.stats.json",
+          "sha256": "93561b69a9adbab5fd8c12f291f17d3fd764bacc38ea2ec3ba1da9f598b85a2b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0006.json",
+          "sha256": "df3efc54b3762caee31b883476de06e694513b009000146a2d26200ad66b29ac"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/test_0006.stats.json",
+          "sha256": "1dd22b00cf9e41229a697fa09dbc94f5f1edee8b46f4a67a7ebea15f0727beec"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0001.json",
+          "sha256": "d4daaacb7628fd9d65f0d3dc9df4e36adc326ff751d44d96b37e8dd759bc27a7"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0001.stats.json",
+          "sha256": "c8334eaa6b80fd432380d33c7ac3cf7358af307792862e5a735f80e0ff528856"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0002.json",
+          "sha256": "64a20c305bb96c1ce161bcb9dff60a0832616db4f0becd5144dceb3bdafcaad3"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0002.stats.json",
+          "sha256": "4729b3707d6d0dd15b51191e7bcd5dc1ebe4c9433ff331eef6ef81b1da4df7c4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0003.json",
+          "sha256": "949f4b861e57ecfa835e4ccb7d3d143e5060e2df10e16397ae60f17a261f16b1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0003.stats.json",
+          "sha256": "3855751cf415b7e7ca67f9a3c946eca1525f44d60411b1c2d41605ee59ae4d73"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0004.json",
+          "sha256": "6501495be5e3f36fa3a8f7f1a6b7d8d4be89d4ef0dcb61d3d8b920d617147354"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0004.stats.json",
+          "sha256": "a74337cac9ce3a05ac42abaeab0c4fe4d274e05950e18ac15944310b90376c5c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0005.json",
+          "sha256": "f9de16195753086a03d681ff113193f4a6ac1f252ef6eaf00980cecacb27fd61"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0005.stats.json",
+          "sha256": "67f95ae8df7506bbecd8177d7e368abd491487e9119a6c8c294655f87c635810"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0006.json",
+          "sha256": "cd5c8b2673d39cd18bc98aa328520b56d7513982a69862dcd615f1b039423627"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0006.stats.json",
+          "sha256": "6f474108632a58e6d4cdbc363a185def40a2e482d28c66b1368e5ac8d0a6d6ee"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0007.json",
+          "sha256": "8de317bb3c1a3752ac8f58720bcb57074a8804ab081d5f4827b3a8a6320c6029"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0007.stats.json",
+          "sha256": "2de0565d3c791813cb8b57bd82c7ea4506c350b137ff3f8213a974424cb34823"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0008.json",
+          "sha256": "70770d20198ca19b1dce99347cd724a15c3071c2c54d52bbf64e3c5017ce72bc"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0008.stats.json",
+          "sha256": "35f2d77f100f04edc397c41fa6d86f8e8b2fb64ba2ff7e50bb057ccae3dd87c7"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0009.json",
+          "sha256": "387520be2f0deb2263dcbba14445a3744a422ab9c68e90598032d1590469a794"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0009.stats.json",
+          "sha256": "4fd80f5903d2e80dfa5ef01228b77e062778915d9a7441b18be735e4c9f9b7a4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0010.json",
+          "sha256": "ae46aedf7a8644e61908562f597cc3890e635f671a146022a8e4244f4e0d866d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0010.stats.json",
+          "sha256": "75166f8952e21fb99e8bbaeb833dc3128a724097b3f6087fcd5b2ea7258db660"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0011.json",
+          "sha256": "f85be0285b5f2a965279a559bd71fede837ccf9d5635d71393bd2c7121a5912b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0011.stats.json",
+          "sha256": "d8cb3d2753d98bdbab5a77531a5e620387de3c97bc07d7982a824e2270be9f09"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0012.json",
+          "sha256": "ffc18f325838bbccc0188dc2444aa346cac8a1e56075f2aa2be51e4816e664ff"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0012.stats.json",
+          "sha256": "9fa936019f7f26279c70ebf8d6f788dcae55908ce01d097468f44a179edc1626"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0013.json",
+          "sha256": "853d663256f98157967a978717927246f408ae9c4306b4dcbe6c696059643da1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0013.stats.json",
+          "sha256": "b60a6657b3f59a920acda5bbc853599fe792382ed09cae89b8a23d2f76cebc79"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0014.json",
+          "sha256": "8dde53658955f42a4a0379b766bfd8d62be347153899df995e83124686d45a30"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0014.stats.json",
+          "sha256": "00731e9b0d3d6e50db808c27d8ebc32e2fd66d725c7f751ad6e99819a74629b1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0015.json",
+          "sha256": "d303496ccfe7f818969caca37f5c9b6d48ce747e2e5318b94daeb23c149bb169"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0015.stats.json",
+          "sha256": "0262740b87767269b2939aec3f9bc65588c7522ed43841351681574e30ed82e9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0016.json",
+          "sha256": "cd42d418d6cbf83d759ad8fce86b8545b70e933669b9dfded70fd27a6d7697bf"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0016.stats.json",
+          "sha256": "738385e955c73538fb7eb1b95c50d2ae767334584851dcf2f60370a67d1ccf8e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0017.json",
+          "sha256": "a1f32a02796f7acb2eb371acc80457e7fb8e94c218e315e38f83c8537c278dcb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0017.stats.json",
+          "sha256": "510ca46885671a3e1a67328f37486ee4b8014d283037c52df1204b779efe5d96"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0018.json",
+          "sha256": "540b884928e4bf92e94e084fc1361ab8502993d468bd2d64288c98ea672c141a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0018.stats.json",
+          "sha256": "eb7ab74757930070aac0deff6df27adc66d7e4f20ceb7b6234515231fed239da"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0019.json",
+          "sha256": "3c61ee8791e5f67191196cd274bdeaa42b75420aa0363f0cd6fe0ac7e1a80694"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0019.stats.json",
+          "sha256": "4a8d68a553ce628960d14d16484a72d7fa7abdb55da1e7251f81bb1c590f2ced"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0020.json",
+          "sha256": "6af7a89b0226bdbd99f841a97406c0a26d76f82d539c288abff4f60144e63bd5"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0020.stats.json",
+          "sha256": "417900a8d64e0b1634cf236adf1e96c07f9f16edb4929487b5146db30841abc3"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0021.json",
+          "sha256": "d2ec5fcc680c98e88f6e626f6f4bc79584f76a3ff24743fb89d1f087db43ef53"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0021.stats.json",
+          "sha256": "77748c9330d9efb864d6c69b110e4c1bcfddc1c0e8b2b34dd4e04a5ba185ad21"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0022.json",
+          "sha256": "8f67de03e2e05be5de7a2aad95223558d660aa7978b54c1c3097d67186a3f939"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0022.stats.json",
+          "sha256": "69757dff88f79bd8336b98c9e96174cb94abbbd5475a092aa06dd9c1b1f649f9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0023.json",
+          "sha256": "164dacf6ad03474153cf9907df9b13e7c3d2c5ff2a71bf7be565668bcfdbec37"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0023.stats.json",
+          "sha256": "93ec281eef6c7d20b089f5470b569600af0d5910865e204cab4c357c2fceb224"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0024.json",
+          "sha256": "a709a2929ff181c1d8d99d7ef97e9a059fa3a605ea404462a22a84dfeb5ee5fe"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0024.stats.json",
+          "sha256": "28c6e85cf61ef17fbdab1ca2f63fa6e2385767068074870a2b5eff7e0c83bb74"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0025.json",
+          "sha256": "197280ab06394f7bf55306dd5ee6bc4fd3cd3e7b32b2fee5514d6d5862c503e2"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0025.stats.json",
+          "sha256": "7ef22ff0ad1a0e625ab6f274b2e5d307c412bee7d8b213b8dfff09c295f61691"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0026.json",
+          "sha256": "5103c2636563dc2bf3b76651a41560e58ee50c813a77799daff1d42f6ecf455e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0026.stats.json",
+          "sha256": "cc80f6bfc9f1580a6590a30bb7f59d1e87962272e47b363dc5d90d87a4765531"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0027.json",
+          "sha256": "80850020116667bc01dd5108850c4f2ac1bd75bde51ea7b0b4fc2ef797c57810"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0027.stats.json",
+          "sha256": "9ea00c073c067375be8e00f26f1bb974497ccc2006e766b7e87e33a1c4e667e4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0028.json",
+          "sha256": "e6a68128f2fe6c1421c64a0b6bd802e5ea2f34ac510ad1c56f59b9f07dfedb90"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0028.stats.json",
+          "sha256": "888158befa98e8e03aa1c14a7e90cd37e7aa824960959280c070d75a3744b629"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0029.json",
+          "sha256": "d694d7011d56d705212582a8e32cb2dfe8760bfd069ba106250b3d4147e9ab9c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0029.stats.json",
+          "sha256": "b8fcf8d0c034b23848610008c1cbaeff090807ecd0f5e639241be1af1da01259"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0030.json",
+          "sha256": "9177de12d42264873eef640b15d3a9a757270861ba1a9187182169c495754cae"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0030.stats.json",
+          "sha256": "0e1cf20afee3ee3ee81c711e1cab5ce2acc88166a448b8cd6288a55c0a152a58"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0031.json",
+          "sha256": "3b31ec9c9eabcdab38953500a20ef5c59a69b3eccb2d52d4dc7fb82c21e791ab"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0031.stats.json",
+          "sha256": "40acb960422c8c7588d3dc301d0d3f7a431d2e5d54ed6aae71602d215180732b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0032.json",
+          "sha256": "74f465bd71ed077bd3d9af0b4ed2b3470f38fc53a9a4f9eeee57712bd01c5867"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0032.stats.json",
+          "sha256": "9811ac730f1adb69cf07ffcd59ba6155e2d988aa8e34fb1966f9c298871bf0b1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0033.json",
+          "sha256": "29e22ff0bb0c581f1aa7706926b2f67f858b4ec8d9543b52168cff1e6ad6d3f4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0033.stats.json",
+          "sha256": "d6f2ce6082de02fa88b2653243941a29730044f5ba01ec3409e5b68817a7d27b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0034.json",
+          "sha256": "716f2f90b4a475a496465140959c6d1e7a278fe9c108270e130b39186bb303bc"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0034.stats.json",
+          "sha256": "78bbe71dd54aa9e3cea612f48a7acb60ee91a2977ff5db59f2024c162506f333"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0035.json",
+          "sha256": "3cd28b32c60f0aa103bbdc401152de87163d658e861d88fd91b0dcd100a63a71"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0035.stats.json",
+          "sha256": "b397c9bd2847efa25d6eb7cb28c6cf089e40060550d3c5ca5c6d53f584759934"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0036.json",
+          "sha256": "7fbd80122dfaab03742bc5245d72040f967ef3f9e967b38d4084e279d4151c38"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0036.stats.json",
+          "sha256": "93e34d7d3a2bf0fadb8f89187ad9f9be07a3fc76460bc38bd755b2405638572d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0037.json",
+          "sha256": "2453e3079685fb78e34e7c909a423f0a0f80506a2efb65772940dcce512f74ea"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0037.stats.json",
+          "sha256": "1aa0cf3c0dc8c12a47262b3ff54f2efb59fb14f57af42c27d6ba53c9fc407e0f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0038.json",
+          "sha256": "7ee9822cd8178bdb874972478ab20428285968d3dab14e86e32923b82d90e585"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0038.stats.json",
+          "sha256": "18c37b9fd8c41763881e0e12e9678572c8f7e7a18e0343aea452362d4268310a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0039.json",
+          "sha256": "941734104619d3b3c17a1d7e463c51fc045171acd9233f2d15afaa7f25ff09de"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0039.stats.json",
+          "sha256": "28b6f3a878ee6b6f1d765cabb5e5ce97d5eced092b131d0dfe7ec77a89407154"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0040.json",
+          "sha256": "fbef6fc317298b11eacd1923df9db01509af3467de028da043f7c51cb39a05ab"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0040.stats.json",
+          "sha256": "8c1962b2f42a179fd2b45092984a61edf5b8b84693714b6aaa7f51bc0b7085ee"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0041.json",
+          "sha256": "f27a4df3e1cf54a3094f8454ef5c85121c826ec3e17d6de8209d3f01f0088839"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0041.stats.json",
+          "sha256": "2db6b169c07c52fa0781d2053e7e95daa50822d9a7352a17fc7081e9a49638fd"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0042.json",
+          "sha256": "d2d30bf756bb472b792e73f6510859fa964c2a1321d6e38e02434b4acd273309"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0042.stats.json",
+          "sha256": "af4b75a7a96bc7e4e611cbc524959453b5808b945d1d6bee9ffd1af4b981cc1d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0043.json",
+          "sha256": "6234f4eb6740ea2194c2e5da3c1c0f2941180cea4a3e3d3342663ba7e9d60278"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0043.stats.json",
+          "sha256": "1c428a01acc6dc77105a40a72e5150bddf68f0fcdaabc216950e9701c74db12e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0044.json",
+          "sha256": "a4fc8f6a8e814247fde55d9700bd37a13138fbc62b192416066338246d1efd4f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0044.stats.json",
+          "sha256": "6b508348d5aff4a9aacb1a5b761aad4774ad82adb3af484259c4540570bc804c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0045.json",
+          "sha256": "469a1a2581a52b4ae92354c45e71eeea014afd35340a1f82a20631da5283f8db"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0045.stats.json",
+          "sha256": "8421a16fe5935d418f19b47e087cea608294d71a5a65661de1a1bf6ac7b951b7"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0046.json",
+          "sha256": "7ac3994871231ee46e7ada521665e4c54b5b1d8ee856331f65e119aa6bfb9c3a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0046.stats.json",
+          "sha256": "1589030a0a00d2c7c3761401aeeb012fcdaed0b79e064411bc75fad6f456530c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0047.json",
+          "sha256": "15df029c5dcc57e9efd4cc067f10305ab6a8ec6b7fbb83eeb9e6a941550193a1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0047.stats.json",
+          "sha256": "8fe1998c3212c25d926f83bd9a6b91b501ea2b5da34ae352be0261fe3756df77"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0048.json",
+          "sha256": "9a56392406d63305f2d7e5c559401b2f2ee60bf4b7a6c156965e7a485ba13feb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0048.stats.json",
+          "sha256": "082d3060c5761be6e96bd11db6a994953126cb49a4443a948462fd8e1afd77d2"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0049.json",
+          "sha256": "05a1e8b216645194aa62cf9875914cd9d06407c370aa09a85c5567f3148ab704"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0049.stats.json",
+          "sha256": "fec8fab8923389487be5fe764b2ff6206f4bea729feb3b76674c13db2137c644"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0050.json",
+          "sha256": "d7e14c4606df02b46f99e6d42326c9ea12c1d8cfc011fff3009dfe2338ca0f0d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0050.stats.json",
+          "sha256": "3fe63ca42a12a6726848f1c71aded07e1c00568a2ee484e58588e64b54d1cd83"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0051.json",
+          "sha256": "5c366e7c05ba552419654e9535c4fb47624065a53c5fe26959231d76acc52da2"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0051.stats.json",
+          "sha256": "16261296c211fd867ddaff8a4fd0c8d39f8a5e6b94e1eb2bcb980c5be802dac5"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0052.json",
+          "sha256": "5f5cb83a993f0a33bc9e650ccc38840db4c3bfcb5efcddbb2c54ef08395cff65"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0052.stats.json",
+          "sha256": "90b7d01b935ef67c9a776d60c6813fc60927a9460f16675e79a6bc60afce4666"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0053.json",
+          "sha256": "81a911c938b57669ec63927583174b3ce5f4b40c7583fcd97ba4f553b9ddaec9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0053.stats.json",
+          "sha256": "886fddb4f4aeb6203caa4b7935741eb18debcb699160435c44eef3c802013c46"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0054.json",
+          "sha256": "758045fadd4d074d931437f7ed2f264deadd961b297fc76f3443e533f9ffbbb1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0054.stats.json",
+          "sha256": "d21abb88153c0b82f8cfe19864369728b7adbd53adca1c6c7530d8bb5594deec"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0055.json",
+          "sha256": "1e02ae18b93618e16f3cff72a73a8a391ab8fd7156d9aec2833179372c04ebd1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0055.stats.json",
+          "sha256": "dd485ac69d96818c602ba59c8c83221700f89c26c89cf44aafef52a8c292cfb4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0056.json",
+          "sha256": "510719e8cfc86aa2821ac27ab60c198ab855f1722ec4c8082e7fc64420408285"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0056.stats.json",
+          "sha256": "3206e01cea35701f07abe24f9675f074b906b8d15c87cf0bcaa053c155b1eec9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0057.json",
+          "sha256": "e012c578cd2eaa560909c3ff6fead0a05d253ed80f582c946fbd25d52d329242"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0057.stats.json",
+          "sha256": "4bad9fbc34444eba37591f9f4595c17efd8fcbca452fca4a4416402676dbde2a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0058.json",
+          "sha256": "a9c80d120fb492ef489b5ea8ed9cd44fe389ad76b67a7aa35c85af1c30e20527"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0058.stats.json",
+          "sha256": "c74629c6d60efd8623e6a1d5d390ab0c395a3e74062c060205bae0ea76970e88"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0059.json",
+          "sha256": "aad98c1f5826f29f598347b7cc9018b82d27a5f914eeef378078933703a84a56"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0059.stats.json",
+          "sha256": "a463e3e640b4da0f05ccfc5270f5427816021451e18ee53b7049d1665b5a5b21"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0060.json",
+          "sha256": "1c332fbbb5c17b4e77dc859b14b25334b430fdd1f8a923ec867f3f486beadbc1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0060.stats.json",
+          "sha256": "a58888b7f52e39fb5196309b59c8f1fa5d8943a41c0389ef5b6b8e9fe25c0397"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0061.json",
+          "sha256": "274a1ac3cb757bb4dbfbdc5af56ffdb364b24749b53c0b988a32c648d3e8a312"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0061.stats.json",
+          "sha256": "bee5f0f40b44eb589a1daff296e2cf9aa9187837f32db11f7b9dcd1d7ac8b48d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0062.json",
+          "sha256": "b95132d1ad71c465ce006ad261c242d78ea36b86fbf1fb9913d312bc95350e6f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0062.stats.json",
+          "sha256": "d97cde902076b985d931f0070f63d150ef936f34d0cb7400e703e6d7e89fb694"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0063.json",
+          "sha256": "ca619afbffbdaf91f280e69335957b0336a3a0be4eb997e002610e2496cd719a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0063.stats.json",
+          "sha256": "c82b5e723539e1d28e0f74b64a945b6e8796a5323cca50b5d5ab5007d2429328"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0064.json",
+          "sha256": "a8e796259b3f356ed94c858d13ba29d5d8e764739c0dc50c6714d3f4b0b4cc94"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0064.stats.json",
+          "sha256": "5e2aeb703a146a57d69f4aa6ef2ff5a7349b97877714259372b3e109c74be4ee"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0065.json",
+          "sha256": "d4f3b9103d1626703eaed54681f7452a29f2f25668a34c5ea14519bc3ee63b65"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0065.stats.json",
+          "sha256": "3375bd50e9add67c5d39acc03d5e18ba392d3b8d6f61ba2804ede99c54e275cd"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0066.json",
+          "sha256": "51900b4c78fa5aca6933a8020329b745c36a68c8add69520b517eac2cafe3b75"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0066.stats.json",
+          "sha256": "b234bff5acb6a908de91622fe008987bd8a2ef01af542792a9afd80bd0898592"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0067.json",
+          "sha256": "24118ee2ca67071994ba2a043bf2926608fad270d1b5fc2e9aaab7b909619ef4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0067.stats.json",
+          "sha256": "8a8130ad79aa6f62be8e8bfeea56b55ac509a2a780d8d109fb03d8352372d352"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0068.json",
+          "sha256": "9550b8e8a6bd443b5dea40424aed1fe3c813ef4755128c74d69a2d7cdf4613d0"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0068.stats.json",
+          "sha256": "de090cd9ca9e115002c83c4aa2fc81af3d398f4f9f8c2a3ef7544d650e3a9432"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0069.json",
+          "sha256": "81e47275208728b1b25783eecae685c59a7ebe78e8459104d878835aab48783d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0069.stats.json",
+          "sha256": "ff91db9b6783eec762b15217a21a969c97e60ec1c02ea814053d6472c34a6ede"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0070.json",
+          "sha256": "a71d36189e6c5c12e7b1db7c679e6a8cc14667bab71bdc3eb2d5caff33811075"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0070.stats.json",
+          "sha256": "ae17cc9f633afa1a7e8ec242dc21792a83c8d828522dc62c2a287c2d197eb304"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0071.json",
+          "sha256": "9d2c7049a0d189552313a9d31fbfdadb67f85d7dfb3224c626dfdd141a6956aa"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0071.stats.json",
+          "sha256": "63f147431ceef4472388fe11a97bd50b5c3b95006cb5bd6740fb418babe3191d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0072.json",
+          "sha256": "59f553d0846b7033bb6ebcea50a6d213b63b87ceebae083c3d7df21094ec53cb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0072.stats.json",
+          "sha256": "40fe4b39c16fd322e9afb123be24c1d643fae5f9ae9ffd2c68370d7ae6002e35"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0073.json",
+          "sha256": "def3d872789bc961bed7568510d7556eeb291c786fcfee66f4a0818af7535ef5"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0073.stats.json",
+          "sha256": "6d499afbe0a38d36073a38626bdc5dae1a3c7611966dc75a934fc7b52b9b51f9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0074.json",
+          "sha256": "23c80a05c090aafc585581af6c8609bc70e9a3555c7bc66c08c8e85e3cc5553e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0074.stats.json",
+          "sha256": "a96e8c85df11a29e7f7692966571021169e574cdd22f890ed96e97ba29a4b9c1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0075.json",
+          "sha256": "212e75df4fd2608465fe4e2d9bdcfd622b62b7f17318704da2e925cb455c147c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0075.stats.json",
+          "sha256": "a9baee2223af465dcc511530af3403abe70e2ca5a9737175c55b6f6951a10097"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0076.json",
+          "sha256": "2784c3f107fdcf0b89e217c8158b96e5d0995d46c1aec4baa99c79aa7aac51c5"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0076.stats.json",
+          "sha256": "4de8ee1deabae058ac33366edb54f43e48e5df51648d9f1ffe3ffdfe929a64f0"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0077.json",
+          "sha256": "7560c0f6ef13d02d9d9ad9ea1a1ec289536d6afb9f0658a0d79635bae0e6104e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0077.stats.json",
+          "sha256": "32baa3f9896b180139d872f9977ff9eeb8ea193b4e4ae3b898c49c80d41828b1"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0078.json",
+          "sha256": "30bc47f4bc4bf1fb664203feef54cf27141b338019eebad1de340f91d414dcb6"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0078.stats.json",
+          "sha256": "7784665d2e54e19e6e922cc8f680d20a1fdeb28c3c3f10779026cf904be48d05"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0079.json",
+          "sha256": "93916bd000808124d5e62b9659e83ca5574a1108e4baa429e73de3339ed58592"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0079.stats.json",
+          "sha256": "921d68990e34d7bfe88a5eb939a794adb70899b01e8b44e6fbee99a43e5badef"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0080.json",
+          "sha256": "84309189c8a7ff0bddb2801b976f6d9d03339a9b9910e5fddda936fc5434a993"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0080.stats.json",
+          "sha256": "c70b500c9fe7f3f248f0f09d45fc7fba379a1a049e28ff7943bbe533f801c350"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0081.json",
+          "sha256": "53cdc9c1ee444cf51b037bb503cde3be78480ba505c476121371dfac73c76f2c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0081.stats.json",
+          "sha256": "f2c7d7641fa4a0bda66d62864f94b6f098dcad01fef37cd5e8c6598cd7e7f5ab"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0082.json",
+          "sha256": "852a3b88649e692e764280a4e38206daac4ab4f97154cd433495d490a0348065"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0082.stats.json",
+          "sha256": "b1f29dcaa3da210d371d4a1e51d2ad392c358daeb56cd26cc3ef2b9b9dcacabb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0083.json",
+          "sha256": "9f9826598d6ed0a4d23c9c9b83119db50c925d89f77c40b154276fd7c8f4faf9"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0083.stats.json",
+          "sha256": "80517763bd5963a6f301146c6b888e039523e25f9649355b132ba75a4c70fa04"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0084.json",
+          "sha256": "98f91557082f5f5eb8da34097a7aa65a0192d68b4c5b5fd7e8da470ce69448bb"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0084.stats.json",
+          "sha256": "ea905be46220c8185d6b8b1ae64cfffe8710b226e483cc659e00f07d0f17d4a4"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0085.json",
+          "sha256": "627a7d625753257060fc57e782049bf0417946295375d86c8305278debb9fcef"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0085.stats.json",
+          "sha256": "98de97b54601c83ed054f51832ff4fa81f6bf473d67bf9831619aab10db998a5"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0086.json",
+          "sha256": "5d740604bcb0d1a7f6ec7b362f051d4f0234291c4d9c7a43fa3a2b6928cbb663"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0086.stats.json",
+          "sha256": "cb5acf6e46ba44442051df455858b167cce1035d9f7ca87b60f012e247a41204"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0087.json",
+          "sha256": "7fba16831245efe2af26d32e759027afc91c4963892dc84a972abd343b471409"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0087.stats.json",
+          "sha256": "9384e86ae877ee4870ec1e1490141aeaec9d725fcd63f26e92882dd9bfff656c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0088.json",
+          "sha256": "67c10a83152a1d9b4820f3c627ee82e0b5deec7b8a9b416ea2457d22e16cb41d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0088.stats.json",
+          "sha256": "9e870ac432d6940982f4a93381c65b04b1e957394cb6e970df37db1667bb1697"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0089.json",
+          "sha256": "e6de5e19b5c12962b82d33207227637f4411986988fccdac0f0e60295d828564"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0089.stats.json",
+          "sha256": "20de9f30d55a8ef968acf1fc8473baff1c1bfbeda2f7088e81e481e2121c7283"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0090.json",
+          "sha256": "36dced349ddcb047e55d9069bd39e4f0c60e770d94a11e2e56dbee6619bed27e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0090.stats.json",
+          "sha256": "71a5106fbf2d28cdd36208fd739176a4e78d5cb6ae7043d82d80277b7eb6735e"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0091.json",
+          "sha256": "c131acd547602eb4a295e04512d31fb1bbef8b514b0f0abf9f323365ed69ce78"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0091.stats.json",
+          "sha256": "77672c6c3d1d62b185163c472d2234a3fde3e78aaa9f82cda2d45947d2227911"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0092.json",
+          "sha256": "4559d03d43fbc990300292588de4eba125a2ae5bc4e29d0667a3f00043db789d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0092.stats.json",
+          "sha256": "3e2c0c11c36a0db68c9fe99df05114464a06eb8427beeb54379016bf4fa06001"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0093.json",
+          "sha256": "9b7bcfa946f1080577874ba9ab663b39df065f2452c460dcff01fc170b88e36d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0093.stats.json",
+          "sha256": "0e0c24789fa04d84525e44682dcaf537e56364a74c8fe0543438aa8e23ef5e6c"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0094.json",
+          "sha256": "25bde664b783d7c285086ceaa09f302d2217f7820c19b5e571d3c7ed25172c86"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0094.stats.json",
+          "sha256": "3903c208d6c059791f3aa563f6367e7a896d9c70c9d3b6489c5a53d08d05f9ca"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0095.json",
+          "sha256": "4a6bd3161ee4feea4e4a1de7f61c987c5d6f2354af11bb607ec0aab35b075314"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0095.stats.json",
+          "sha256": "ca4ae1ba18df159b85e75762ad7acc87198493a94229faf55637511f16e88fbf"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0096.json",
+          "sha256": "69418078b45a1ab111f2f0f1460aad288add41973c5949fbaade6f57c2a8bdff"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/train_0096.stats.json",
+          "sha256": "42b12c9f67d0458b9a965f839611636a0a340e25b282c0b2b4f044c38f46db2d"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0001.json",
+          "sha256": "e24b2fe8c8f8f09b0d78c82c9c625829b437382882e7c9e25b119e5b1892b789"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0001.stats.json",
+          "sha256": "11b5893049381eb8b32e98f7b2772c0e2fcd35fecc70d629b5e5b78069316d6a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0002.json",
+          "sha256": "728a31e18a865c4be403b0aa862843a497bebfa50caa631cd67d998b4dad27c0"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0002.stats.json",
+          "sha256": "780312366c0220fa95497f8aec7685c651f5284a3909d3531bd9ce5bfa44edfe"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0003.json",
+          "sha256": "400ab17a4921632f615bfe4a7cfd3705af7b0040f7713c06ff1f4838baaaec67"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0003.stats.json",
+          "sha256": "01460287c02fbfc51002e59dedb1809c61979b83dcf2af9d4ed72a4e5aa24e7b"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0004.json",
+          "sha256": "5010458d27273aa7cfc4ca9b079f7a99251472a44ace75229586c487c7dbae41"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0004.stats.json",
+          "sha256": "0165379900ea3eec3491ed4a0954851d64dfee79fb1d7bea8739f824cbb34893"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0005.json",
+          "sha256": "371e340241f5021bd1c77c2825d04bde9a2c069b5dbfe2cfa52ccb274a1fb101"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0005.stats.json",
+          "sha256": "35d86f769fa28ebca3993d0339214e9f57099cbc6e11207795f0146197f21001"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0006.json",
+          "sha256": "523a103228c214b1186002c658bd2fc911711417d7ffc327c0cc0b75d070ff76"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/rows/validation_0006.stats.json",
+          "sha256": "3637c066bd411fa0f79c8bac06fbe514d5b1b91187df0d5cd68797f67ece5620"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/source_manifest.json",
+          "sha256": "66f4c7539de266c57c1c716e148b427d896f5b6ce9cf74194c7fe68a3b0ebd64"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/source_split.json",
+          "sha256": "c25baf6cbc197e698e2c2a88db93b4758bec319f9a31a6ebb4128a42ea679eff"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/summary.json",
+          "sha256": "0d3de162c69836dba30cdfbb73a76630b485426e614762d0db3f037bfe43100f"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/training_targets.json",
+          "sha256": "b770956f4bca4755d7da4b14e9f0d63b80554ec361c54e7cd4a0704da61f263a"
+        },
+        {
+          "path": "light-v5_3-gunvehicle-20260907/verification.json",
+          "sha256": "ba6a5d12163946d049b8f6e5e733cc73c688fd26728199591da6e5524fbb0924"
+        }
+      ]
+    },
+    "cache-light-v5_3-20260907": {
+      "path": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\cache-light-v5_3-20260907",
+      "files": 1298,
+      "bytes": 2671106542,
+      "metadata_files": [
+        {
+          "path": "cache-light-v5_3-20260907/train/identity.json",
+          "sha256": "ccdda130bfa883ff29bf4e57f4b624b3c53454c1e513af5a03912084fdf3e6e0"
+        },
+        {
+          "path": "cache-light-v5_3-20260907/validation/identity.json",
+          "sha256": "7133e74ec9390a00780294b3d958ea0cc6e75f649664d728061d5b6ae64d75f0"
+        }
+      ]
+    },
+    "cache-light-v5_3-gunvehicle-20260907": {
+      "path": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\cache-light-v5_3-gunvehicle-20260907",
+      "files": 2547,
+      "bytes": 5071280558,
+      "metadata_files": [
+        {
+          "path": "cache-light-v5_3-gunvehicle-20260907/random_targets/identity.json",
+          "sha256": "f243af9f92f2cfa5099edc4200c79173b57db3afa294f8dcb4747134cc387e8a"
+        },
+        {
+          "path": "cache-light-v5_3-gunvehicle-20260907/train/identity.json",
+          "sha256": "6f7f534f1d8229c050906e1a864c33f2318d05374bc0c0a5d997a0f76bdd1801"
+        },
+        {
+          "path": "cache-light-v5_3-gunvehicle-20260907/validation/identity.json",
+          "sha256": "7133e74ec9390a00780294b3d958ea0cc6e75f649664d728061d5b6ae64d75f0"
+        }
+      ]
+    },
+    "scenario-small-20260907": {
+      "path": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\scenario-small-20260907",
+      "files": 157,
+      "bytes": 388326550,
+      "metadata_files": [
+        {
+          "path": "scenario-small-20260907/config.json",
+          "sha256": "9e8d8f1aab4151d4486882b307095bdf8321039f80bed37f77fe2f9337616baa"
+        },
+        {
+          "path": "scenario-small-20260907/frame_annotation_audit.json",
+          "sha256": "4beb74c16ea31935dff64be140588926a90878d70844cb8cb7610889ed3202b9"
+        },
+        {
+          "path": "scenario-small-20260907/generation_identity.json",
+          "sha256": "3ef0a38e91f3baea8923ee9a81d3d4d1a38811e66da9629a892a6df742294f47"
+        },
+        {
+          "path": "scenario-small-20260907/manifest.jsonl",
+          "sha256": "1d2126d117a0a4d4940c4189899e7d6ea70bfc2a9cfaa663a14b497eefc1d15f"
+        },
+        {
+          "path": "scenario-small-20260907/manifest_test.jsonl",
+          "sha256": "6bdab04d4ff095a9709747d767c77f7de7bcb5841de3b89c364e28d5975353ea"
+        },
+        {
+          "path": "scenario-small-20260907/manifest_train.jsonl",
+          "sha256": "6efa902a902f2c95b353c2b1257e6dc5081f2e3b79bef4915958dc744d87bab4"
+        },
+        {
+          "path": "scenario-small-20260907/manifest_validation.jsonl",
+          "sha256": "1e2f1b28c667988c55efe248d02135efed4887487f7cb13a1a35971e66bc7328"
+        },
+        {
+          "path": "scenario-small-20260907/master_gain.json",
+          "sha256": "4672dd28e332606f2dffc6264df34993f47f8cf191ad3565a15b26a25ce24897"
+        },
+        {
+          "path": "scenario-small-20260907/recipes.jsonl",
+          "sha256": "04ec1820bd46b3753eec0d629ddb9096c0fcbef710ee52a147418886973281b7"
+        },
+        {
+          "path": "scenario-small-20260907/source_manifest.json",
+          "sha256": "92346ac9adb6d4ae162269f1e5914d90a52f861faaff53efc0b9817896908ceb"
+        },
+        {
+          "path": "scenario-small-20260907/source_split.json",
+          "sha256": "c1f497e6893d0a4aa6d84e07fd84c6bd340e66eb67d44f4fa2967d6727d30564"
+        },
+        {
+          "path": "scenario-small-20260907/summary.json",
+          "sha256": "3e87366dae8353d34e694e2aac814ef5cce9d76939edb01d5051e873c7535c47"
+        },
+        {
+          "path": "scenario-small-20260907/verification.json",
+          "sha256": "c53fde3633cbbef3eef085d3fac1fec4feb7628ed2b27eb98f733545fa990226"
+        }
+      ]
+    },
+    "scenario-smoke-v4": {
+      "path": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\scenario-smoke-v4",
+      "files": 83,
+      "bytes": 194152257,
+      "metadata_files": [
+        {
+          "path": "scenario-smoke-v4/config.json",
+          "sha256": "3aa64d5fb349bc9dd4275f44f25ac2859d80b1225b7d27342f69bd61f2221294"
+        },
+        {
+          "path": "scenario-smoke-v4/generation_identity.json",
+          "sha256": "9065e86ebbd0ea63a88c9c34f101ea9e77857c44ccff163ca5b851640790142e"
+        },
+        {
+          "path": "scenario-smoke-v4/manifest.jsonl",
+          "sha256": "0524ff44c067c5f09ac9a2a3bec8c37cb8de1fad077466cddffd54c707039e95"
+        },
+        {
+          "path": "scenario-smoke-v4/manifest_test.jsonl",
+          "sha256": "61679a9b935c302b056682d2941279daad2e8470cc6e8f174068edc40df3ce7b"
+        },
+        {
+          "path": "scenario-smoke-v4/manifest_train.jsonl",
+          "sha256": "cda7734973c9eac3a100a0e2f5d174a2769098caf5185d5ced94ebdf2a823756"
+        },
+        {
+          "path": "scenario-smoke-v4/manifest_validation.jsonl",
+          "sha256": "9ddbb2e6fc0aa24273a9f3f5de45333495b7bb32bfe5409306f1af09532818c2"
+        },
+        {
+          "path": "scenario-smoke-v4/master_gain.json",
+          "sha256": "6601e62a54f00d7690d419b45f3e9350cbfd78141dd67e01db846080916f32d1"
+        },
+        {
+          "path": "scenario-smoke-v4/recipes.jsonl",
+          "sha256": "c0a3953434a34a92ab753367decb9e57088c23447c222afc2338fe24056641f5"
+        },
+        {
+          "path": "scenario-smoke-v4/source_manifest.json",
+          "sha256": "92346ac9adb6d4ae162269f1e5914d90a52f861faaff53efc0b9817896908ceb"
+        },
+        {
+          "path": "scenario-smoke-v4/source_split.json",
+          "sha256": "c1f497e6893d0a4aa6d84e07fd84c6bd340e66eb67d44f4fa2967d6727d30564"
+        },
+        {
+          "path": "scenario-smoke-v4/summary.json",
+          "sha256": "3f0c41eb49c118d6dd2edb46ff0a40cf3865a27a5fa1f600e5fffeedb85ba15f"
+        }
+      ]
+    }
+  },
+  "total_bytes_to_delete": 13489217692,
+  "archive": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\registry\\v5_retired_training_metadata_20260908.zip",
+  "archive_bytes": 201576373,
+  "archive_sha256": "c341cc1e6ac7eeea234abb1b9a454259533f4f11a6e67044d352a4150f6b4148",
+  "retained_models": {
+    "outputs\\train-light-v5_3-20260907\\model.pt": {
+      "bytes": 4291579,
+      "sha256": "3f2875750a4abe6478644a34dd04071b9deedfe4ebeca61ae8f2a701cb0663b0"
+    },
+    "outputs\\train-light-v5_3-250epochs-20260907\\model.pt": {
+      "bytes": 4291963,
+      "sha256": "1a5e69fca4a1880f5118f1ca4f68b9bee468cbdbd68af30e4b04ca7d18b17310"
+    },
+    "outputs\\train-light-v5_3-250epochs-20260907\\model_detection.pt": {
+      "bytes": 4295023,
+      "sha256": "3603df49319300de2c01f0ed6f11a5890876d1b019461b90e104885247b281bd"
+    },
+    "outputs\\train-light-v5_3-gunvehicle-aug400-20260907\\model.pt": {
+      "bytes": 4292155,
+      "sha256": "c2f49071b43036994081e8dc3b6cf4d3c7392bc11095afe674f8824445826a1d"
+    },
+    "outputs\\train-light-v5_3-gunvehicle-aug400-20260907\\model_detection.pt": {
+      "bytes": 4295215,
+      "sha256": "3d654b3cae5644f06c0d56965b6145e0d401fb3757b804b59ecbae8c55ad8bb1"
+    }
+  },
+  "scope": "Only listed obsolete synthetic datasets and feature caches; originals, models and previews retained",
+  "completed_at": "2026-09-08T02:12:26.126546+00:00",
+  "deleted_targets": [
+    "light-v5_3-20260907",
+    "light-v5_3-gunvehicle-20260907",
+    "cache-light-v5_3-20260907",
+    "cache-light-v5_3-gunvehicle-20260907",
+    "scenario-small-20260907",
+    "scenario-smoke-v4"
+  ],
+  "retained_models_verified": 5,
+  "new_scenes_verified": 720,
+  "new_scene_files_sha256_verified": 2880,
+  "net_released_bytes": 13287641319,
+  "training_started": false,
+  "training_requires_explicit_user_instruction": true,
+  "new_dataset_bytes": 20736006076,
+  "datasets_bytes_after": 22353276583,
+  "drive_free_bytes_after": 56929079296
+}

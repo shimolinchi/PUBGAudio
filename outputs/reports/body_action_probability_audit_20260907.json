@@ -1,0 +1,53 @@
+{
+  "seeds": 200,
+  "scope": "planning only; locomotion duration fractions exclude pauses/body actions, not game statistics",
+  "v5_2": {
+    "locomotion_seconds": {
+      "prone_crawl": 708.5058522389995,
+      "walk": 704.8487085786445,
+      "run": 775.1292229237673,
+      "crouch_walk": 831.1784729492208,
+      "sprint": 963.9483211301491
+    },
+    "duration_fraction": {
+      "prone_crawl": 0.17785519904573224,
+      "walk": 0.1769371515637026,
+      "run": 0.19457956740033527,
+      "crouch_walk": 0.2086495295441036,
+      "sprint": 0.2419785524461262
+    },
+    "body_action_counts": {},
+    "after_bout_selections": {}
+  },
+  "v5_3": {
+    "locomotion_seconds": {
+      "prone_crawl": 492.5356558765256,
+      "crouch_walk": 701.7082697700338,
+      "run": 983.9992924173782,
+      "walk": 558.3376902112116,
+      "sprint": 875.4180106018788
+    },
+    "duration_fraction": {
+      "prone_crawl": 0.1363609643686314,
+      "crouch_walk": 0.19427145066482887,
+      "run": 0.2724251348124168,
+      "walk": 0.154578587300574,
+      "sprint": 0.24236386285354886
+    },
+    "body_action_counts": {
+      "prone_to_crouch": 8,
+      "crouch_down": 49,
+      "crouch_up": 55,
+      "prone_down": 29,
+      "prone_up": 34,
+      "crouch_to_prone": 6,
+      "vault": 5
+    },
+    "after_bout_selections": {
+      "continue": 329,
+      "crouch_cycle": 30,
+      "prone_cycle": 18,
+      "vault": 5
+    }
+  }
+}

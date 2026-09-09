@@ -1,0 +1,18 @@
+{
+  "state": "finished",
+  "url": "https://wandb.ai/simonlynch-harbin-institute-of-technology/PUBGAudio/runs/aa19d2890dff",
+  "completed_epochs": 30,
+  "test_checkpoint_epoch": 15,
+  "test_f1": {
+    "external": {
+      "footsteps": 0.6525096525096525,
+      "vehicle": 0.7442641298265249,
+      "gunfire": 0.2578397212543554
+    },
+    "self": {
+      "footsteps": 0.9182509505703422,
+      "vehicle": 0.9832920792079208,
+      "gunfire": 0.7055016181229773
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "training_completed",
+  "model_config": {
+    "classes": 3,
+    "input_channels": 4,
+    "frequency_bins": 512,
+    "cnn_channels": 128,
+    "frequency_pool": [
+      8,
+      8,
+      4
+    ],
+    "time_pool": [
+      5,
+      1,
+      1
+    ],
+    "gru_hidden": 128,
+    "gru_layers": 2,
+    "attention_layers": 2,
+    "attention_heads": 8,
+    "head_hidden": 128,
+    "dropout": 0.05,
+    "output_mode": "multi_accddoa",
+    "tracks": 3,
+    "self_classes": 3
+  },
+  "parameters": 1064231,
+  "dataset": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\light-v5_3-20260907",
+  "device": "cuda",
+  "torch_version": "2.8.0+cu128",
+  "cuda_version": "12.8",
+  "device_name": "NVIDIA GeForce RTX 5070 Ti",
+  "completed_epochs": 30,
+  "best_validation_loss": 0.052617250113851495,
+  "batch_size": 16,
+  "cache_dir": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\cache-light-v5_3-20260907",
+  "workers": 2,
+  "threads": 4,
+  "seed": 202609077,
+  "train_scenes": 48,
+  "validation_scenes": 6,
+  "train_crops": 1152,
+  "validation_crops": 144,
+  "real_game_accuracy_not_evaluated": true
+}

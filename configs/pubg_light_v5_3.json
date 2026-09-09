@@ -1,0 +1,9 @@
+{
+  "model": {"classes": 3, "output_mode": "multi_accddoa", "self_classes": 3},
+  "seed": 202609077,
+  "learning_rate": 0.001,
+  "epochs": 80,
+  "patience": 15,
+  "distance_scale": 100.0,
+  "purpose": "Light v5.3 three-class baseline; complete epochs, validation-loss checkpoint selection, fixed diagnostic threshold 0.5, one final held-out test."
+}

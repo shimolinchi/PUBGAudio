@@ -1,0 +1,27 @@
+{
+  "v5_1": {
+    "vehicle_count": 100,
+    "active_vehicle_seconds": 2840.92,
+    "actual_powered_acceleration_fraction": 0.3092941723103783,
+    "engine_on_idle_fraction": 0.19586612787406896,
+    "engine_off_moving_fraction": 0.14170761584275515,
+    "view_episodes_per_60s": 5.19,
+    "view_modes": {
+      "fixed": 34,
+      "natural": 66
+    }
+  },
+  "v5_2": {
+    "vehicle_count": 100,
+    "active_vehicle_seconds": 2861.4500000000003,
+    "actual_powered_acceleration_fraction": 0.4499641790001573,
+    "engine_on_idle_fraction": 0.12180537839207395,
+    "engine_off_moving_fraction": 0.021363294833039195,
+    "view_episodes_per_60s": 22.03,
+    "view_modes": {
+      "fixed": 15,
+      "natural": 85
+    }
+  },
+  "scope": "100 matched deterministic planner seeds per config; not game statistics or listening acceptance"
+}

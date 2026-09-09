@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "state": "finished",
+  "completed_epochs": 400,
+  "best_detection_epoch": 339,
+  "test_checkpoint_epoch": 229,
+  "test_detection_checkpoint_epoch": 339,
+  "test_f1_values_verified": 12,
+  "final_evaluation_completed": true,
+  "url": "https://wandb.ai/simonlynch-harbin-institute-of-technology/PUBGAudio/runs/e6f7b62b7263"
+}

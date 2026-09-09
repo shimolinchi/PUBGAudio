@@ -1,0 +1,333 @@
+{
+  "bank_id": 2143169776,
+  "bank_file_sha256": "19d9b055780f0397deb117083e127f5da5e2fc4fd94b3cee5b45f077ccaaa8e0",
+  "parser": "bnnm/wwiser v20260808 read-only XML dump",
+  "parser_source": "https://github.com/bnnm/wwiser",
+  "traces": {
+    "1103459313": [
+      {
+        "object_id": 1103459313,
+        "type": "CAkEvent",
+        "source_ids": []
+      },
+      {
+        "object_id": 334636408,
+        "type": "CAkActionPlay",
+        "source_ids": []
+      },
+      {
+        "object_id": 500554510,
+        "type": "CAkSwitchCntr",
+        "source_ids": []
+      },
+      {
+        "object_id": 263074837,
+        "type": "CAkRanSeqCntr",
+        "source_ids": []
+      },
+      {
+        "object_id": 272510973,
+        "type": "CAkSound",
+        "source_ids": [
+          355685805
+        ]
+      },
+      {
+        "object_id": 344746157,
+        "type": "CAkSound",
+        "source_ids": [
+          888384367
+        ]
+      },
+      {
+        "object_id": 351267819,
+        "type": "CAkSound",
+        "source_ids": [
+          519224851
+        ]
+      },
+      {
+        "object_id": 478614891,
+        "type": "CAkSound",
+        "source_ids": [
+          804096818
+        ]
+      },
+      {
+        "object_id": 559601994,
+        "type": "CAkSound",
+        "source_ids": [
+          277443246
+        ]
+      },
+      {
+        "object_id": 779903229,
+        "type": "CAkSound",
+        "source_ids": [
+          990125138
+        ]
+      },
+      {
+        "object_id": 847985524,
+        "type": "CAkSound",
+        "source_ids": [
+          1073122829
+        ]
+      },
+      {
+        "object_id": 853956495,
+        "type": "CAkSound",
+        "source_ids": [
+          792282903
+        ]
+      },
+      {
+        "object_id": 895503868,
+        "type": "CAkSound",
+        "source_ids": [
+          30403813
+        ]
+      },
+      {
+        "object_id": 498503957,
+        "type": "CAkRanSeqCntr",
+        "source_ids": []
+      },
+      {
+        "object_id": 73619047,
+        "type": "CAkSound",
+        "source_ids": [
+          1073122829
+        ]
+      },
+      {
+        "object_id": 143577390,
+        "type": "CAkSound",
+        "source_ids": [
+          30403813
+        ]
+      },
+      {
+        "object_id": 186062450,
+        "type": "CAkSound",
+        "source_ids": [
+          804096818
+        ]
+      },
+      {
+        "object_id": 191278888,
+        "type": "CAkSound",
+        "source_ids": [
+          990125138
+        ]
+      },
+      {
+        "object_id": 242716929,
+        "type": "CAkSound",
+        "source_ids": [
+          519224851
+        ]
+      },
+      {
+        "object_id": 484021749,
+        "type": "CAkSound",
+        "source_ids": [
+          888384367
+        ]
+      },
+      {
+        "object_id": 611733591,
+        "type": "CAkSound",
+        "source_ids": [
+          792282903
+        ]
+      },
+      {
+        "object_id": 801155340,
+        "type": "CAkSound",
+        "source_ids": [
+          355685805
+        ]
+      },
+      {
+        "object_id": 805774355,
+        "type": "CAkSound",
+        "source_ids": [
+          277443246
+        ]
+      }
+    ],
+    "4269572827": [
+      {
+        "object_id": 4269572827,
+        "type": "CAkEvent",
+        "source_ids": []
+      }
+    ],
+    "4158240715": [
+      {
+        "object_id": 4158240715,
+        "type": "CAkEvent",
+        "source_ids": []
+      },
+      {
+        "object_id": 872932676,
+        "type": "CAkActionPlay",
+        "source_ids": []
+      },
+      {
+        "object_id": 554673134,
+        "type": "CAkSwitchCntr",
+        "source_ids": []
+      },
+      {
+        "object_id": 706092820,
+        "type": "CAkRanSeqCntr",
+        "source_ids": []
+      },
+      {
+        "object_id": 100855331,
+        "type": "CAkSound",
+        "source_ids": [
+          888384367
+        ]
+      },
+      {
+        "object_id": 303959602,
+        "type": "CAkSound",
+        "source_ids": [
+          1073122829
+        ]
+      },
+      {
+        "object_id": 332069117,
+        "type": "CAkSound",
+        "source_ids": [
+          792282903
+        ]
+      },
+      {
+        "object_id": 355678087,
+        "type": "CAkSound",
+        "source_ids": [
+          519224851
+        ]
+      },
+      {
+        "object_id": 535628410,
+        "type": "CAkSound",
+        "source_ids": [
+          355685805
+        ]
+      },
+      {
+        "object_id": 645181252,
+        "type": "CAkSound",
+        "source_ids": [
+          30403813
+        ]
+      },
+      {
+        "object_id": 785423216,
+        "type": "CAkSound",
+        "source_ids": [
+          804096818
+        ]
+      },
+      {
+        "object_id": 957313383,
+        "type": "CAkSound",
+        "source_ids": [
+          990125138
+        ]
+      },
+      {
+        "object_id": 1002684266,
+        "type": "CAkSound",
+        "source_ids": [
+          277443246
+        ]
+      },
+      {
+        "object_id": 726881069,
+        "type": "CAkRanSeqCntr",
+        "source_ids": []
+      },
+      {
+        "object_id": 24030827,
+        "type": "CAkSound",
+        "source_ids": [
+          1073122829
+        ]
+      },
+      {
+        "object_id": 83961067,
+        "type": "CAkSound",
+        "source_ids": [
+          888384367
+        ]
+      },
+      {
+        "object_id": 507103968,
+        "type": "CAkSound",
+        "source_ids": [
+          277443246
+        ]
+      },
+      {
+        "object_id": 633194864,
+        "type": "CAkSound",
+        "source_ids": [
+          30403813
+        ]
+      },
+      {
+        "object_id": 680574730,
+        "type": "CAkSound",
+        "source_ids": [
+          804096818
+        ]
+      },
+      {
+        "object_id": 724320649,
+        "type": "CAkSound",
+        "source_ids": [
+          355685805
+        ]
+      },
+      {
+        "object_id": 746952657,
+        "type": "CAkSound",
+        "source_ids": [
+          792282903
+        ]
+      },
+      {
+        "object_id": 868659367,
+        "type": "CAkSound",
+        "source_ids": [
+          519224851
+        ]
+      },
+      {
+        "object_id": 1000121865,
+        "type": "CAkSound",
+        "source_ids": [
+          990125138
+        ]
+      }
+    ]
+  },
+  "finding": "Transitions_Ruslte and Vaulting_Rustle share 9 native media; Prone_Ruslte has zero actions in this bank. No unique crouch/prone audio identity established. Exact pose tags are simulated.",
+  "shared_attenuation_id": 515586057,
+  "attenuation_max_native_distance": 3000,
+  "metres_conversion": "centimetres and runtime scale1 assumed, not calibrated",
+  "new_sources": 39,
+  "roles": {
+    "vault_climb": 9,
+    "vault_contact": 9,
+    "vault_grab": 9,
+    "vault_rustle": 3,
+    "transition_rustle": 9
+  }
+}

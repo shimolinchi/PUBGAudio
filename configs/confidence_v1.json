@@ -1,0 +1,38 @@
+{
+  "schema": "PUBGAudio-confidence-policy-v1",
+  "classes": ["footsteps", "vehicle", "gunfire"],
+  "roles": ["external", "self"],
+  "output_hop_seconds": 0.1,
+  "ground_truth": {
+    "external_presence": "counts > 0",
+    "external_valid": "mask > 0",
+    "self_presence": "self_target > 0",
+    "self_valid": "self_mask > 0",
+    "label_values": [0, 1],
+    "masked_frames": "exclude_from_positive_and_negative_supervision",
+    "generated_confidence_probability": null
+  },
+  "calibration": {
+    "split": "validation",
+    "group_by": "scene_id",
+    "fit_fraction": 0.5,
+    "seed": 2026090811,
+    "minimum_positive_frames": 20,
+    "minimum_negative_frames": 20,
+    "preserve_frame_prevalence": true,
+    "use_test_labels": false,
+    "bind_exact_checkpoint": true
+  },
+  "inference": {
+    "emit_presence_score": true,
+    "emit_presence_probability": true,
+    "uncalibrated_probability": null,
+    "direction_confidence": null,
+    "distance_confidence": null,
+    "probability_scope": "frame_class_role_presence_not_position_or_individual_track"
+  },
+  "workflow": {
+    "calibrate_primary_export": true,
+    "primary_export": "model_localization.pt"
+  }
+}

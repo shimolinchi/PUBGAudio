@@ -1,0 +1,357 @@
+{
+  "date": "2026-09-08",
+  "status": "completed",
+  "target": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\audio-synthetic-20260907-v4",
+  "target_files": 6028,
+  "target_bytes": 16148417215,
+  "dataset_bytes_before": 30496055024,
+  "c_free_bytes_before": 44961570816,
+  "metadata_archive": "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\datasets\\registry\\v4_retired_generation_metadata_20260908.zip",
+  "metadata_archive_bytes": 14598102,
+  "metadata_archive_sha256": "d50740d845a132efd72d2da1d9a07219edbb0bb03fe2572e93cfe0bc2cd9efd7",
+  "metadata_entries": [
+    {
+      "path": "config.json",
+      "bytes": 4226,
+      "sha256": "a17dc2c46d0ba01cba48f885e778838ef9abcc8360fc036b8b782c3844c34909"
+    },
+    {
+      "path": "frame_annotation_audit.json",
+      "bytes": 1298,
+      "sha256": "d990cc197ac1d324f71766202e96c3200932ecf3f2cab319cc60317d4f075f26"
+    },
+    {
+      "path": "generation_identity.json",
+      "bytes": 6314,
+      "sha256": "a904960959a494990346cd9fd869264c9eaa67506db3be9d704340acbf7a7adf"
+    },
+    {
+      "path": "manifest.jsonl",
+      "bytes": 34166806,
+      "sha256": "5968bde1e77c87c9b2068c183493e5115f63d37aaa92a31c910507c58893b778"
+    },
+    {
+      "path": "manifest_test.jsonl",
+      "bytes": 3363015,
+      "sha256": "458cf1a7d67d8c046a25337fbe01a277c74573fb8fb4467f5748df8c50ebd4a4"
+    },
+    {
+      "path": "manifest_train.jsonl",
+      "bytes": 27797996,
+      "sha256": "9459be214a14e032a5dc8ef75b7748aad403f1b356623495c5b28beaef73f2d7"
+    },
+    {
+      "path": "manifest_validation.jsonl",
+      "bytes": 3002795,
+      "sha256": "2b7f1c012bcfbe47612ce6f275cf29631ab239373e9422082c87926441a08861"
+    },
+    {
+      "path": "master_gain.json",
+      "bytes": 154,
+      "sha256": "e4dc1e358580965809d2bc259c087ebcc6759aaa1c55fa0cbdb3b5df391de735"
+    },
+    {
+      "path": "recipes.jsonl",
+      "bytes": 32689190,
+      "sha256": "914f500217270a432b5a6009b0c18f32d612dc69515049074973713a0d37d44a"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 891007,
+      "sha256": "92346ac9adb6d4ae162269f1e5914d90a52f861faaff53efc0b9817896908ceb"
+    },
+    {
+      "path": "source_split.json",
+      "bytes": 31660,
+      "sha256": "c1f497e6893d0a4aa6d84e07fd84c6bd340e66eb67d44f4fa2967d6727d30564"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 856,
+      "sha256": "8ee828442cda61f2767d29b758f65b049b03ef39fcdeee6e83bbf897b736d27c"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 710,
+      "sha256": "899f4ccab9b517a83b5f99bae9f9583ff8be5b42f58357cbd86a119644afa8aa"
+    },
+    {
+      "path": "generator_snapshot/build_motion_preview.py",
+      "bytes": 6584,
+      "sha256": "c9af39d0b66b712ca75f6416019721e2ce23ff7c5b217fccc6e0c46923c683b2"
+    },
+    {
+      "path": "generator_snapshot/build_scenario_preview.py",
+      "bytes": 7493,
+      "sha256": "8f5a6c2e1bceb5e0fb2d3b61bbb057c0f9f2d23f394886fcafe98f96108ffdf1"
+    },
+    {
+      "path": "generator_snapshot/export_motion_labels.py",
+      "bytes": 7948,
+      "sha256": "3a85ff8acbe2af59105ad2353ed73eabb2b369196851ff8946ef32919a483e51"
+    },
+    {
+      "path": "generator_snapshot/generate_mixed_dataset.py",
+      "bytes": 27431,
+      "sha256": "4ebe03a646a8958797f3d294f34267ee7f73a232f12e7cd559a790094b86ba77"
+    },
+    {
+      "path": "generator_snapshot/generate_motion_dataset.py",
+      "bytes": 20097,
+      "sha256": "0f3904dedb0b0ada8b53464e5ad2e1941861a4691dc36a6d18135cf38d18d523"
+    },
+    {
+      "path": "generator_snapshot/generate_scenario_dataset.py",
+      "bytes": 15052,
+      "sha256": "27c7306660bc7075ed1b99219fcb4f1e0a062fb6b0f33ce555692033bbd357a5"
+    },
+    {
+      "path": "generator_snapshot/generate_self_audio_dataset.py",
+      "bytes": 24988,
+      "sha256": "df8dac5dfbe93552e208b4a44f5914b82bf7cc36daec7aad0cd17d73283ec8f1"
+    },
+    {
+      "path": "generator_snapshot/mix_dataset_v1.json",
+      "bytes": 2149,
+      "sha256": "11a5d725a375d6e8c4ea9deade91dc91d13927ea36500b1c3a3a1f43b987b108"
+    },
+    {
+      "path": "generator_snapshot/motion_synthesis.py",
+      "bytes": 19659,
+      "sha256": "3aa09276a329bbbdcc918fbf7345aec7592b10b5cab3e3415c58d83e2c2f32e9"
+    },
+    {
+      "path": "generator_snapshot/prepare_confuser_sources.py",
+      "bytes": 1703,
+      "sha256": "8fb227d88a06d5a57cc44b4113e11765558a136fe311b49d074584038f15fd4d"
+    },
+    {
+      "path": "generator_snapshot/prepare_motion_sources.py",
+      "bytes": 3274,
+      "sha256": "e76071a5a6eb88cc3b1722e0154170bcefa19c2ef370a6feb39eb990e739669b"
+    },
+    {
+      "path": "generator_snapshot/prepare_self_audio_sources.py",
+      "bytes": 1857,
+      "sha256": "3c7a28eca0a0734ee27bd0fac922b9ceeddf07041fac925610d2d4ceafc1b607"
+    },
+    {
+      "path": "generator_snapshot/prepare_synthetic_sources.py",
+      "bytes": 11352,
+      "sha256": "74f561207d7e381e320e1a0b805ba66cc5abbdd9ba99bd8de497f890b1e34b81"
+    },
+    {
+      "path": "generator_snapshot/scenario_synthesis.py",
+      "bytes": 6855,
+      "sha256": "9354c04b1f15861d040aef23d60cd00361e97a3f81ecddfc0ec3b5e49453941b"
+    },
+    {
+      "path": "generator_snapshot/self_audio_synthesis.py",
+      "bytes": 5729,
+      "sha256": "5ff70468b982529a5cd3bbc437254dc6dfdb86e8abb09fe0883bcfd7d6c57f80"
+    }
+  ],
+  "protected_model_hashes": {
+    "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\outputs\\train-light-v5_3-gunvehicle-aug400-20260907\\model.pt": "c2f49071b43036994081e8dc3b6cf4d3c7392bc11095afe674f8824445826a1d",
+    "C:\\Projects\\PUBGAssistant-cpp\\modules\\PUBGAudio\\outputs\\train-light-v5_3-gunvehicle-aug400-20260907\\model_detection.pt": "3d654b3cae5644f06c0d56965b6145e0d401fb3757b804b59ecbae8c55ad8bb1"
+  },
+  "latest_wav_inventory": {
+    "audio\\test_0001.wav": 15360044,
+    "audio\\test_0002.wav": 15360044,
+    "audio\\test_0003.wav": 15360044,
+    "audio\\test_0004.wav": 15360044,
+    "audio\\test_0005.wav": 15360044,
+    "audio\\test_0006.wav": 15360044,
+    "audio\\train_0001.wav": 15360044,
+    "audio\\train_0002.wav": 15360044,
+    "audio\\train_0003.wav": 15360044,
+    "audio\\train_0004.wav": 15360044,
+    "audio\\train_0005.wav": 15360044,
+    "audio\\train_0006.wav": 15360044,
+    "audio\\train_0007.wav": 15360044,
+    "audio\\train_0008.wav": 15360044,
+    "audio\\train_0009.wav": 15360044,
+    "audio\\train_0010.wav": 15360044,
+    "audio\\train_0011.wav": 15360044,
+    "audio\\train_0012.wav": 15360044,
+    "audio\\train_0013.wav": 15360044,
+    "audio\\train_0014.wav": 15360044,
+    "audio\\train_0015.wav": 15360044,
+    "audio\\train_0016.wav": 15360044,
+    "audio\\train_0017.wav": 15360044,
+    "audio\\train_0018.wav": 15360044,
+    "audio\\train_0019.wav": 15360044,
+    "audio\\train_0020.wav": 15360044,
+    "audio\\train_0021.wav": 15360044,
+    "audio\\train_0022.wav": 15360044,
+    "audio\\train_0023.wav": 15360044,
+    "audio\\train_0024.wav": 15360044,
+    "audio\\train_0025.wav": 15360044,
+    "audio\\train_0026.wav": 15360044,
+    "audio\\train_0027.wav": 15360044,
+    "audio\\train_0028.wav": 15360044,
+    "audio\\train_0029.wav": 15360044,
+    "audio\\train_0030.wav": 15360044,
+    "audio\\train_0031.wav": 15360044,
+    "audio\\train_0032.wav": 15360044,
+    "audio\\train_0033.wav": 15360044,
+    "audio\\train_0034.wav": 15360044,
+    "audio\\train_0035.wav": 15360044,
+    "audio\\train_0036.wav": 15360044,
+    "audio\\train_0037.wav": 15360044,
+    "audio\\train_0038.wav": 15360044,
+    "audio\\train_0039.wav": 15360044,
+    "audio\\train_0040.wav": 15360044,
+    "audio\\train_0041.wav": 15360044,
+    "audio\\train_0042.wav": 15360044,
+    "audio\\train_0043.wav": 15360044,
+    "audio\\train_0044.wav": 15360044,
+    "audio\\train_0045.wav": 15360044,
+    "audio\\train_0046.wav": 15360044,
+    "audio\\train_0047.wav": 15360044,
+    "audio\\train_0048.wav": 15360044,
+    "audio\\train_0049.wav": 15360044,
+    "audio\\train_0050.wav": 15360044,
+    "audio\\train_0051.wav": 15360044,
+    "audio\\train_0052.wav": 15360044,
+    "audio\\train_0053.wav": 15360044,
+    "audio\\train_0054.wav": 15360044,
+    "audio\\train_0055.wav": 15360044,
+    "audio\\train_0056.wav": 15360044,
+    "audio\\train_0057.wav": 15360044,
+    "audio\\train_0058.wav": 15360044,
+    "audio\\train_0059.wav": 15360044,
+    "audio\\train_0060.wav": 15360044,
+    "audio\\train_0061.wav": 15360044,
+    "audio\\train_0062.wav": 15360044,
+    "audio\\train_0063.wav": 15360044,
+    "audio\\train_0064.wav": 15360044,
+    "audio\\train_0065.wav": 15360044,
+    "audio\\train_0066.wav": 15360044,
+    "audio\\train_0067.wav": 15360044,
+    "audio\\train_0068.wav": 15360044,
+    "audio\\train_0069.wav": 15360044,
+    "audio\\train_0070.wav": 15360044,
+    "audio\\train_0071.wav": 15360044,
+    "audio\\train_0072.wav": 15360044,
+    "audio\\train_0073.wav": 15360044,
+    "audio\\train_0074.wav": 15360044,
+    "audio\\train_0075.wav": 15360044,
+    "audio\\train_0076.wav": 15360044,
+    "audio\\train_0077.wav": 15360044,
+    "audio\\train_0078.wav": 15360044,
+    "audio\\train_0079.wav": 15360044,
+    "audio\\train_0080.wav": 15360044,
+    "audio\\train_0081.wav": 15360044,
+    "audio\\train_0082.wav": 15360044,
+    "audio\\train_0083.wav": 15360044,
+    "audio\\train_0084.wav": 15360044,
+    "audio\\train_0085.wav": 15360044,
+    "audio\\train_0086.wav": 15360044,
+    "audio\\train_0087.wav": 15360044,
+    "audio\\train_0088.wav": 15360044,
+    "audio\\train_0089.wav": 15360044,
+    "audio\\train_0090.wav": 15360044,
+    "audio\\train_0091.wav": 15360044,
+    "audio\\train_0092.wav": 15360044,
+    "audio\\train_0093.wav": 15360044,
+    "audio\\train_0094.wav": 15360044,
+    "audio\\train_0095.wav": 15360044,
+    "audio\\train_0096.wav": 15360044,
+    "audio\\validation_0001.wav": 15360044,
+    "audio\\validation_0002.wav": 15360044,
+    "audio\\validation_0003.wav": 15360044,
+    "audio\\validation_0004.wav": 15360044,
+    "audio\\validation_0005.wav": 15360044,
+    "audio\\validation_0006.wav": 15360044
+  },
+  "size_basis": "Logical file lengths, with C free space measured independently.",
+  "target_absent_verified": true,
+  "latest_wavs_verified": 108,
+  "model_hashes_unchanged": true,
+  "remaining_dataset_directories": [
+    {
+      "name": "cache-light-v5_3-20260907",
+      "files": 1298,
+      "bytes": 2671106542
+    },
+    {
+      "name": "cache-light-v5_3-gunvehicle-20260907",
+      "files": 2547,
+      "bytes": 5071280558
+    },
+    {
+      "name": "confuser-sources",
+      "files": 71,
+      "bytes": 40644009
+    },
+    {
+      "name": "hrir",
+      "files": 1,
+      "bytes": 226611
+    },
+    {
+      "name": "light-v5_3-20260907",
+      "files": 414,
+      "bytes": 1881120923
+    },
+    {
+      "name": "light-v5_3-gunvehicle-20260907",
+      "files": 748,
+      "bytes": 3283230862
+    },
+    {
+      "name": "registry",
+      "files": 59,
+      "bytes": 16918023
+    },
+    {
+      "name": "scenario-small-20260907",
+      "files": 157,
+      "bytes": 388326550
+    },
+    {
+      "name": "scenario-smoke-v4",
+      "files": 83,
+      "bytes": 194152257
+    },
+    {
+      "name": "sources-body-v5_3",
+      "files": 80,
+      "bytes": 3439207
+    },
+    {
+      "name": "sources-body-v5_3-final",
+      "files": 79,
+      "bytes": 3525797
+    },
+    {
+      "name": "sources-events-v5",
+      "files": 171,
+      "bytes": 30338448
+    },
+    {
+      "name": "sources-v4",
+      "files": 1401,
+      "bytes": 172949110
+    },
+    {
+      "name": "sources-v5",
+      "files": 1553,
+      "bytes": 199337332
+    },
+    {
+      "name": "sources-v5_3",
+      "files": 1632,
+      "bytes": 202776543
+    },
+    {
+      "name": "sources-v5_3-final",
+      "files": 1631,
+      "bytes": 202863139
+    }
+  ],
+  "dataset_bytes_after": 14362235911,
+  "net_dataset_bytes_released": 16133819113,
+  "c_free_bytes_after": 61115056128
+}

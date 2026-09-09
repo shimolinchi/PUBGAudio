@@ -1,0 +1,13 @@
+{
+  "status": "deterministic_sampling_plan_verified",
+  "epochs": 400,
+  "samples": 460800,
+  "mirrored": 230247,
+  "mirror_fraction": 0.49966796875,
+  "crops_per_scene_per_epoch": 12,
+  "possible_starts_per_scene": 1151,
+  "unique_starts_min": 1120,
+  "unique_starts_max": 1142,
+  "unique_starts_mean": 1133.9270833333333,
+  "augmentation_source_sha256": "b5271126e817956353dd7c3e1f5723765fb8d60531a0e08f910b716c66c356ce"
+}

@@ -1,0 +1,20 @@
+{
+  "model": {
+    "classes": 3,
+    "output_mode": "multi_accddoa",
+    "self_classes": 3
+  },
+  "seed": 202609077,
+  "learning_rate": 0.001,
+  "epochs": 400,
+  "patience": 75,
+  "early_stopping_enabled": false,
+  "save_detection_checkpoint": true,
+  "distance_scale": 100.0,
+  "purpose": "F034 combined update: append 48 gunfire/vehicle-focused training scenes; mirror raw stereo features with x-reflected targets; random five-second windows on a 100ms grid. 400 sampled epochs, 12 windows per each of 96 scenes, 1152 samples/72 updates per epoch, 28800 updates total. Fixed unaugmented validation/test. This is not a single-factor augmentation ablation.",
+  "augmentation": {
+    "enabled": true,
+    "mirror_probability": 0.5,
+    "crops_per_scene": 12
+  }
+}

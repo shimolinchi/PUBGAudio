@@ -1,0 +1,11 @@
+{
+  "model": {"classes": 3, "output_mode": "multi_accddoa", "self_classes": 3},
+  "seed": 202609077,
+  "learning_rate": 0.001,
+  "epochs": 250,
+  "patience": 75,
+  "early_stopping_enabled": false,
+  "save_detection_checkpoint": true,
+  "distance_scale": 100.0,
+  "purpose": "Fixed 250-epoch duration comparison against the 30-epoch light baseline; same initialization seed, data, backbone, optimizer, learning rate and batch size. No early stop. Save validation-loss and external-macro-F1 checkpoints separately; fixed threshold 0.5. Test metrics never select a checkpoint."
+}

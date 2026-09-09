@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "exported_weights_and_normalizer_exact": true,
+  "cpu_inference_seconds": 120,
+  "cpu_output_frames": 1200,
+  "finite_outputs": true,
+  "models": {
+    "model.pt": {
+      "bytes": 4292155,
+      "sha256": "c2f49071b43036994081e8dc3b6cf4d3c7392bc11095afe674f8824445826a1d"
+    },
+    "model_detection.pt": {
+      "bytes": 4295215,
+      "sha256": "3d654b3cae5644f06c0d56965b6145e0d401fb3757b804b59ecbae8c55ad8bb1"
+    }
+  }
+}

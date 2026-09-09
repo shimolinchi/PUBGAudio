@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "artifacts": [
+    {
+      "file": "model.pt",
+      "bytes": 4291963,
+      "sha256": "1a5e69fca4a1880f5118f1ca4f68b9bee468cbdbd68af30e4b04ca7d18b17310"
+    },
+    {
+      "file": "model_detection.pt",
+      "bytes": 4295023,
+      "sha256": "3603df49319300de2c01f0ed6f11a5890876d1b019461b90e104885247b281bd"
+    }
+  ],
+  "inference_artifact": "model_detection.pt",
+  "inference_audio": "validation_0001.wav",
+  "frames": 1200,
+  "finite_outputs": true,
+  "training_source_identity_unchanged": true,
+  "check": "Both exported tensors and normalization equal their selected checkpoints; detection artifact passed standalone 120-second CPU inference",
+  "not_additional_test_evaluation": true
+}

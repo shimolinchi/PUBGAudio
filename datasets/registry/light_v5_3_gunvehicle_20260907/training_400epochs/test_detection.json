@@ -1,0 +1,149 @@
+{
+  "status": "evaluated",
+  "scope": "small synthetic held-out diagnostics, not official SELD scores",
+  "checkpoint_epoch": 338,
+  "checkpoint_sha256": "231dc4451e57e8270235dc94a41d5a973c8a9fce8f1475c97f2e032d9f8e4373",
+  "split": "test",
+  "scenes": 6,
+  "crops": 144,
+  "dataset_fingerprint": {
+    "train": "b8b80376faf046e7d69dbdd403ba28898b3cdaf5591d2d0586ebddace0d05a2a",
+    "validation": "706eb25de4045c11a32980fea67ea11a79f68db2e2d3a4671985dbc5121a43cb",
+    "test": "99b7be6bedc05034b201fb80274d58f4153e5921c7d50c184988d47f58c46a76"
+  },
+  "device": "cuda",
+  "torch_version": "2.8.0+cu128",
+  "batch_size": 16,
+  "loss": {
+    "total": 0.03548101333176924,
+    "external": 0.025251408478248374,
+    "self": 0.02045920841353816
+  },
+  "loss_aggregation": "crop-weighted batch masked objective",
+  "diagnostics": {
+    "threshold": 0.5,
+    "frame_seconds": 0.1,
+    "external_activity_rule": "maximum xyz norm over ADPIT tracks; duplicate tracks count once",
+    "localization_rule": "detected single-source frames only; highest-confidence track, no truth-based selection",
+    "distance_units": "uncalibrated synthetic units, not measured metres",
+    "external": {
+      "per_class": {
+        "footsteps": {
+          "tp": 285,
+          "fp": 14,
+          "fn": 60,
+          "tn": 6256,
+          "precision": 0.9531772575250836,
+          "recall": 0.8260869565217391,
+          "f1": 0.8850931677018633,
+          "positive_frames": 345,
+          "valid_frames": 6615,
+          "ignored_frames": 585,
+          "conditional_localization": {
+            "detected_single_source_frames": 235,
+            "angular_mae_degrees": 9.904879436087102,
+            "distance_mae_units": 8.397455223570478
+          }
+        },
+        "vehicle": {
+          "tp": 945,
+          "fp": 57,
+          "fn": 83,
+          "tn": 5487,
+          "precision": 0.9431137724550899,
+          "recall": 0.919260700389105,
+          "f1": 0.9310344827586207,
+          "positive_frames": 1028,
+          "valid_frames": 6572,
+          "ignored_frames": 628,
+          "conditional_localization": {
+            "detected_single_source_frames": 774,
+            "angular_mae_degrees": 67.40332851360627,
+            "distance_mae_units": 25.096293762364745
+          }
+        },
+        "gunfire": {
+          "tp": 130,
+          "fp": 94,
+          "fn": 111,
+          "tn": 6505,
+          "precision": 0.5803571428571429,
+          "recall": 0.5394190871369294,
+          "f1": 0.5591397849462365,
+          "positive_frames": 241,
+          "valid_frames": 6840,
+          "ignored_frames": 360,
+          "conditional_localization": {
+            "detected_single_source_frames": 128,
+            "angular_mae_degrees": 32.248045921325684,
+            "distance_mae_units": 14.718747198581696
+          }
+        }
+      },
+      "micro": {
+        "tp": 1360,
+        "fp": 165,
+        "fn": 254,
+        "tn": 18248,
+        "precision": 0.8918032786885246,
+        "recall": 0.8426270136307311,
+        "f1": 0.8665179993628545,
+        "positive_frames": 1614,
+        "valid_frames": 20027
+      }
+    },
+    "self": {
+      "per_class": {
+        "footsteps": {
+          "tp": 515,
+          "fp": 6,
+          "fn": 10,
+          "tn": 6393,
+          "precision": 0.9884836852207294,
+          "recall": 0.9809523809523809,
+          "f1": 0.9847036328871893,
+          "positive_frames": 525,
+          "valid_frames": 6924,
+          "ignored_frames": 276
+        },
+        "vehicle": {
+          "tp": 1611,
+          "fp": 21,
+          "fn": 3,
+          "tn": 5289,
+          "precision": 0.9871323529411765,
+          "recall": 0.9981412639405205,
+          "f1": 0.9926062846580407,
+          "positive_frames": 1614,
+          "valid_frames": 6924,
+          "ignored_frames": 276
+        },
+        "gunfire": {
+          "tp": 85,
+          "fp": 1,
+          "fn": 47,
+          "tn": 6791,
+          "precision": 0.9883720930232558,
+          "recall": 0.6439393939393939,
+          "f1": 0.7798165137614679,
+          "positive_frames": 132,
+          "valid_frames": 6924,
+          "ignored_frames": 276
+        }
+      },
+      "micro": {
+        "tp": 2211,
+        "fp": 28,
+        "fn": 60,
+        "tn": 18473,
+        "precision": 0.9874944171505137,
+        "recall": 0.9735799207397622,
+        "f1": 0.9804878048780488,
+        "positive_frames": 2271,
+        "valid_frames": 20772
+      }
+    }
+  },
+  "real_game_accuracy_not_evaluated": true,
+  "checkpoint_selection": "maximum validation external macro F1; test not used for selection"
+}
